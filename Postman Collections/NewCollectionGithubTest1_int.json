@@ -24,7 +24,7 @@
 							}
 						}
 					],
-					"_postman_id": "9813edab-c806-4a71-9fbd-dd3d8f81a2ef",
+					"id": "9813edab-c806-4a71-9fbd-dd3d8f81a2ef",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -84,7 +84,7 @@
 							}
 						}
 					],
-					"_postman_id": "49732ced-b677-4142-95a0-c484e8f85993",
+					"id": "49732ced-b677-4142-95a0-c484e8f85993",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -122,7 +122,7 @@
 							}
 						}
 					],
-					"_postman_id": "aabb80c5-a3f2-4020-ba65-ca823a441da0",
+					"id": "aabb80c5-a3f2-4020-ba65-ca823a441da0",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -167,7 +167,7 @@
 							}
 						}
 					],
-					"_postman_id": "c7e5bfe3-6285-4e32-bb04-b24fd633937e",
+					"id": "c7e5bfe3-6285-4e32-bb04-b24fd633937e",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -179,7 +179,7 @@
 					"response": []
 				}
 			],
-			"_postman_id": "4011833b-4984-45d4-9e8e-23f5b4941846"
+			"id": "4011833b-4984-45d4-9e8e-23f5b4941846"
 		},
 		{
 			"name": "glue2-view-api",
@@ -200,7 +200,7 @@
 							}
 						}
 					],
-					"_postman_id": "39ac1006-8bf3-4ce4-a5b6-0143ed49fe0e",
+					"id": "39ac1006-8bf3-4ce4-a5b6-0143ed49fe0e",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -212,26 +212,12 @@
 					"response": []
 				}
 			],
-			"_postman_id": "74db0102-6149-45d0-9fd0-d048e7b85db5"
+			"id": "74db0102-6149-45d0-9fd0-d048e7b85db5"
 		},
 		{
 			"name": "Folder1",
-			"item": [
-				{
-					"name": "RequestTest1",
-					"_postman_id": "58957d8a-f62c-4b8c-86a7-494de83286e2",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": null
-					},
-					"response": []
-				}
-			],
-			"_postman_id": "39bfbeb2-4afe-49cc-8c43-7ed7a7338b0a"
+			"item": [],
+			"id": "39bfbeb2-4afe-49cc-8c43-7ed7a7338b0a"
 		}
 	],
 	"event": [
@@ -258,10 +244,9 @@
 	],
 	"variable": [
 		{
-			"id": "68861075-3a66-4a9c-8354-476ec57e3823",
+			"id": "e020c7c2-e954-49f4-a765-f957247eab67",
 			"key": "absIDCollectVar",
-			"value": "urn:glue2:ComputingService:expanse-gpu.sdsc.xsede.org",
-			"type": "string"
+			"value": "urn:glue2:ComputingService:expanse-gpu.sdsc.xsede.org"
 		}
 	]
 }
