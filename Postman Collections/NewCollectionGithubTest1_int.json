@@ -213,11 +213,6 @@
 				}
 			],
 			"id": "74db0102-6149-45d0-9fd0-d048e7b85db5"
-		},
-		{
-			"name": "Folder1",
-			"item": [],
-			"id": "39bfbeb2-4afe-49cc-8c43-7ed7a7338b0a"
 		}
 	],
 	"event": [
@@ -244,7 +239,7 @@
 	],
 	"variable": [
 		{
-			"id": "e020c7c2-e954-49f4-a765-f957247eab67",
+			"id": "bd4f999f-53c6-41b3-8ea7-d534f3ae326e",
 			"key": "absIDCollectVar",
 			"value": "urn:glue2:ComputingService:expanse-gpu.sdsc.xsede.org"
 		}
