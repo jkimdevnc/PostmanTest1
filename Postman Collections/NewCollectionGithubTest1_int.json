@@ -218,7 +218,7 @@
 			"name": "IncaTests",
 			"item": [
 				{
-					"name": "New Request",
+					"name": "IncaTest1",
 					"id": "7b35106e-e6bb-4ec1-975e-cb25f2b8754b",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -269,7 +269,7 @@
 	],
 	"variable": [
 		{
-			"id": "f32326a6-9601-43dd-8cef-d10ca643a205",
+			"id": "e1011fa7-4dba-4b7c-b2b8-6d6286083bbc",
 			"key": "absIDCollectVar",
 			"value": "urn:glue2:ComputingService:expanse-gpu.sdsc.xsede.org"
 		}
