@@ -213,6 +213,18 @@
 				}
 			],
 			"id": "74db0102-6149-45d0-9fd0-d048e7b85db5"
+		},
+		{
+			"name": "New Request",
+			"id": "3942775a-4518-4ec7-88bb-a9083084447f",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
 		}
 	],
 	"event": [
@@ -239,7 +251,7 @@
 	],
 	"variable": [
 		{
-			"id": "bd4f999f-53c6-41b3-8ea7-d534f3ae326e",
+			"id": "623dff16-67f2-43c9-9bbb-3ede317f3cc6",
 			"key": "absIDCollectVar",
 			"value": "urn:glue2:ComputingService:expanse-gpu.sdsc.xsede.org"
 		}
