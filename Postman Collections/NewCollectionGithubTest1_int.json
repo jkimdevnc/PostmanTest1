@@ -255,13 +255,61 @@
 				},
 				{
 					"name": "IncaTest4",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "639242f7-1081-407b-99ae-d557aab618c9",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test(\"Response time is less than 200ms\", function () {",
+									"    pm.expect(pm.response.responseTime).to.be.below(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"id": "ff3ea4c4-2018-4f2e-adae-e7dfbf7cdd8b",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "https://info.xsede.org/wh1/resource-api/v3/event_search/?affiliation=uiuc.edu&start_date=2022-08-05T00:00:00-05:00&end_date=2022-08-12T00:00:00-05:00",
+							"protocol": "https",
+							"host": [
+								"info",
+								"xsede",
+								"org"
+							],
+							"path": [
+								"wh1",
+								"resource-api",
+								"v3",
+								"event_search",
+								""
+							],
+							"query": [
+								{
+									"key": "affiliation",
+									"value": "uiuc.edu"
+								},
+								{
+									"key": "start_date",
+									"value": "2022-08-05T00:00:00-05:00"
+								},
+								{
+									"key": "end_date",
+									"value": "2022-08-12T00:00:00-05:00"
+								}
+							]
+						}
 					},
 					"response": []
 				}
@@ -293,7 +341,7 @@
 	],
 	"variable": [
 		{
-			"id": "3ba4a4b5-2d6c-4dee-9437-89415ab5920b",
+			"id": "3c064513-b72f-44ee-adac-e7dd27f5d10b",
 			"key": "absIDCollectVar",
 			"value": "urn:glue2:ComputingService:expanse-gpu.sdsc.xsede.org"
 		}
