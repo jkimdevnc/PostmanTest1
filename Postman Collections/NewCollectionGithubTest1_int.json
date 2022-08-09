@@ -231,13 +231,64 @@
 				},
 				{
 					"name": "IncaTest2",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "943b956e-aa4c-4c9b-8180-57a17f966c3a",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test(\"Response time is less than 200ms\", function () {",
+									"    pm.expect(pm.response.responseTime).to.be.below(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"id": "798cf6db-81ef-4042-8eb8-8a02230032c0",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "https://info.xsede.org/wh1/resource-api/v3/resource_esearch?affiliation=uiuc.edu&resource_groups=organizations&page=1&results_per_page=20",
+							"protocol": "https",
+							"host": [
+								"info",
+								"xsede",
+								"org"
+							],
+							"path": [
+								"wh1",
+								"resource-api",
+								"v3",
+								"resource_esearch"
+							],
+							"query": [
+								{
+									"key": "affiliation",
+									"value": "uiuc.edu"
+								},
+								{
+									"key": "resource_groups",
+									"value": "organizations"
+								},
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "results_per_page",
+									"value": "20"
+								}
+							]
+						}
 					},
 					"response": []
 				},
@@ -389,7 +440,7 @@
 	],
 	"variable": [
 		{
-			"id": "71c62ed5-c15b-481b-9bde-d8d29f300ddc",
+			"id": "a876bc90-5868-426a-840c-f04ee6ac346c",
 			"key": "absIDCollectVar",
 			"value": "urn:glue2:ComputingService:expanse-gpu.sdsc.xsede.org"
 		}
