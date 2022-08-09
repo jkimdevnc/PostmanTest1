@@ -228,21 +228,33 @@
 						"header": []
 					},
 					"response": []
+				},
+				{
+					"name": "IncaTest3",
+					"id": "3942775a-4518-4ec7-88bb-a9083084447f",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"id": "798cf6db-81ef-4042-8eb8-8a02230032c0",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
 				}
 			],
 			"id": "a89e9082-1c7b-4183-b844-d55e01aa0ab1"
-		},
-		{
-			"name": "IncaTest3",
-			"id": "3942775a-4518-4ec7-88bb-a9083084447f",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": []
-			},
-			"response": []
 		}
 	],
 	"event": [
@@ -269,7 +281,7 @@
 	],
 	"variable": [
 		{
-			"id": "e1011fa7-4dba-4b7c-b2b8-6d6286083bbc",
+			"id": "f4d5fdee-0fe2-4e15-ab66-4c90e37e8e0a",
 			"key": "absIDCollectVar",
 			"value": "urn:glue2:ComputingService:expanse-gpu.sdsc.xsede.org"
 		}
