@@ -216,7 +216,20 @@
 		},
 		{
 			"name": "IncaTests",
-			"item": [],
+			"item": [
+				{
+					"name": "New Request",
+					"id": "7b35106e-e6bb-4ec1-975e-cb25f2b8754b",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			],
 			"id": "a89e9082-1c7b-4183-b844-d55e01aa0ab1"
 		},
 		{
@@ -256,7 +269,7 @@
 	],
 	"variable": [
 		{
-			"id": "4842edd7-d74e-4c47-bb44-661b332a1f1e",
+			"id": "e23510bb-3d4c-48f8-911c-d048d7374ae2",
 			"key": "absIDCollectVar",
 			"value": "urn:glue2:ComputingService:expanse-gpu.sdsc.xsede.org"
 		}
