@@ -219,13 +219,50 @@
 			"item": [
 				{
 					"name": "IncaTest1",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "979b32ff-508c-4c6b-ad62-9ddda57b68c1",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"id": "7b35106e-e6bb-4ec1-975e-cb25f2b8754b",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "https://info.xsede.org/wh1/resource-api/v3/resource_esearch?search_terms=aws",
+							"protocol": "https",
+							"host": [
+								"info",
+								"xsede",
+								"org"
+							],
+							"path": [
+								"wh1",
+								"resource-api",
+								"v3",
+								"resource_esearch"
+							],
+							"query": [
+								{
+									"key": "search_terms",
+									"value": "aws"
+								}
+							]
+						}
 					},
 					"response": []
 				},
@@ -440,7 +477,7 @@
 	],
 	"variable": [
 		{
-			"id": "a876bc90-5868-426a-840c-f04ee6ac346c",
+			"id": "9ce473ff-5313-4f78-9dc0-88937df4f952",
 			"key": "absIDCollectVar",
 			"value": "urn:glue2:ComputingService:expanse-gpu.sdsc.xsede.org"
 		}
