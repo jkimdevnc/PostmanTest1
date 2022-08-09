@@ -215,6 +215,11 @@
 			"id": "74db0102-6149-45d0-9fd0-d048e7b85db5"
 		},
 		{
+			"name": "New Folder",
+			"item": [],
+			"id": "a89e9082-1c7b-4183-b844-d55e01aa0ab1"
+		},
+		{
 			"name": "IncaTest1",
 			"id": "3942775a-4518-4ec7-88bb-a9083084447f",
 			"protocolProfileBehavior": {
@@ -251,7 +256,7 @@
 	],
 	"variable": [
 		{
-			"id": "d7bbc533-2610-4614-b6be-2ed0a8619c05",
+			"id": "8c508d84-e62e-4f88-ab3d-d40bf9002f5e",
 			"key": "absIDCollectVar",
 			"value": "urn:glue2:ComputingService:expanse-gpu.sdsc.xsede.org"
 		}
