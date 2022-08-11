@@ -1,7 +1,7 @@
 {
 	"info": {
 		"_postman_id": "60f7a3e2-a056-433b-b20e-2ec026c6d421",
-		"name": "XSEDE_API_TESTS_withGithub",
+		"name": "XSEDE_API_TESTS_POSTMAN_withGithub",
 		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
 	},
 	"item": [
@@ -488,7 +488,7 @@
 	],
 	"variable": [
 		{
-			"id": "ae5cbdcb-188c-4072-ac07-087fadc88955",
+			"id": "42ac2f12-7afe-4b45-b271-5506e88d6961",
 			"key": "xsede_ID",
 			"value": "urn:glue2:ComputingService:expanse-gpu.sdsc.xsede.org"
 		}
