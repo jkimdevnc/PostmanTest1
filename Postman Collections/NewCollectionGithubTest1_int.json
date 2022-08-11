@@ -21,7 +21,24 @@
 									"});",
 									"pm.test(\"Response time is less than 300ms\", function () {",
 									"    pm.expect(pm.response.responseTime).to.be.below(300);",
+									"});",
+									"",
+									"",
+									"pm.test(\"Your test name\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    console.log(jsonData);",
+									"    pm.expect(jsonData.value).to.eql(100);",
 									"});"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "246bf44f-a299-4dae-b14c-9c9ad1b6a9f1",
+								"exec": [
+									""
 								],
 								"type": "text/javascript"
 							}
@@ -418,7 +435,7 @@
 	],
 	"variable": [
 		{
-			"id": "02ae1ae8-ccf2-43c0-abd2-bcc644116de4",
+			"id": "39cbcaa9-8e38-458c-b65d-ac4618d578f5",
 			"key": "absIDCollectVar",
 			"value": "urn:glue2:ComputingService:expanse-gpu.sdsc.xsede.org"
 		}
