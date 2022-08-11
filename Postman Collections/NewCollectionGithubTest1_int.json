@@ -104,7 +104,7 @@
 								"id": "577c8fae-4830-4abf-8c5d-13c61344dc39",
 								"exec": [
 									"",
-									"pm.environment.set(\"absIDLocal\", \"urn:glue3:ComputingService:expanse-gpu.sdsc.xsede.org\");"
+									"// pm.environment.set(\"absIDLocal\", \"urn:glue3:ComputingService:expanse-gpu.sdsc.xsede.org\");"
 								],
 								"type": "text/javascript"
 							}
@@ -535,7 +535,7 @@
 	],
 	"variable": [
 		{
-			"id": "e7c5bc93-2190-49bd-8ee4-6a9160c8cb56",
+			"id": "f6d30cc9-930b-4b03-a8d1-201c75b69550",
 			"key": "absIDCollectVar",
 			"value": "urn:glue2:ComputingService:expanse-gpu.sdsc.xsede.org"
 		}
