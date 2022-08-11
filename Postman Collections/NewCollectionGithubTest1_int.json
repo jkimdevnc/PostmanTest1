@@ -20,8 +20,8 @@
 									"    pm.response.to.have.status(200);",
 									"});",
 									"",
-									"pm.test(\"Response time is less than 300ms\", function () {",
-									"    pm.expect(pm.response.responseTime).to.be.below(300);",
+									"pm.test(\"Response time is less than 400ms\", function () {",
+									"    pm.expect(pm.response.responseTime).to.be.below(400);",
 									"});"
 								],
 								"type": "text/javascript"
@@ -464,7 +464,7 @@
 	],
 	"variable": [
 		{
-			"id": "a2cf9193-4ef8-4fa7-b10d-162ea3946935",
+			"id": "586dd596-43aa-4a0c-9419-3e5f24ce5e98",
 			"key": "absIDCollectVar",
 			"value": "urn:glue2:ComputingService:expanse-gpu.sdsc.xsede.org"
 		}
