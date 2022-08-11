@@ -63,24 +63,26 @@
 						{
 							"listen": "prerequest",
 							"script": {
+								"id": "577c8fae-4830-4abf-8c5d-13c61344dc39",
 								"exec": [
 									"",
-									"pm.environment.set(\"absIDLocal\", \"urn:glue2:ComputingService:expanse-gpu.sdsc.xsede.org\");"
+									"pm.environment.set(\"absIDLocal\", \"urn:glue2:ComputingService:expanse-gpu.sdsc.xsede.org\");",
+									"",
+									"console.log(absIDLocal);"
 								],
-								"type": "text/javascript",
-								"id": "577c8fae-4830-4abf-8c5d-13c61344dc39"
+								"type": "text/javascript"
 							}
 						},
 						{
 							"listen": "test",
 							"script": {
+								"id": "2190fa95-ed57-4ee9-87a5-d993e6f07fb0",
 								"exec": [
 									"pm.test(\"Status code is 200\", function () {",
 									"    pm.response.to.have.status(200);",
 									"});"
 								],
-								"type": "text/javascript",
-								"id": "2190fa95-ed57-4ee9-87a5-d993e6f07fb0"
+								"type": "text/javascript"
 							}
 						}
 					],
@@ -537,7 +539,7 @@
 	],
 	"variable": [
 		{
-			"id": "b3d75e73-ac52-4073-8fd0-e009058d25e8",
+			"id": "79cbf60d-74cc-4452-aa23-ffcd1f5b88dd",
 			"key": "absIDCollectVar",
 			"value": "urn:glue2:ComputingService:expanse-gpu.sdsc.xsede.org"
 		}
