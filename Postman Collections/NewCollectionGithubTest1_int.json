@@ -398,28 +398,28 @@
 		{
 			"listen": "prerequest",
 			"script": {
+				"id": "3d733c29-352b-4685-97c0-8a301b67b100",
 				"type": "text/javascript",
 				"exec": [
 					""
-				],
-				"id": "54209556-c944-4d88-8a75-3589ce232cdc"
+				]
 			}
 		},
 		{
 			"listen": "test",
 			"script": {
+				"id": "7ecd8087-721f-4a15-8a75-412449ba7e8d",
 				"type": "text/javascript",
 				"exec": [
 					""
-				],
-				"id": "c58820ab-e036-4391-b34b-233698281a08"
+				]
 			}
 		}
 	],
 	"variable": [
 		{
-			"id": "48c57584-4b4e-4b81-9289-ebb06e5d626f",
-			"key": "absIDCollectVar",
+			"id": "aa170df9-5ca6-4135-b9e3-0856f7bc92d3",
+			"key": "xsede_ID",
 			"value": "urn:glue2:ComputingService:expanse-gpu.sdsc.xsede.org"
 		}
 	]
