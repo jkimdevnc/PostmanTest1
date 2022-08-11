@@ -96,6 +96,44 @@
 					"response": []
 				},
 				{
+					"name": "abstractservice_ID Copy",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "577c8fae-4830-4abf-8c5d-13c61344dc39",
+								"exec": [
+									"",
+									"pm.environment.set(\"absIDLocal\", \"urn:glue3:ComputingService:expanse-gpu.sdsc.xsede.org\");"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "2190fa95-ed57-4ee9-87a5-d993e6f07fb0",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "abeafc9e-0387-47c3-8a99-559f645c8783",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "https://info.xsede.org/wh1/glue2-db-api/v1/abstractservice/ID/{{absIDLocal}}"
+					},
+					"response": []
+				},
+				{
 					"name": "abstractservice_ID2",
 					"event": [
 						{
@@ -497,7 +535,7 @@
 	],
 	"variable": [
 		{
-			"id": "5d812fbf-fc12-4336-b7a9-c1b80a08b4fd",
+			"id": "e7c5bc93-2190-49bd-8ee4-6a9160c8cb56",
 			"key": "absIDCollectVar",
 			"value": "urn:glue2:ComputingService:expanse-gpu.sdsc.xsede.org"
 		}
