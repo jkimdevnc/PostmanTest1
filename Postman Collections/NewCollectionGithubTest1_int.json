@@ -67,7 +67,7 @@
 								"exec": [
 									"",
 									"pm.environment.set(\"absIDLocal\", \"urn:glue2:ComputingService:expanse-gpu.sdsc.xsede.org\");",
-									"console.log(pm.environment.get(\"absIDLocal\"));"
+									"// console.log(pm.environment.get(\"absIDLocal\"));"
 								],
 								"type": "text/javascript"
 							}
@@ -538,7 +538,7 @@
 	],
 	"variable": [
 		{
-			"id": "4a110c8b-71ea-40ec-9f6a-e6357c04e264",
+			"id": "70a0f208-7c5f-432e-8a10-cb5b52c75c7c",
 			"key": "absIDCollectVar",
 			"value": "urn:glue2:ComputingService:expanse-gpu.sdsc.xsede.org"
 		}
