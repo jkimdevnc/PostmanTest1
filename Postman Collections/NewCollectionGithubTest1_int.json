@@ -407,6 +407,25 @@
 								],
 								"type": "text/javascript"
 							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "8e4ff692-67a8-4419-a610-65d6ec8b1664",
+								"exec": [
+									"let today = new Date();",
+									"console.log(today);",
+									"let todayfmt = new Date(today.getFullYear(), today.getMonth(), today.getDate()).toJSON().slice(0,10) + \"T00:00:00-05:00\";",
+									"",
+									"console.log(todayfmt);",
+									"",
+									"let nextweek = new Date(today.getFullYear(), today.getMonth(), today.getDate()+7).toJSON().slice(0,10) + \"T00:00:00-05:00\";",
+									"console.log(nextweek);",
+									"",
+									"//pm.environment.set(\"queryParams\", );"
+								],
+								"type": "text/javascript"
+							}
 						}
 					],
 					"id": "ff3ea4c4-2018-4f2e-adae-e7dfbf7cdd8b",
@@ -477,7 +496,7 @@
 	],
 	"variable": [
 		{
-			"id": "9ce473ff-5313-4f78-9dc0-88937df4f952",
+			"id": "56646be6-2bd8-4f1f-9974-1338caf6f042",
 			"key": "absIDCollectVar",
 			"value": "urn:glue2:ComputingService:expanse-gpu.sdsc.xsede.org"
 		}
