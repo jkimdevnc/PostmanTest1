@@ -437,7 +437,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://info.xsede.org/wh1/resource-api/v3/event_search/?affiliation=uiuc.edu&start_date={{param1}}&end_date=2022-08-12T00:00:00-05:00",
+							"raw": "https://info.xsede.org/wh1/resource-api/v3/event_search/?affiliation=uiuc.edu&start_date={{param1}}&end_date={{param2}}",
 							"protocol": "https",
 							"host": [
 								"info",
@@ -462,7 +462,7 @@
 								},
 								{
 									"key": "end_date",
-									"value": "2022-08-12T00:00:00-05:00"
+									"value": "{{param2}}"
 								}
 							]
 						}
@@ -497,7 +497,7 @@
 	],
 	"variable": [
 		{
-			"id": "60cc47c9-9c52-47cf-8d73-688dae7d5dad",
+			"id": "5d812fbf-fc12-4336-b7a9-c1b80a08b4fd",
 			"key": "absIDCollectVar",
 			"value": "urn:glue2:ComputingService:expanse-gpu.sdsc.xsede.org"
 		}
