@@ -416,13 +416,14 @@
 									"let today = new Date();",
 									"console.log(today);",
 									"",
-									"let todayfmt = new Date(today.getFullYear(), today.getMonth(), today.getDate()).toJSON().slice(0,10) + \"T00:00:00-05:10\";",
+									"let todayfmt = new Date(today.getFullYear(), today.getMonth(), today.getDate()).toJSON().slice(0,10) + \"T00:00:00-05:00\";",
 									"console.log(todayfmt);",
 									"",
 									"let nextweekfmt = new Date(today.getFullYear(), today.getMonth(), today.getDate()+7).toJSON().slice(0,10) + \"T00:00:00-05:00\";",
 									"console.log(nextweekfmt);",
 									"",
-									"pm.environment.set(\"param1\", todayfmt );"
+									"pm.environment.set(\"param1\", todayfmt );",
+									"pm.environment.set(\"param2\", nextweekfmt );"
 								],
 								"type": "text/javascript"
 							}
@@ -496,7 +497,7 @@
 	],
 	"variable": [
 		{
-			"id": "e12eaee1-ca20-4003-88c1-b1abcb9db5a1",
+			"id": "60cc47c9-9c52-47cf-8d73-688dae7d5dad",
 			"key": "absIDCollectVar",
 			"value": "urn:glue2:ComputingService:expanse-gpu.sdsc.xsede.org"
 		}
