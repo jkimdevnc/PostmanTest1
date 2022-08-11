@@ -26,7 +26,7 @@
 									"",
 									"pm.test(\"Your test name\", function () {",
 									"    var jsonData = pm.response.json();",
-									"    console.log(jsonData);",
+									"    console.log(jsonData[0]);",
 									"    //pm.expect(jsonData.value).to.eql(100);",
 									"});"
 								],
@@ -435,7 +435,7 @@
 	],
 	"variable": [
 		{
-			"id": "d8997003-9204-44c1-8c1b-e74a9baf6b77",
+			"id": "bc385d57-eac4-479b-9014-58830f3164af",
 			"key": "absIDCollectVar",
 			"value": "urn:glue2:ComputingService:expanse-gpu.sdsc.xsede.org"
 		}
