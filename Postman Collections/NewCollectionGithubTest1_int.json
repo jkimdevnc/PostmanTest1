@@ -398,7 +398,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "3d733c29-352b-4685-97c0-8a301b67b100",
+				"id": "16e68bce-7a3d-4958-8651-48600df38720",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -408,7 +408,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "7ecd8087-721f-4a15-8a75-412449ba7e8d",
+				"id": "a3638fe6-b062-4bf4-9e83-f06dcf895428",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -418,8 +418,8 @@
 	],
 	"variable": [
 		{
-			"id": "aa170df9-5ca6-4135-b9e3-0856f7bc92d3",
-			"key": "xsede_ID",
+			"id": "02ae1ae8-ccf2-43c0-abd2-bcc644116de4",
+			"key": "absIDCollectVar",
 			"value": "urn:glue2:ComputingService:expanse-gpu.sdsc.xsede.org"
 		}
 	]
