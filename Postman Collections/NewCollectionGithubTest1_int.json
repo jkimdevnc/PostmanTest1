@@ -19,8 +19,8 @@
 									"pm.test(\"Status code is 200\", function () {",
 									"    pm.response.to.have.status(200);",
 									"});",
-									"pm.test(\"Response time is less than 350ms\", function () {",
-									"    pm.expect(pm.response.responseTime).to.be.below(350);",
+									"pm.test(\"Response time is less than 300ms\", function () {",
+									"    pm.expect(pm.response.responseTime).to.be.below(300);",
 									"});"
 								],
 								"type": "text/javascript"
@@ -463,7 +463,7 @@
 	],
 	"variable": [
 		{
-			"id": "3e0eee5c-f5ed-4d93-8821-c3c8eaac17bd",
+			"id": "0cb25374-d8ef-4249-975c-a6cd0f73012e",
 			"key": "absIDCollectVar",
 			"value": "urn:glue2:ComputingService:expanse-gpu.sdsc.xsede.org"
 		}
