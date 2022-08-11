@@ -14,13 +14,17 @@
 						{
 							"listen": "test",
 							"script": {
+								"id": "9b3aac39-6a27-4d23-8e08-99a4ea3ed14d",
 								"exec": [
 									"pm.test(\"Status code is 200\", function () {",
 									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test(\"Response time is less than 300ms\", function () {",
+									"    pm.expect(pm.response.responseTime).to.be.below(300);",
 									"});"
 								],
-								"type": "text/javascript",
-								"id": "9b3aac39-6a27-4d23-8e08-99a4ea3ed14d"
+								"type": "text/javascript"
 							}
 						}
 					],
@@ -460,7 +464,7 @@
 	],
 	"variable": [
 		{
-			"id": "c7d8900f-9e7f-4f29-bd4e-952a72cd2859",
+			"id": "a2cf9193-4ef8-4fa7-b10d-162ea3946935",
 			"key": "absIDCollectVar",
 			"value": "urn:glue2:ComputingService:expanse-gpu.sdsc.xsede.org"
 		}
