@@ -29,9 +29,23 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "246bf44f-a299-4dae-b14c-9c9ad1b6a9f1",
+								"id": "f4d091d3-4c8c-428c-892a-b6e93c5e9e69",
 								"exec": [
-									""
+									"pm.sendRequest(\"https://info.xsede.org/wh1/glue2-db-api/v1/abstractservice/\", function (err, response) {",
+									"    //console.log(response.json()[0]);",
+									"",
+									"    // get ID of first element",
+									"    ID = response.json()[0].ID;",
+									"    console.log(ID);",
+									"",
+									"    // get ResourceID of first element - TEST purpose",
+									"    //resourceID = response.json()[0].ResourceID;",
+									"    //console.log(resourceID);",
+									"",
+									"    // set ID to collection variable",
+									"    pm.collectionVariables.set(\"xsede_ID\", ID);",
+									"",
+									"});"
 								],
 								"type": "text/javascript"
 							}
@@ -79,7 +93,10 @@
 								"id": "577c8fae-4830-4abf-8c5d-13c61344dc39",
 								"exec": [
 									"",
-									"pm.environment.set(\"absIDLocal\", \"urn:glue2:ComputingService:expanse-gpu.sdsc.xsede.org\");",
+									"//pm.environment.set(\"localID\", \"urn:glue2:ComputingService:expanse-gpu.sdsc.xsede.org\");",
+									"// Get ID from collection variable which is set by previous test",
+									"pm.environment.set(\"localID\", pm.collectionVariables.get(\"xsede_ID\"));",
+									"console.log(pm.collectionVariables.get(\"xsede_ID\"));",
 									"// console.log(pm.environment.get(\"absIDLocal\"));"
 								],
 								"type": "text/javascript"
@@ -105,7 +122,50 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": "https://info.xsede.org/wh1/glue2-db-api/v1/abstractservice/ID/{{absIDLocal}}"
+						"url": "https://info.xsede.org/wh1/glue2-db-api/v1/abstractservice/ID/{{localID}}"
+					},
+					"response": []
+				},
+				{
+					"name": "abstractservice_IDtestenv",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "577c8fae-4830-4abf-8c5d-13c61344dc39",
+								"exec": [
+									"",
+									"console.log(pm.collectionVariables.get(\"xsede_ID\"));",
+									"",
+									"pm.collectionVariables.set(\"xsede_ID\", \"urn:glue2:ComputingService:expanse-gpu.sdsc.xsede.org\");",
+									"",
+									"console.log(pm.collectionVariables.get(\"xsede_ID\"));",
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "2190fa95-ed57-4ee9-87a5-d993e6f07fb0",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "ad2b9b3d-c018-405f-8b91-03c28bd66f27",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "https://info.xsede.org/wh1/glue2-db-api/v1/abstractservice/ID/{{xsede_ID}}"
 					},
 					"response": []
 				}
@@ -428,8 +488,8 @@
 	],
 	"variable": [
 		{
-			"id": "a32f5f96-7111-4be5-ba1d-24a4051d3691",
-			"key": "absIDCollectVar",
+			"id": "7651f0bd-232d-4c54-a683-e74e801c97da",
+			"key": "xsede_ID",
 			"value": "urn:glue2:ComputingService:expanse-gpu.sdsc.xsede.org"
 		}
 	]
