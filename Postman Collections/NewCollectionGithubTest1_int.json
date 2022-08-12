@@ -1,7 +1,7 @@
 {
 	"info": {
 		"_postman_id": "60f7a3e2-a056-433b-b20e-2ec026c6d421",
-		"name": "NewCollectionGithubTest1_DEL",
+		"name": "NewCollectionGithubTest1_TMP",
 		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
 	},
 	"item": [
@@ -488,7 +488,7 @@
 	],
 	"variable": [
 		{
-			"id": "c1db90f2-cb54-41a4-a896-6dad43826d7d",
+			"id": "d66bc141-bf80-49bc-897e-cfa36194bbd1",
 			"key": "xsede_ID",
 			"value": "urn:glue2:ComputingService:expanse-gpu.sdsc.xsede.org"
 		}
