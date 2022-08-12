@@ -380,6 +380,58 @@
 						"url": "https://info.xsede.org/wh1/glue2-db-api/v1/accesspolicy/ID/{{localID}}"
 					},
 					"response": []
+				},
+				{
+					"name": "admindomain",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "4088e1a0-ff52-4914-9276-f0f48712fb6c",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test(\"Response time is less than 300ms\", function () {",
+									"    pm.expect(pm.response.responseTime).to.be.below(300);",
+									"});",
+									"",
+									"pm.test(\"Save ID\", function () {",
+									"    // get mid index of response data array",
+									"    arrLen = pm.response.json().results.length;",
+									"    //console.log(arrLen);",
+									"    if (arrLen < 1) {",
+									"        // set ID variable to none and return fail",
+									"        pm.collectionVariables.set(\"xsede_ID\",'');",
+									"        pm.expect.fail(\" No element exist!\");",
+									"    }",
+									"    midIdx = Math.floor(arrLen/2);",
+									"    //console.log(midIdx);",
+									"",
+									"    // get ID of midIdx element",
+									"    //console.log(pm.response.json().results[midIdx]);",
+									"    ID = pm.response.json().results[midIdx].ID;",
+									"    //console.log(ID);",
+									"",
+									"    // set ID to a collection variable",
+									"    pm.collectionVariables.set(\"xsede_ID\", ID);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "3c484c33-0ab3-480d-8b2c-5e8a0f864de9",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "https://info.xsede.org/wh1/glue2-db-api/v1/accesspolicy/"
+					},
+					"response": []
 				}
 			],
 			"id": "4011833b-4984-45d4-9e8e-23f5b4941846"
@@ -700,7 +752,7 @@
 	],
 	"variable": [
 		{
-			"id": "14bf5e6d-58e8-44a8-98e6-b7ac65b59244",
+			"id": "f3409f41-9a19-4eb3-be7a-b433a663ed84",
 			"key": "xsede_ID",
 			"value": "urn:glue2:ComputingService:expanse-gpu.sdsc.xsede.org"
 		}
