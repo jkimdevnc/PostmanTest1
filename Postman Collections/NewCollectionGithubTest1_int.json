@@ -476,7 +476,33 @@
 					"response": []
 				}
 			],
-			"id": "4011833b-4984-45d4-9e8e-23f5b4941846"
+			"id": "4011833b-4984-45d4-9e8e-23f5b4941846",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "ae323e19-2df0-4b22-959d-80c21cd0dfad",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "7d175269-4621-46a1-a64b-1a236d1e2562",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							""
+						]
+					}
+				}
+			]
 		},
 		{
 			"name": "glue2-view-api",
@@ -794,7 +820,7 @@
 	],
 	"variable": [
 		{
-			"id": "887b535b-2b09-46c0-a562-7dc5723bba3e",
+			"id": "989f4769-4506-44b9-9d99-4cf6992ad51d",
 			"key": "xsede_ID",
 			"value": "urn:glue2:ComputingService:expanse-gpu.sdsc.xsede.org"
 		}
