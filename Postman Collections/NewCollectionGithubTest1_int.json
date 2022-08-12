@@ -16,9 +16,7 @@
 							"script": {
 								"id": "7df94e74-46ef-4d1b-a6cf-b2966627fc54",
 								"exec": [
-									"pm.test(\"Status code is 200\", function () {",
-									"    pm.response.to.have.status(200);",
-									"});",
+									"",
 									"",
 									"pm.test(\"Save ID\", function () {",
 									"    // get mid index of response data array",
@@ -796,7 +794,7 @@
 	],
 	"variable": [
 		{
-			"id": "a4078074-a630-49b0-81c8-407917da5332",
+			"id": "887b535b-2b09-46c0-a562-7dc5723bba3e",
 			"key": "xsede_ID",
 			"value": "urn:glue2:ComputingService:expanse-gpu.sdsc.xsede.org"
 		}
