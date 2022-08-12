@@ -189,13 +189,13 @@
 									"pm.test(\"Save ID\", function () {",
 									"    // get mid index of response data array",
 									"    arrLen = pm.response.json().results.length;",
-									"    console.log(arrLen);",
+									"    //console.log(arrLen);",
 									"    midIdx = Math.floor(arrLen/2);",
 									"    console.log(midIdx);",
 									"",
-									"    // get ID of first element",
-									"    //console.log(pm.response.json().results[0]);",
-									"    ID = pm.response.json().results[0].ID;",
+									"    // get ID of midIdx element",
+									"    //console.log(pm.response.json().results[midIdx]);",
+									"    ID = pm.response.json().results[midIdx].ID;",
 									"    console.log(ID);",
 									"",
 									"    // set ID to collection variable",
@@ -580,7 +580,7 @@
 	],
 	"variable": [
 		{
-			"id": "45f29bdb-5ef0-4ed8-9e18-b1019f3d6523",
+			"id": "591e88a9-b790-42d4-96e5-75d98e07227c",
 			"key": "xsede_ID",
 			"value": "urn:glue2:ComputingService:expanse-gpu.sdsc.xsede.org"
 		}
