@@ -164,9 +164,7 @@
 							"script": {
 								"id": "2190fa95-ed57-4ee9-87a5-d993e6f07fb0",
 								"exec": [
-									"pm.test(\"Status code is 200\", function () {",
-									"    pm.response.to.have.status(200);",
-									"});"
+									""
 								],
 								"type": "text/javascript"
 							}
@@ -813,7 +811,7 @@
 	],
 	"variable": [
 		{
-			"id": "2389f4d1-4b1c-4889-b0d4-31c2e4da97d0",
+			"id": "b498b629-6d97-4377-a0af-8a056adb40d8",
 			"key": "xsede_ID",
 			"value": "urn:glue2:ComputingService:expanse-gpu.sdsc.xsede.org"
 		}
