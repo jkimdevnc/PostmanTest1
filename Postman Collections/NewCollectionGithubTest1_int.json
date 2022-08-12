@@ -246,8 +246,8 @@
 								"id": "72f54e9d-cc10-4b1a-89a9-689c36ba6794",
 								"exec": [
 									"// Get ID from collection variable which is set by previous test",
+									"//console.log(pm.collectionVariables.get(\"xsede_ID\"));",
 									"pm.environment.set(\"localID\", pm.collectionVariables.get(\"xsede_ID\"));",
-									"console.log(pm.collectionVariables.get(\"xsede_ID\"));",
 									""
 								],
 								"type": "text/javascript"
@@ -600,7 +600,7 @@
 	],
 	"variable": [
 		{
-			"id": "80510129-feb3-4b9f-b651-fcf831fcf748",
+			"id": "83805181-6459-49bf-ab4c-3fdd96f689b8",
 			"key": "xsede_ID",
 			"value": "urn:glue2:ComputingService:expanse-gpu.sdsc.xsede.org"
 		}
