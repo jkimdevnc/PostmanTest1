@@ -207,6 +207,9 @@
 									"    // get mid index of response data array",
 									"    arrLen = pm.response.json().results.length;",
 									"    //console.log(arrLen);",
+									"    if (arrLen < 1) {",
+									"        pm.expect.fail(\" No element exist!\");",
+									"    }",
 									"    midIdx = Math.floor(arrLen/2);",
 									"    console.log(midIdx);",
 									"",
@@ -597,7 +600,7 @@
 	],
 	"variable": [
 		{
-			"id": "26aed709-dcfe-4573-b0b4-d1861f912318",
+			"id": "54624e54-c2d3-4fa0-9c41-7893a692bf79",
 			"key": "xsede_ID",
 			"value": "urn:glue2:ComputingService:expanse-gpu.sdsc.xsede.org"
 		}
