@@ -283,13 +283,28 @@
 				},
 				{
 					"name": "accesspolicy",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "4088e1a0-ff52-4914-9276-f0f48712fb6c",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"id": "f8500cba-1aa5-4634-878c-387e6197ee96",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": "https://info.xsede.org/wh1/glue2-db-api/v1/accesspolicy/"
 					},
 					"response": []
 				}
@@ -612,7 +627,7 @@
 	],
 	"variable": [
 		{
-			"id": "5ca9a889-5b2e-472f-a24b-99180f2aaf62",
+			"id": "23679ef1-d596-4e2d-8d8a-67c6fa0cc248",
 			"key": "xsede_ID",
 			"value": "urn:glue2:ComputingService:expanse-gpu.sdsc.xsede.org"
 		}
