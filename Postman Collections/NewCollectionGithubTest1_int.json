@@ -9,18 +9,32 @@
 			"name": "glue2-db-api",
 			"item": [
 				{
-					"name": "abstractservice",
+					"name": "abstractservice Copy",
 					"event": [
 						{
 							"listen": "test",
 							"script": {
-								"id": "9b3aac39-6a27-4d23-8e08-99a4ea3ed14d",
+								"id": "7df94e74-46ef-4d1b-a6cf-b2966627fc54",
 								"exec": [
 									"pm.test(\"Status code is 200\", function () {",
 									"    pm.response.to.have.status(200);",
 									"});",
+									"",
 									"pm.test(\"Response time is less than 300ms\", function () {",
 									"    pm.expect(pm.response.responseTime).to.be.below(300);",
+									"});",
+									"",
+									"pm.test(\"Save ID\", function () {",
+									"    // get ID of first element",
+									"    ID = pm.response.json()[0].ID;",
+									"    //console.log(ID);",
+									"",
+									"    // get ResourceID of first element - TEST purpose",
+									"    //resourceID = response.json()[0].ResourceID;",
+									"    //console.log(resourceID);",
+									"",
+									"    // set ID to collection variable",
+									"    pm.collectionVariables.set(\"xsede_ID\", ID);",
 									"});"
 								],
 								"type": "text/javascript"
@@ -29,29 +43,15 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "f4d091d3-4c8c-428c-892a-b6e93c5e9e69",
+								"id": "b8a7f3be-e00b-4b99-9044-673c5b14fc7b",
 								"exec": [
-									"pm.sendRequest(\"https://info.xsede.org/wh1/glue2-db-api/v1/abstractservice/\", function (err, response) {",
-									"    //console.log(response.json()[0]);",
-									"",
-									"    // get ID of first element",
-									"    ID = response.json()[0].ID;",
-									"    console.log(ID);",
-									"",
-									"    // get ResourceID of first element - TEST purpose",
-									"    //resourceID = response.json()[0].ResourceID;",
-									"    //console.log(resourceID);",
-									"",
-									"    // set ID to collection variable",
-									"    pm.collectionVariables.set(\"xsede_ID\", ID);",
-									"",
-									"});"
+									""
 								],
 								"type": "text/javascript"
 							}
 						}
 					],
-					"id": "9813edab-c806-4a71-9fbd-dd3d8f81a2ef",
+					"id": "e68bf9f5-2a6f-4048-9a3d-1ebeced7e5aa",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -488,7 +488,7 @@
 	],
 	"variable": [
 		{
-			"id": "d66bc141-bf80-49bc-897e-cfa36194bbd1",
+			"id": "19a255de-51f1-40dd-a431-a90f0f6a4842",
 			"key": "xsede_ID",
 			"value": "urn:glue2:ComputingService:expanse-gpu.sdsc.xsede.org"
 		}
