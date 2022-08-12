@@ -25,6 +25,8 @@
 									"    let arrLen = pm.response.json().length;",
 									"    //console.log(arrLen);",
 									"    if (arrLen < 1) {",
+									"        // set ID variable to none and return fail",
+									"        pm.collectionVariables.set(\"xsede_ID\",'');",
 									"        pm.expect.fail(\" No element exist!\");",
 									"    }",
 									"",
@@ -654,7 +656,7 @@
 	],
 	"variable": [
 		{
-			"id": "3c950920-96b8-447a-9b5d-e4c2446a1db3",
+			"id": "d59a3458-c21f-4dae-b3f4-d964b961336d",
 			"key": "xsede_ID",
 			"value": "urn:glue2:ComputingService:expanse-gpu.sdsc.xsede.org"
 		}
