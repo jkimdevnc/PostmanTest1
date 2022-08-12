@@ -9,7 +9,7 @@
 			"name": "glue2-db-api",
 			"item": [
 				{
-					"name": "abstractservice Copy",
+					"name": "abstractservice",
 					"event": [
 						{
 							"listen": "test",
@@ -488,7 +488,7 @@
 	],
 	"variable": [
 		{
-			"id": "19a255de-51f1-40dd-a431-a90f0f6a4842",
+			"id": "e37dbaef-4f37-4e64-8162-6695f9c10c92",
 			"key": "xsede_ID",
 			"value": "urn:glue2:ComputingService:expanse-gpu.sdsc.xsede.org"
 		}
