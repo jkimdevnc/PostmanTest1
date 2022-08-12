@@ -182,13 +182,14 @@
 									"    pm.response.to.have.status(200);",
 									"});",
 									"",
-									"pm.test(\"Response time is less than 200ms\", function () {",
-									"    pm.expect(pm.response.responseTime).to.be.below(200);",
+									"pm.test(\"Response time is less than 300ms\", function () {",
+									"    pm.expect(pm.response.responseTime).to.be.below(300);",
 									"});",
 									"",
 									"pm.test(\"Save ID\", function () {",
 									"    // get ID of first element",
 									"    //console.log(pm.response.json().results[0]);",
+									"    console.log(pm.response.size());",
 									"    ID = pm.response.json().results[0].ID;",
 									"    console.log(ID);",
 									"",
@@ -574,7 +575,7 @@
 	],
 	"variable": [
 		{
-			"id": "ba40d698-ff56-4b55-a161-6c05b16ede85",
+			"id": "8fcabd81-32c8-4467-8a56-e6bb5a260f37",
 			"key": "xsede_ID",
 			"value": "urn:glue2:ComputingService:expanse-gpu.sdsc.xsede.org"
 		}
