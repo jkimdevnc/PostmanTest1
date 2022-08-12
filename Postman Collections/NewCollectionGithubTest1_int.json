@@ -188,7 +188,7 @@
 									"",
 									"pm.test(\"Save ID\", function () {",
 									"    // get ID of first element",
-									"    console.log(pm.response.json().results);",
+									"    console.log(pm.response.json().results[0]);",
 									"    ID = pm.response.json()[0].ID;",
 									"    console.log(ID);",
 									"",
@@ -572,7 +572,7 @@
 	],
 	"variable": [
 		{
-			"id": "f1a32ab2-d282-4680-8554-d95bbd31cfdc",
+			"id": "557287d6-2ce9-4e0e-bdea-b17a2cf60e79",
 			"key": "xsede_ID",
 			"value": "urn:glue2:ComputingService:expanse-gpu.sdsc.xsede.org"
 		}
