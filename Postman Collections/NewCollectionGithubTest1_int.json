@@ -9,48 +9,6 @@
 			"name": "glue2-db-api",
 			"item": [
 				{
-					"name": "abstractservice_ID",
-					"event": [
-						{
-							"listen": "prerequest",
-							"script": {
-								"id": "577c8fae-4830-4abf-8c5d-13c61344dc39",
-								"exec": [
-									"",
-									"//pm.environment.set(\"localID\", \"urn:glue2:ComputingService:expanse-gpu.sdsc.xsede.org\");",
-									"// Get ID from collection variable which is set by previous test",
-									"pm.environment.set(\"localID\", pm.collectionVariables.get(\"xsede_ID\"));",
-									"console.log(pm.collectionVariables.get(\"xsede_ID\"));",
-									"// console.log(pm.environment.get(\"absIDLocal\"));"
-								],
-								"type": "text/javascript"
-							}
-						},
-						{
-							"listen": "test",
-							"script": {
-								"id": "2190fa95-ed57-4ee9-87a5-d993e6f07fb0",
-								"exec": [
-									"pm.test(\"Status code is 200\", function () {",
-									"    pm.response.to.have.status(200);",
-									"});"
-								],
-								"type": "text/javascript"
-							}
-						}
-					],
-					"id": "49732ced-b677-4142-95a0-c484e8f85993",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": "https://info.xsede.org/wh1/glue2-db-api/v1/abstractservice/ID/{{localID}}"
-					},
-					"response": []
-				},
-				{
 					"name": "abstractservice_IDtestenv",
 					"event": [
 						{
@@ -639,7 +597,7 @@
 	],
 	"variable": [
 		{
-			"id": "c1f370be-7084-45d7-9d81-2031aba22715",
+			"id": "90610b32-e8fc-4757-b186-37bae10b217c",
 			"key": "xsede_ID",
 			"value": "urn:glue2:ComputingService:expanse-gpu.sdsc.xsede.org"
 		}
