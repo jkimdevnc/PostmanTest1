@@ -377,7 +377,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": "https://info.xsede.org/wh1/glue2-db-api/v1/acceleratorenvironment/ID/{{localID}}"
+						"url": "https://info.xsede.org/wh1/glue2-db-api/v1/accesspolicy/ID/{{localID}}"
 					},
 					"response": []
 				}
@@ -700,7 +700,7 @@
 	],
 	"variable": [
 		{
-			"id": "e3ec20e7-2a53-4607-b211-5ccb0272c02f",
+			"id": "14bf5e6d-58e8-44a8-98e6-b7ac65b59244",
 			"key": "xsede_ID",
 			"value": "urn:glue2:ComputingService:expanse-gpu.sdsc.xsede.org"
 		}
