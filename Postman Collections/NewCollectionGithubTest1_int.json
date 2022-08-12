@@ -646,7 +646,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://info.xsede.org/wh1/glue2-db-api/v1/applicationenvironment/\n",
+							"raw": "https://info.xsede.org/wh1/glue2-db-api/v1/applicationhandle/\n\n",
 							"protocol": "https",
 							"host": [
 								"info",
@@ -657,8 +657,8 @@
 								"wh1",
 								"glue2-db-api",
 								"v1",
-								"applicationenvironment",
-								"\n"
+								"applicationhandle",
+								"\n\n"
 							],
 							"query": [
 								{
@@ -1016,7 +1016,7 @@
 	],
 	"variable": [
 		{
-			"id": "e208f133-818e-40ff-ad3f-50947ffbc59f",
+			"id": "8897725a-d4f2-4744-898e-92e0d17d6a6f",
 			"key": "xsede_ID",
 			"value": "NONE"
 		}
