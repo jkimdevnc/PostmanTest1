@@ -279,9 +279,6 @@
 							"script": {
 								"id": "4088e1a0-ff52-4914-9276-f0f48712fb6c",
 								"exec": [
-									"pm.test(\"Status code is 200\", function () {",
-									"    pm.response.to.have.status(200);",
-									"});",
 									"",
 									"pm.test(\"Response time is less than 300ms\", function () {",
 									"    pm.expect(pm.response.responseTime).to.be.below(300);",
@@ -808,7 +805,7 @@
 	],
 	"variable": [
 		{
-			"id": "6b2610d8-07de-443a-a648-5c7b20db756c",
+			"id": "e94b4472-0c4f-4a94-85f1-c0b637e93969",
 			"key": "xsede_ID",
 			"value": "urn:glue2:ComputingService:expanse-gpu.sdsc.xsede.org"
 		}
