@@ -97,7 +97,7 @@
 					"response": []
 				},
 				{
-					"name": "abstractservice_ID Copy",
+					"name": "abstractservice_ID",
 					"event": [
 						{
 							"listen": "prerequest",
@@ -597,7 +597,7 @@
 	],
 	"variable": [
 		{
-			"id": "904adac7-69ee-4fbd-883f-7ac80cbeb9ed",
+			"id": "26aed709-dcfe-4573-b0b4-d1861f912318",
 			"key": "xsede_ID",
 			"value": "urn:glue2:ComputingService:expanse-gpu.sdsc.xsede.org"
 		}
