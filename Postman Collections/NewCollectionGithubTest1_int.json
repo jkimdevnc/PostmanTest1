@@ -181,17 +181,17 @@
 									"    pm.response.to.have.status(200);",
 									"});",
 									"",
+									"pm.test(\"Response time is less than 200ms\", function () {",
+									"    pm.expect(pm.response.responseTime).to.be.below(200);",
+									"});",
+									"",
 									"pm.test(\"Save ID\", function () {",
 									"    // get ID of first element",
-									"    ID = pm.response.json()[0].ID;",
+									"    ID = pm.response.json()[0].\"ID\";",
 									"    console.log(ID);",
 									"",
 									"    // set ID to collection variable",
 									"    pm.collectionVariables.set(\"xsede_ID\", ID);",
-									"});",
-									"",
-									"pm.test(\"Response time is less than 200ms\", function () {",
-									"    pm.expect(pm.response.responseTime).to.be.below(200);",
 									"});"
 								],
 								"type": "text/javascript"
@@ -570,7 +570,7 @@
 	],
 	"variable": [
 		{
-			"id": "ff8b9136-6de0-437c-9555-a1c16dcfdf26",
+			"id": "ad040132-d2fb-4b3f-9bdc-d45c86279a03",
 			"key": "xsede_ID",
 			"value": "urn:glue2:ComputingService:expanse-gpu.sdsc.xsede.org"
 		}
