@@ -211,14 +211,14 @@
 									"        pm.expect.fail(\" No element exist!\");",
 									"    }",
 									"    midIdx = Math.floor(arrLen/2);",
-									"    console.log(midIdx);",
+									"    //console.log(midIdx);",
 									"",
 									"    // get ID of midIdx element",
 									"    //console.log(pm.response.json().results[midIdx]);",
 									"    ID = pm.response.json().results[midIdx].ID;",
-									"    console.log(ID);",
+									"    //console.log(ID);",
 									"",
-									"    // set ID to collection variable",
+									"    // set ID to a collection variable",
 									"    pm.collectionVariables.set(\"xsede_ID\", ID);",
 									"});"
 								],
@@ -600,7 +600,7 @@
 	],
 	"variable": [
 		{
-			"id": "6a7ed3c6-d5cb-4839-a5eb-5e1580432918",
+			"id": "d8848d62-36ec-4971-be67-c7c24fe9e7c9",
 			"key": "xsede_ID",
 			"value": "urn:glue2:ComputingService:expanse-gpu.sdsc.xsede.org"
 		}
