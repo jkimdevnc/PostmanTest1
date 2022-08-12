@@ -210,7 +210,7 @@
 					"response": []
 				},
 				{
-					"name": "New Request",
+					"name": "acceleratorenvironment_ID",
 					"id": "b7f04954-1c73-478d-a21d-b69a9ffe1d6f",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -540,7 +540,7 @@
 	],
 	"variable": [
 		{
-			"id": "56495548-3bff-48fd-a6fb-59f09a6d7805",
+			"id": "cda14d3d-4c06-4330-b017-33f30a280799",
 			"key": "xsede_ID",
 			"value": "urn:glue2:ComputingService:expanse-gpu.sdsc.xsede.org"
 		}
