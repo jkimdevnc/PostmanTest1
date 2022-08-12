@@ -9,141 +9,7 @@
 			"name": "glue2-db-api",
 			"item": [
 				{
-					"name": "abstractservice_IDtestenv",
-					"event": [
-						{
-							"listen": "prerequest",
-							"script": {
-								"id": "577c8fae-4830-4abf-8c5d-13c61344dc39",
-								"exec": [
-									"",
-									"console.log(pm.collectionVariables.get(\"xsede_ID\"));",
-									"",
-									"pm.collectionVariables.set(\"xsede_ID\", \"urn:glue2:ComputingService:expanse-gpu.sdsc.xsede.org\");",
-									"",
-									"console.log(pm.collectionVariables.get(\"xsede_ID\"));",
-									""
-								],
-								"type": "text/javascript"
-							}
-						},
-						{
-							"listen": "test",
-							"script": {
-								"id": "2190fa95-ed57-4ee9-87a5-d993e6f07fb0",
-								"exec": [
-									"pm.test(\"Status code is 200\", function () {",
-									"    pm.response.to.have.status(200);",
-									"});"
-								],
-								"type": "text/javascript"
-							}
-						}
-					],
-					"id": "ad2b9b3d-c018-405f-8b91-03c28bd66f27",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": "https://info.xsede.org/wh1/glue2-db-api/v1/abstractservice/ID/{{xsede_ID}}"
-					},
-					"response": []
-				},
-				{
-					"name": "acceleratorenvironment",
-					"event": [
-						{
-							"listen": "test",
-							"script": {
-								"id": "391cc075-7652-46c6-9e1f-e1a68d2b7b86",
-								"exec": [
-									"pm.test(\"Status code is 200\", function () {",
-									"    pm.response.to.have.status(200);",
-									"});",
-									"",
-									"pm.test(\"Response time is less than 300ms\", function () {",
-									"    pm.expect(pm.response.responseTime).to.be.below(300);",
-									"});",
-									"",
-									"pm.test(\"Save ID\", function () {",
-									"    // get mid index of response data array",
-									"    arrLen = pm.response.json().results.length;",
-									"    //console.log(arrLen);",
-									"    midIdx = Math.floor(arrLen/2);",
-									"    console.log(midIdx);",
-									"",
-									"    // get ID of midIdx element",
-									"    //console.log(pm.response.json().results[midIdx]);",
-									"    ID = pm.response.json().results[midIdx].ID;",
-									"    console.log(ID);",
-									"",
-									"    // set ID to collection variable",
-									"    pm.collectionVariables.set(\"xsede_ID\", ID);",
-									"});"
-								],
-								"type": "text/javascript"
-							}
-						}
-					],
-					"id": "273d7732-c06a-4842-a96f-8b2575f2a25b",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": "https://info.xsede.org/wh1/glue2-db-api/v1/acceleratorenvironment/"
-					},
-					"response": []
-				},
-				{
-					"name": "acceleratorenvironment_ID",
-					"event": [
-						{
-							"listen": "prerequest",
-							"script": {
-								"id": "72f54e9d-cc10-4b1a-89a9-689c36ba6794",
-								"exec": [
-									"// Get ID from collection variable which is set by previous test",
-									"pm.environment.set(\"localID\", pm.collectionVariables.get(\"xsede_ID\"));",
-									"console.log(pm.collectionVariables.get(\"xsede_ID\"));",
-									""
-								],
-								"type": "text/javascript"
-							}
-						},
-						{
-							"listen": "test",
-							"script": {
-								"id": "25000081-882a-4ec5-a8c6-59a35717397d",
-								"exec": [
-									"pm.test(\"Status code is 200\", function () {",
-									"    pm.response.to.have.status(200);",
-									"});",
-									"",
-									"pm.test(\"Response time is less than 200ms\", function () {",
-									"    pm.expect(pm.response.responseTime).to.be.below(200);",
-									"});"
-								],
-								"type": "text/javascript"
-							}
-						}
-					],
-					"id": "b7f04954-1c73-478d-a21d-b69a9ffe1d6f",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": "https://info.xsede.org/wh1/glue2-db-api/v1/acceleratorenvironment/ID/{{localID}}"
-					},
-					"response": []
-				},
-				{
-					"name": "abstractservice Copy",
+					"name": "abstractservice",
 					"event": [
 						{
 							"listen": "test",
@@ -275,6 +141,140 @@
 						"method": "GET",
 						"header": [],
 						"url": "https://info.xsede.org/wh1/glue2-db-api/v1/abstractservice/ID/{{localID}}"
+					},
+					"response": []
+				},
+				{
+					"name": "abstractservice_IDtestenv",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "577c8fae-4830-4abf-8c5d-13c61344dc39",
+								"exec": [
+									"",
+									"console.log(pm.collectionVariables.get(\"xsede_ID\"));",
+									"",
+									"pm.collectionVariables.set(\"xsede_ID\", \"urn:glue2:ComputingService:expanse-gpu.sdsc.xsede.org\");",
+									"",
+									"console.log(pm.collectionVariables.get(\"xsede_ID\"));",
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "2190fa95-ed57-4ee9-87a5-d993e6f07fb0",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "ad2b9b3d-c018-405f-8b91-03c28bd66f27",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "https://info.xsede.org/wh1/glue2-db-api/v1/abstractservice/ID/{{xsede_ID}}"
+					},
+					"response": []
+				},
+				{
+					"name": "acceleratorenvironment",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "391cc075-7652-46c6-9e1f-e1a68d2b7b86",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test(\"Response time is less than 300ms\", function () {",
+									"    pm.expect(pm.response.responseTime).to.be.below(300);",
+									"});",
+									"",
+									"pm.test(\"Save ID\", function () {",
+									"    // get mid index of response data array",
+									"    arrLen = pm.response.json().results.length;",
+									"    //console.log(arrLen);",
+									"    midIdx = Math.floor(arrLen/2);",
+									"    console.log(midIdx);",
+									"",
+									"    // get ID of midIdx element",
+									"    //console.log(pm.response.json().results[midIdx]);",
+									"    ID = pm.response.json().results[midIdx].ID;",
+									"    console.log(ID);",
+									"",
+									"    // set ID to collection variable",
+									"    pm.collectionVariables.set(\"xsede_ID\", ID);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "273d7732-c06a-4842-a96f-8b2575f2a25b",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "https://info.xsede.org/wh1/glue2-db-api/v1/acceleratorenvironment/"
+					},
+					"response": []
+				},
+				{
+					"name": "acceleratorenvironment_ID",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "72f54e9d-cc10-4b1a-89a9-689c36ba6794",
+								"exec": [
+									"// Get ID from collection variable which is set by previous test",
+									"pm.environment.set(\"localID\", pm.collectionVariables.get(\"xsede_ID\"));",
+									"console.log(pm.collectionVariables.get(\"xsede_ID\"));",
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "25000081-882a-4ec5-a8c6-59a35717397d",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test(\"Response time is less than 200ms\", function () {",
+									"    pm.expect(pm.response.responseTime).to.be.below(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "b7f04954-1c73-478d-a21d-b69a9ffe1d6f",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "https://info.xsede.org/wh1/glue2-db-api/v1/acceleratorenvironment/ID/{{localID}}"
 					},
 					"response": []
 				}
@@ -597,7 +597,7 @@
 	],
 	"variable": [
 		{
-			"id": "90610b32-e8fc-4757-b186-37bae10b217c",
+			"id": "904adac7-69ee-4fbd-883f-7ac80cbeb9ed",
 			"key": "xsede_ID",
 			"value": "urn:glue2:ComputingService:expanse-gpu.sdsc.xsede.org"
 		}
