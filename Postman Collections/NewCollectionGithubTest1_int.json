@@ -208,6 +208,18 @@
 						"url": "https://info.xsede.org/wh1/glue2-db-api/v1/acceleratorenvironment/"
 					},
 					"response": []
+				},
+				{
+					"name": "New Request",
+					"id": "b7f04954-1c73-478d-a21d-b69a9ffe1d6f",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
 				}
 			],
 			"id": "4011833b-4984-45d4-9e8e-23f5b4941846"
@@ -528,7 +540,7 @@
 	],
 	"variable": [
 		{
-			"id": "d665dddc-a165-440c-a3aa-0c2f722a9bdf",
+			"id": "56495548-3bff-48fd-a6fb-59f09a6d7805",
 			"key": "xsede_ID",
 			"value": "urn:glue2:ComputingService:expanse-gpu.sdsc.xsede.org"
 		}
