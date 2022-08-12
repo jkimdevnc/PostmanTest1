@@ -579,7 +579,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": "https://info.xsede.org/wh1/glue2-db-api/v1/abstractservice/ID/{{localID}}"
+						"url": "https://info.xsede.org/wh1/glue2-db-api/v1/applicationenvironment/ID/{{localID}}"
 					},
 					"response": []
 				}
@@ -928,7 +928,7 @@
 	],
 	"variable": [
 		{
-			"id": "12e0f3de-7424-427b-a034-d6c3baefd6de",
+			"id": "f6495da3-e5e7-4c6b-864b-dd7c3862eac4",
 			"key": "xsede_ID",
 			"value": "NONE"
 		}
