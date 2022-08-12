@@ -302,6 +302,7 @@
 									"    arrLen = pm.response.json().results.length;",
 									"    //console.log(arrLen);",
 									"    if (arrLen < 1) {",
+									"        pm.collectionVariables.set(\"xsede_ID\",'');",
 									"        pm.expect.fail(\" No element exist!\");",
 									"    }",
 									"    midIdx = Math.floor(arrLen/2);",
@@ -650,7 +651,7 @@
 	],
 	"variable": [
 		{
-			"id": "f60562c9-161b-4cde-a6b1-03dfeb11723a",
+			"id": "967284c9-0507-4b1e-89e6-0b815d37efce",
 			"key": "xsede_ID",
 			"value": "urn:glue2:ComputingService:expanse-gpu.sdsc.xsede.org"
 		}
