@@ -187,9 +187,14 @@
 									"});",
 									"",
 									"pm.test(\"Save ID\", function () {",
+									"    // get mid index of response data array",
+									"    arrLen = pm.response.json().results.length;",
+									"    console.log(arrLen);",
+									"    midIdx = Math.floor(arrLen/2);",
+									"    console.log(midIdx);",
+									"",
 									"    // get ID of first element",
 									"    //console.log(pm.response.json().results[0]);",
-									"    console.log(pm.response.size());",
 									"    ID = pm.response.json().results[0].ID;",
 									"    console.log(ID);",
 									"",
@@ -575,7 +580,7 @@
 	],
 	"variable": [
 		{
-			"id": "44938d6f-6552-4e7c-81f2-33a1bbda3b27",
+			"id": "27e0a580-50cf-40e6-b60f-a3aa1ac33f99",
 			"key": "xsede_ID",
 			"value": "urn:glue2:ComputingService:expanse-gpu.sdsc.xsede.org"
 		}
