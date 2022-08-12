@@ -575,7 +575,7 @@
 	],
 	"variable": [
 		{
-			"id": "fbc1436a-a3c5-410b-8a49-ee114fbcd743",
+			"id": "7e6b59bf-1557-4ef5-9829-f33b6ec1ff3b",
 			"key": "xsede_ID",
 			"value": "urn:glue2:ComputingService:expanse-gpu.sdsc.xsede.org"
 		}
