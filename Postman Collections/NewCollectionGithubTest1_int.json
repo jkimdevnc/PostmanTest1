@@ -776,7 +776,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "16e68bce-7a3d-4958-8651-48600df38720",
+				"id": "bc6a04f2-f4b7-473b-9836-b43860b4ca5d",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -786,7 +786,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "a3638fe6-b062-4bf4-9e83-f06dcf895428",
+				"id": "f4dd610e-8921-4aed-985d-4e45dd2aa436",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -796,9 +796,9 @@
 	],
 	"variable": [
 		{
-			"id": "b9ca5a2e-b27f-4c87-98ff-a86d59bc0dbc",
+			"id": "4d2180d7-90e5-4b3d-9501-e55f8174ecea",
 			"key": "xsede_ID",
-			"value": "urn:glue2:ComputingService:expanse-gpu.sdsc.xsede.org"
+			"value": "NONE"
 		}
 	]
 }
