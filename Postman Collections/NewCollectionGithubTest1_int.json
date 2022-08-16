@@ -294,7 +294,7 @@
 									"        pm.expect.fail(\" No element exist!\");",
 									"    }",
 									"    midIdx = Math.floor(arrLen/2);",
-									"    //console.log(midIdx);",
+									"    console.log(midIdx);",
 									"",
 									"    // get ID of midIdx element",
 									"    //console.log(pm.response.json().results[midIdx]);",
@@ -1285,7 +1285,7 @@
 	],
 	"variable": [
 		{
-			"id": "e37c716b-baac-4f44-a7b0-ef482ce69003",
+			"id": "fd5440c4-ba73-41d2-a85f-f2b3d4f3a2b8",
 			"key": "xsede_ID",
 			"value": "NONE"
 		}
