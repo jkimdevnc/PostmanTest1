@@ -975,8 +975,8 @@
 									"    pm.collectionVariables.set(\"xsede_ID\", ID);",
 									"});",
 									"",
-									"pm.test(\"Response time is less than 500ms\", function () {",
-									"    pm.expect(pm.response.responseTime).to.be.below(500);",
+									"pm.test(\"Response time is less than 300ms\", function () {",
+									"    pm.expect(pm.response.responseTime).to.be.below(300);",
 									"});",
 									"",
 									""
@@ -1373,7 +1373,7 @@
 	],
 	"variable": [
 		{
-			"id": "1f311ac4-5386-4674-b6ca-5baa150c1774",
+			"id": "acdf4694-4132-43da-96e3-820afc00dee2",
 			"key": "xsede_ID",
 			"value": "NONE"
 		}
