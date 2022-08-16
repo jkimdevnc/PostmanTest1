@@ -1122,6 +1122,50 @@
 					"response": []
 				},
 				{
+					"name": "computingshareacceleratorinfo_ID",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "e5b223db-4ae4-4140-8aba-90934afcd3c5",
+								"exec": [
+									"",
+									"// Get ID from collection variable which is set by previous test",
+									"//console.log(pm.collectionVariables.get(\"xsede_ID\"));",
+									"pm.environment.set(\"localID\", pm.collectionVariables.get(\"xsede_ID\"));",
+									"",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "bcfca4d9-5c39-4759-9f4b-5fb44515f8fa",
+								"exec": [
+									"",
+									"pm.test(\"Response time is less than 200ms\", function () {",
+									"    pm.expect(pm.response.responseTime).to.be.below(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "a24aa201-f14d-4ed0-90fc-7c528acd790a",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "https://info.xsede.org/wh1/glue2-db-api/v1/computingshareacceleratorinfo/ID/{{localID}}"
+					},
+					"response": []
+				},
+				{
 					"name": "contact",
 					"event": [
 						{
@@ -1166,51 +1210,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": "https://info.xsede.org/wh1/glue2-db-api/v1/computingshareacceleratorinfo/\n"
-					},
-					"response": []
-				},
-				{
-					"name": "computingshareacceleratorinfo_ID",
-					"event": [
-						{
-							"listen": "prerequest",
-							"script": {
-								"id": "e5b223db-4ae4-4140-8aba-90934afcd3c5",
-								"exec": [
-									"",
-									"// Get ID from collection variable which is set by previous test",
-									"//console.log(pm.collectionVariables.get(\"xsede_ID\"));",
-									"pm.environment.set(\"localID\", pm.collectionVariables.get(\"xsede_ID\"));",
-									"",
-									"",
-									""
-								],
-								"type": "text/javascript"
-							}
-						},
-						{
-							"listen": "test",
-							"script": {
-								"id": "bcfca4d9-5c39-4759-9f4b-5fb44515f8fa",
-								"exec": [
-									"",
-									"pm.test(\"Response time is less than 200ms\", function () {",
-									"    pm.expect(pm.response.responseTime).to.be.below(200);",
-									"});"
-								],
-								"type": "text/javascript"
-							}
-						}
-					],
-					"id": "a24aa201-f14d-4ed0-90fc-7c528acd790a",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": "https://info.xsede.org/wh1/glue2-db-api/v1/computingshareacceleratorinfo/ID/{{localID}}"
+						"url": "https://info.xsede.org/wh1/glue2-db-api/v1/contact/\n"
 					},
 					"response": []
 				}
@@ -1559,7 +1559,7 @@
 	],
 	"variable": [
 		{
-			"id": "289fef56-ce37-4098-b313-bb75d4ba3a46",
+			"id": "84569c5e-d93a-4979-ad54-7179e7c88dbf",
 			"key": "xsede_ID",
 			"value": "NONE"
 		}
