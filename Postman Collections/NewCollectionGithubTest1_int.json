@@ -1347,7 +1347,51 @@
 					"response": []
 				},
 				{
-					"name": "entityhistory",
+					"name": "endpoint_ID",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "e5b223db-4ae4-4140-8aba-90934afcd3c5",
+								"exec": [
+									"",
+									"// Get ID from collection variable which is set by previous test",
+									"//console.log(pm.collectionVariables.get(\"xsede_ID\"));",
+									"pm.environment.set(\"localID\", pm.collectionVariables.get(\"xsede_ID\"));",
+									"",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "bcfca4d9-5c39-4759-9f4b-5fb44515f8fa",
+								"exec": [
+									"",
+									"pm.test(\"Response time is less than 200ms\", function () {",
+									"    pm.expect(pm.response.responseTime).to.be.below(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "35c29d41-f06c-4aed-adc5-305e14106259",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "https://info.xsede.org/wh1/glue2-db-api/v1/endpoint/ID/{{localID}}"
+					},
+					"response": []
+				},
+				{
+					"name": "entityhistory_TODO",
 					"event": [
 						{
 							"listen": "test",
@@ -1431,50 +1475,6 @@
 								}
 							]
 						}
-					},
-					"response": []
-				},
-				{
-					"name": "endpoint_ID",
-					"event": [
-						{
-							"listen": "prerequest",
-							"script": {
-								"id": "e5b223db-4ae4-4140-8aba-90934afcd3c5",
-								"exec": [
-									"",
-									"// Get ID from collection variable which is set by previous test",
-									"//console.log(pm.collectionVariables.get(\"xsede_ID\"));",
-									"pm.environment.set(\"localID\", pm.collectionVariables.get(\"xsede_ID\"));",
-									"",
-									"",
-									""
-								],
-								"type": "text/javascript"
-							}
-						},
-						{
-							"listen": "test",
-							"script": {
-								"id": "bcfca4d9-5c39-4759-9f4b-5fb44515f8fa",
-								"exec": [
-									"",
-									"pm.test(\"Response time is less than 200ms\", function () {",
-									"    pm.expect(pm.response.responseTime).to.be.below(200);",
-									"});"
-								],
-								"type": "text/javascript"
-							}
-						}
-					],
-					"id": "35c29d41-f06c-4aed-adc5-305e14106259",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": "https://info.xsede.org/wh1/glue2-db-api/v1/endpoint/ID/{{localID}}"
 					},
 					"response": []
 				}
@@ -1823,7 +1823,7 @@
 	],
 	"variable": [
 		{
-			"id": "a7ab55d1-4ff2-4693-a87f-b473ed0efe14",
+			"id": "8df5a5f0-dc98-4514-9dd3-daee9746cbbe",
 			"key": "xsede_ID",
 			"value": "NONE"
 		}
