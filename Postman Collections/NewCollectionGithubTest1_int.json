@@ -299,7 +299,7 @@
 									"    // get ID of midIdx element",
 									"    //console.log(pm.response.json().results[midIdx]);",
 									"    ID = pm.response.json().results[midIdx].ID;",
-									"    //console.log(ID);",
+									"    console.log(ID);",
 									"",
 									"    // set ID to a collection variable",
 									"    pm.collectionVariables.set(\"xsede_ID\", ID);",
@@ -1285,7 +1285,7 @@
 	],
 	"variable": [
 		{
-			"id": "2bb4ff26-c2fc-4660-b7ba-e2f05a2db41a",
+			"id": "f8a6f42c-27a8-4a5c-94b2-7e350fc5d081",
 			"key": "xsede_ID",
 			"value": "NONE"
 		}
