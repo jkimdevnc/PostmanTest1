@@ -1409,7 +1409,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://info.xsede.org/wh1/glue2-db-api/v1/endpoint/",
+							"raw": "https://info.xsede.org/wh1/glue2-db-api/v1/entityhistory/",
 							"protocol": "https",
 							"host": [
 								"info",
@@ -1420,7 +1420,7 @@
 								"wh1",
 								"glue2-db-api",
 								"v1",
-								"endpoint",
+								"entityhistory",
 								""
 							],
 							"query": [
@@ -1823,7 +1823,7 @@
 	],
 	"variable": [
 		{
-			"id": "9d78c7c5-f839-4547-a024-bc45a969a55d",
+			"id": "a7ab55d1-4ff2-4693-a87f-b473ed0efe14",
 			"key": "xsede_ID",
 			"value": "NONE"
 		}
