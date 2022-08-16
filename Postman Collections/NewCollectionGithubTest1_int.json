@@ -1699,7 +1699,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": "https://info.xsede.org/wh1/glue2-db-api/v1/computingmanageracceleratorinfo/\n"
+						"url": "https://info.xsede.org/wh1/glue2-db-api/v1/userdomain/"
 					},
 					"response": []
 				}
@@ -2048,7 +2048,7 @@
 	],
 	"variable": [
 		{
-			"id": "ec715515-fe2e-4825-af6f-46df8939d996",
+			"id": "38b1f926-ae70-4c99-9fc0-6830eb9b5257",
 			"key": "xsede_ID",
 			"value": "NONE"
 		}
