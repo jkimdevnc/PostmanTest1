@@ -456,6 +456,48 @@
 						"url": "https://info.xsede.org/wh1/glue2-views-api/v1/services-spf/ResourceID/{{resourceID}}"
 					},
 					"response": []
+				},
+				{
+					"name": "services-spf_ServiceType",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "27796364-d966-4cbc-9914-40fb53fcc0ce",
+								"exec": [
+									"// collection variables that are set by previous test",
+									"console.log(\"Loaded ResourceID: \" + pm.collectionVariables.get(\"ResourceID\"));",
+									"",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "dfa6f311-f0ae-4c58-bfab-e18de08d2e6a",
+								"exec": [
+									"",
+									"pm.test(\"Response time is less than 200ms\", function () {",
+									"    pm.expect(pm.response.responseTime).to.be.below(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "1bd91954-f02e-4281-8a91-0a93004d98d3",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "https://info.xsede.org/wh1/glue2-views-api/v1/services-spf/ResourceID/{{resourceID}}"
+					},
+					"response": []
 				}
 			],
 			"id": "74db0102-6149-45d0-9fd0-d048e7b85db5"
@@ -743,22 +785,22 @@
 	],
 	"variable": [
 		{
-			"id": "832c004b-6fbc-4376-939f-257ce1fd00fe",
+			"id": "44d475ed-143d-4672-802d-8259f4374eaf",
 			"key": "xsede_ID",
 			"value": "NONE"
 		},
 		{
-			"id": "2ab9dbd0-642b-40ee-a386-82cdf5ec33b7",
+			"id": "15b73677-d2c7-4f67-9c9d-ed479b98a374",
 			"key": "localID",
 			"value": ""
 		},
 		{
-			"id": "c79cd00c-0da3-4865-8969-a13247706278",
+			"id": "2677ebaa-73dd-4341-8017-3b470d15a286",
 			"key": "resourceID",
 			"value": ""
 		},
 		{
-			"id": "07a4d9cf-b087-4380-9525-b4ab7e4e59a6",
+			"id": "9e98747b-ba85-46f0-8f7b-73153caf3ad3",
 			"key": "interfaceName",
 			"value": ""
 		}
