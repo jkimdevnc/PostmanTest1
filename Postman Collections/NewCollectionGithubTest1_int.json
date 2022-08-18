@@ -831,7 +831,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": "https://info.xsede.org/wh1/glue2-views-api/v1/services-spf/"
+						"url": "https://info.xsede.org/wh1/glue2-views-api/v1/software-spf/"
 					},
 					"response": []
 				}
@@ -1121,27 +1121,27 @@
 	],
 	"variable": [
 		{
-			"id": "c316e2c1-856b-4428-8623-73ae4afb1435",
+			"id": "bc3d1378-a730-46b0-aa5b-3b31cfd00ef7",
 			"key": "xsede_ID",
 			"value": "NONE"
 		},
 		{
-			"id": "98788454-8fe3-4f09-b534-89c115a21e5e",
+			"id": "328e2614-8ea4-47cc-bc68-d587f805c12d",
 			"key": "localID",
 			"value": ""
 		},
 		{
-			"id": "a0eab61b-a384-466f-a2e6-eeb6112fbf4d",
+			"id": "2c9c0772-7b55-41c4-ad5e-77dd26e72f44",
 			"key": "resourceID",
 			"value": ""
 		},
 		{
-			"id": "24bcfb2c-d56a-4bf0-be60-9052f32b740f",
+			"id": "db5fcb50-8189-452b-a331-e58dcf906dc0",
 			"key": "interfaceName",
 			"value": ""
 		},
 		{
-			"id": "5cb7c06a-f6c1-4bb1-bf9e-be184f86ad17",
+			"id": "e3c2da37-6936-48f8-8ec8-219329754dfe",
 			"key": "serviceType",
 			"value": ""
 		}
