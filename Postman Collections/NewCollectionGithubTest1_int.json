@@ -278,7 +278,7 @@
 									"    pm.expect(pm.response.responseTime).to.be.below(300);",
 									"});",
 									"",
-									"pm.test(\"Save Parameters\", function () {",
+									"pm.test(\"Save Parameters for next test\", function () {",
 									"    // get mid index of response data array",
 									"    let arrLen = pm.response.json().length;",
 									"    //console.log(arrLen);",
@@ -785,22 +785,22 @@
 	],
 	"variable": [
 		{
-			"id": "a2860fdc-cf34-4f2a-a703-ab60a7ea4bae",
+			"id": "c8810eec-9165-40b5-844c-af0b7ba37076",
 			"key": "xsede_ID",
 			"value": "NONE"
 		},
 		{
-			"id": "94f4a3e5-b47d-4285-a507-bea07b1959e3",
+			"id": "59839fb0-791e-417d-a28b-20dc3671517f",
 			"key": "localID",
 			"value": ""
 		},
 		{
-			"id": "445a63f8-1efc-4ba7-9d90-1daa01248c2d",
+			"id": "8986f5bc-e242-4ba1-9276-306161834106",
 			"key": "resourceID",
 			"value": ""
 		},
 		{
-			"id": "6cc1f6e1-3d22-4253-8801-b0e110476395",
+			"id": "b0e8ca63-bcb0-4922-8245-22d8f136a835",
 			"key": "interfaceName",
 			"value": ""
 		}
