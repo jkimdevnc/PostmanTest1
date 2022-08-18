@@ -770,8 +770,8 @@
 									"    pm.response.to.have.status(200);",
 									"});",
 									"",
-									"pm.test(\"Response time is less than 300ms\", function () {",
-									"    pm.expect(pm.response.responseTime).to.be.below(300);",
+									"pm.test(\"Response time is less than 3500ms\", function () {",
+									"    pm.expect(pm.response.responseTime).to.be.below(3500);",
 									"});",
 									"",
 									"pm.test(\"Save Parameters for next test\", function () {",
@@ -804,12 +804,12 @@
 									"    pm.collectionVariables.set(\"resourceID\", resourceID);",
 									"",
 									"    //-----------------------------------",
-									"    // Save ServiceType",
+									"    // Save AppName",
 									"    // get middle element ",
-									"    serviceType = pm.response.json()[midIdx].ServiceType;",
-									"    console.log(\"SAVED ServiceType: \" + serviceType);",
+									"    appName = pm.response.json()[midIdx].AppName;",
+									"    console.log(\"SAVED AppName: \" + appName);",
 									"    // set to collection variable",
-									"    pm.collectionVariables.set(\"serviceType\", serviceType);",
+									"    pm.collectionVariables.set(\"appName\", appName);",
 									"});"
 								],
 								"type": "text/javascript"
@@ -1113,27 +1113,27 @@
 	],
 	"variable": [
 		{
-			"id": "20f2e70b-ff28-4c3f-abb0-4f4290966a7b",
+			"id": "bbd6d603-4e90-41d5-8a98-501bc1781acf",
 			"key": "xsede_ID",
 			"value": "NONE"
 		},
 		{
-			"id": "ca9d8bb4-08c7-46d6-bc0b-8124859f0b3b",
+			"id": "333e4a2f-21db-4c8e-a217-b5d329a8f704",
 			"key": "localID",
 			"value": ""
 		},
 		{
-			"id": "fda02e1e-0600-4bf0-a77e-506d5de40915",
+			"id": "8a5768b2-798e-4642-a66f-7452c89d4f45",
 			"key": "resourceID",
 			"value": ""
 		},
 		{
-			"id": "7079a300-f8cd-4e1e-a087-182bd2a0ab2e",
+			"id": "77c48226-f7f9-44d9-be9c-6d61db9c30ad",
 			"key": "interfaceName",
 			"value": ""
 		},
 		{
-			"id": "a23a5971-4386-42bf-b116-2a8c44ff3835",
+			"id": "3dc92db4-3550-41de-9c9c-556b739b9bad",
 			"key": "serviceType",
 			"value": ""
 		}
