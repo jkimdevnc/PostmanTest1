@@ -701,22 +701,22 @@
 	],
 	"variable": [
 		{
-			"id": "ccf70715-df20-4f70-b676-15bf948fe030",
+			"id": "bf736d62-978e-4bc6-892b-d972119b26c9",
 			"key": "xsede_ID",
 			"value": "NONE"
 		},
 		{
-			"id": "c254c1d2-2409-4c39-86a8-b62aa8b58cf4",
+			"id": "26b661e1-f327-496a-8f01-a8e7e535c970",
 			"key": "localID",
 			"value": ""
 		},
 		{
-			"id": "0bbaecee-efa8-445d-bc9c-ac09f12160cf",
+			"id": "8a9b4590-8a85-4fef-84f1-9558d21a46b4",
 			"key": "resourceID",
 			"value": ""
 		},
 		{
-			"id": "58409744-886a-4a20-9f19-4747df4cdd8a",
+			"id": "77f36aae-f368-4687-9146-4dcbd1061234",
 			"key": "interfaceName",
 			"value": ""
 		}
