@@ -477,7 +477,7 @@
 								"id": "27796364-d966-4cbc-9914-40fb53fcc0ce",
 								"exec": [
 									"// collection variables that are set by previous test",
-									"console.log(\"Loaded ResourceID: \" + pm.collectionVariables.get(\"ResourceID\"));",
+									"console.log(\"Loaded ServiceType: \" + pm.collectionVariables.get(\"serviceType\"));",
 									"",
 									"",
 									""
@@ -796,27 +796,27 @@
 	],
 	"variable": [
 		{
-			"id": "849b980b-c579-4b61-a321-f26c6effb86c",
+			"id": "1ee11036-4d45-4fe7-9a6b-bc69fcb90b8d",
 			"key": "xsede_ID",
 			"value": "NONE"
 		},
 		{
-			"id": "2228eda3-41f5-456b-a68b-f00a476aa92d",
+			"id": "fa730cf6-4c68-49b8-958c-5f4138a4efdb",
 			"key": "localID",
 			"value": ""
 		},
 		{
-			"id": "0c4f7bca-ea2f-4ad7-afa0-78fdc4bdc985",
+			"id": "570bad76-6df2-4aa4-b414-61990f53faaa",
 			"key": "resourceID",
 			"value": ""
 		},
 		{
-			"id": "64907bfc-7efb-43c0-b875-f45e71c88d98",
+			"id": "b8a15ddc-c38c-412d-b3b3-62ebfe79d70b",
 			"key": "interfaceName",
 			"value": ""
 		},
 		{
-			"id": "eb2b75b6-4b90-48e3-9296-ab9ed184fa0b",
+			"id": "130204c4-307f-4c05-af90-1185a7cea77f",
 			"key": "serviceType",
 			"value": ""
 		}
