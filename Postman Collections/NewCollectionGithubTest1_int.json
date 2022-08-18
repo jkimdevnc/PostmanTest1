@@ -770,8 +770,8 @@
 									"    pm.response.to.have.status(200);",
 									"});",
 									"",
-									"pm.test(\"Response time is less than 3500ms\", function () {",
-									"    pm.expect(pm.response.responseTime).to.be.below(3500);",
+									"pm.test(\"Response time is less than 4000ms\", function () {",
+									"    pm.expect(pm.response.responseTime).to.be.below(4000);",
 									"});",
 									"",
 									"pm.test(\"Save Parameters for next test\", function () {",
@@ -1113,32 +1113,32 @@
 	],
 	"variable": [
 		{
-			"id": "d3228c84-86b2-4a98-a888-be8db29a17ef",
+			"id": "cc9a31d0-99e7-42d2-9717-23f96756748f",
 			"key": "xsede_ID",
 			"value": "NONE"
 		},
 		{
-			"id": "d169d038-dee3-49ad-a1da-9f11ba35502e",
+			"id": "201c5f93-b8e7-4680-b678-a5ed54fdb700",
 			"key": "localID",
 			"value": ""
 		},
 		{
-			"id": "1b9599d5-020c-4f1e-acc5-b4d772e66726",
+			"id": "db10c80b-ade2-4212-9f98-d6cfa0cbe2c0",
 			"key": "resourceID",
 			"value": ""
 		},
 		{
-			"id": "b5784c43-0156-4493-8530-997276e7e5e6",
+			"id": "e573808e-5c3b-4f13-ad46-f4b3d7d28016",
 			"key": "interfaceName",
 			"value": ""
 		},
 		{
-			"id": "b5d2212a-3a27-419a-8cd6-42739aa382d2",
+			"id": "57bc119e-8f5c-4a73-beb8-9b0c212b939f",
 			"key": "serviceType",
 			"value": ""
 		},
 		{
-			"id": "da338bff-8c0d-43fc-b078-e66145fe7ce5",
+			"id": "3a5bbbd2-6ccc-4416-85f3-27464df7326c",
 			"key": "appName",
 			"value": ""
 		}
