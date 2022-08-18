@@ -759,7 +759,7 @@
 					"response": []
 				},
 				{
-					"name": "services-spf",
+					"name": "software-spf",
 					"event": [
 						{
 							"listen": "test",
@@ -824,6 +824,51 @@
 						"method": "GET",
 						"header": [],
 						"url": "https://info.xsede.org/wh1/glue2-views-api/v1/software-spf/"
+					},
+					"response": []
+				},
+				{
+					"name": "services-spf_ID Copy",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "27796364-d966-4cbc-9914-40fb53fcc0ce",
+								"exec": [
+									"",
+									"// collection variables that are set by previous test",
+									"console.log(\"Loaded ID: \" + pm.collectionVariables.get(\"xsede_ID\"));",
+									"",
+									"",
+									"",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "dfa6f311-f0ae-4c58-bfab-e18de08d2e6a",
+								"exec": [
+									"",
+									"pm.test(\"Response time is less than 200ms\", function () {",
+									"    pm.expect(pm.response.responseTime).to.be.below(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "2b4c7f2d-0d33-4389-88cb-0caca664fbaf",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "https://info.xsede.org/wh1/glue2-views-api/v1/services-spf/ID/{{xsede_ID}}"
 					},
 					"response": []
 				}
@@ -1113,32 +1158,32 @@
 	],
 	"variable": [
 		{
-			"id": "37f19788-b8c2-4f74-9fca-b8fb0d80a244",
+			"id": "285ae481-ed5f-49fb-8dc2-843e1f01afdd",
 			"key": "xsede_ID",
 			"value": "NONE"
 		},
 		{
-			"id": "9deef8a6-cd7a-4e30-a046-570916722040",
+			"id": "e1cfadd9-6a1e-4ffe-a9c5-d0a65ac85ae8",
 			"key": "localID",
 			"value": ""
 		},
 		{
-			"id": "af1d56e2-7c24-4911-b9ab-fc323505a2c7",
+			"id": "fca1c469-f60f-414d-9940-b755f4bac9ff",
 			"key": "resourceID",
 			"value": ""
 		},
 		{
-			"id": "c3409b6e-fd6a-49ff-8025-b0e70d0db91b",
+			"id": "32ee40ff-4220-4b91-8a71-293bc3c3960a",
 			"key": "interfaceName",
 			"value": ""
 		},
 		{
-			"id": "283cd26c-caf4-4b1f-95c3-ca2d08e30b03",
+			"id": "fe7039f6-1365-431f-bc12-76436af08768",
 			"key": "serviceType",
 			"value": ""
 		},
 		{
-			"id": "fda275d8-376e-4ac8-8453-625d80b4c877",
+			"id": "5fe175e4-d790-4ebf-b045-e9497b56fcd2",
 			"key": "appName",
 			"value": ""
 		}
