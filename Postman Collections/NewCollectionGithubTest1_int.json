@@ -619,9 +619,14 @@
 	],
 	"variable": [
 		{
-			"id": "3e421d1c-eaa8-4cf0-936a-8b9a0b044c3d",
+			"id": "8006cf53-cd03-4b3f-ac82-be5764b3c0b1",
 			"key": "xsede_ID",
 			"value": "NONE"
+		},
+		{
+			"id": "a572f654-8e41-46fd-adac-9cd633b52602",
+			"key": "localID",
+			"value": ""
 		}
 	]
 }
