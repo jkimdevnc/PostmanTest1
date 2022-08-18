@@ -1311,32 +1311,32 @@
 	],
 	"variable": [
 		{
-			"id": "40a85e7f-afe7-46a3-af67-1708b23024c2",
+			"id": "5608b0da-3476-425d-89bf-cf2f50fb43dc",
 			"key": "xsede_ID",
 			"value": "NONE"
 		},
 		{
-			"id": "62112664-02e9-42be-bf0d-f467f1b58284",
+			"id": "32b31576-f2b3-4310-b61b-b29e69cba685",
 			"key": "localID",
 			"value": ""
 		},
 		{
-			"id": "a9e8e59f-e907-4eb1-bdf2-6a155c6e9302",
+			"id": "49f9bcf8-bc24-4dbd-b185-4902c5f88df7",
 			"key": "resourceID",
 			"value": ""
 		},
 		{
-			"id": "42c58d9b-d94d-4cb5-8a36-54da1e55bd8b",
+			"id": "9163643f-07a2-442a-a72d-005dc5c45048",
 			"key": "interfaceName",
 			"value": ""
 		},
 		{
-			"id": "f6915a69-7dad-422c-a929-691e20b6030d",
+			"id": "15b0dd07-6750-48f5-8e31-2b39fb7f5df2",
 			"key": "serviceType",
 			"value": ""
 		},
 		{
-			"id": "bc9ebdde-961a-449a-bd6c-e5b70a5ba687",
+			"id": "9f74020d-e992-4214-aa8c-7e4b6867d9ac",
 			"key": "appName",
 			"value": ""
 		}
