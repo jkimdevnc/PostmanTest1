@@ -1108,7 +1108,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": "https://info.xsede.org/wh1/glue2-views-api/v1/software-spf/ID/{{xsede_ID}}"
+						"url": "https://info.xsede.org/wh1/glue2-views-api/v1/software/ID/{{xsede_ID}}"
 					},
 					"response": []
 				}
@@ -1398,32 +1398,32 @@
 	],
 	"variable": [
 		{
-			"id": "ed382988-a3eb-4d17-b1ef-b01488718009",
+			"id": "b86fd725-e1cb-4426-89e5-e335c28fe032",
 			"key": "xsede_ID",
 			"value": "NONE"
 		},
 		{
-			"id": "3d751f78-51cf-4e9d-98f9-12b595803478",
+			"id": "a8ce1804-c651-4d8d-a5b1-51ec80327bd2",
 			"key": "localID",
 			"value": ""
 		},
 		{
-			"id": "5e811c06-625e-4c9c-bf0d-e8391cc1e5a0",
+			"id": "21685ccb-ae0d-4cb4-833a-bcdb43aa76ad",
 			"key": "resourceID",
 			"value": ""
 		},
 		{
-			"id": "74402e38-c199-41dd-8379-5051691709f3",
+			"id": "19f29106-f0a7-40b5-b461-b65ec3524898",
 			"key": "interfaceName",
 			"value": ""
 		},
 		{
-			"id": "3a245d15-d845-44e6-88ce-993e4289be77",
+			"id": "7e9fa513-ba6a-4c6d-ae7f-564695ac1776",
 			"key": "serviceType",
 			"value": ""
 		},
 		{
-			"id": "692d734c-41a0-4bd1-ac21-72e6a5c60fdc",
+			"id": "1533278e-657d-4a31-9778-a2df3491aa79",
 			"key": "appName",
 			"value": ""
 		}
