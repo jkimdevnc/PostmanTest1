@@ -754,7 +754,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": "https://info.xsede.org/wh1/glue2-views-api/v1/services-spf/ServiceType/{{serviceType}}"
+						"url": "https://info.xsede.org/wh1/glue2-views-api/v1/services/ServiceType/{{serviceType}}"
 					},
 					"response": []
 				}
@@ -1044,27 +1044,27 @@
 	],
 	"variable": [
 		{
-			"id": "b99e36a9-89a7-49c6-9b29-0117d5fbb1cc",
+			"id": "32de6f4a-2cc7-444a-86c7-8b27ad24ef38",
 			"key": "xsede_ID",
 			"value": "NONE"
 		},
 		{
-			"id": "348d0fc5-31b7-4cf3-adcc-6ae49d799701",
+			"id": "95cb2c1a-409b-418c-b76b-f3576270ad3e",
 			"key": "localID",
 			"value": ""
 		},
 		{
-			"id": "f0a6b274-e347-418b-b93b-f2d986d4e66d",
+			"id": "98d55920-44b4-43b3-b281-3df7e030596b",
 			"key": "resourceID",
 			"value": ""
 		},
 		{
-			"id": "bf0503cd-65fa-4a21-9216-0acd41977922",
+			"id": "197333fb-7fa4-4d48-8227-e5698f2c0c14",
 			"key": "interfaceName",
 			"value": ""
 		},
 		{
-			"id": "00e2eb86-6890-4032-8574-848904e4ec34",
+			"id": "b371e613-8058-49e0-9a88-a141c08e4cd0",
 			"key": "serviceType",
 			"value": ""
 		}
