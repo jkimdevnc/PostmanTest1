@@ -871,6 +871,48 @@
 						"url": "https://info.xsede.org/wh1/glue2-views-api/v1/software-spf/ID/{{xsede_ID}}"
 					},
 					"response": []
+				},
+				{
+					"name": "software-spf_ResourceID",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "27796364-d966-4cbc-9914-40fb53fcc0ce",
+								"exec": [
+									"// collection variables that are set by previous test",
+									"console.log(\"Loaded ResourceID: \" + pm.collectionVariables.get(\"resourceID\"));",
+									"",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "dfa6f311-f0ae-4c58-bfab-e18de08d2e6a",
+								"exec": [
+									"",
+									"pm.test(\"Response time is less than 200ms\", function () {",
+									"    pm.expect(pm.response.responseTime).to.be.below(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "7112377b-cbbb-44be-abdb-7e123e8cbd73",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "https://info.xsede.org/wh1/glue2-views-api/v1/services-spf/ResourceID/{{resourceID}}"
+					},
+					"response": []
 				}
 			],
 			"id": "74db0102-6149-45d0-9fd0-d048e7b85db5"
@@ -1158,32 +1200,32 @@
 	],
 	"variable": [
 		{
-			"id": "f162a4b5-9e48-4d72-8339-cbec577a085e",
+			"id": "3e4827ad-64cb-4845-89f2-7f8d8cdc992c",
 			"key": "xsede_ID",
 			"value": "NONE"
 		},
 		{
-			"id": "64ba88a4-de07-4b9a-a59f-5989349babf4",
+			"id": "e2cada4c-55b6-471d-94c1-2f2e275fc076",
 			"key": "localID",
 			"value": ""
 		},
 		{
-			"id": "94c56840-66a5-410e-9e93-c8283d1d6545",
+			"id": "c6111c77-31f5-4770-bad4-7c0b9dfa3462",
 			"key": "resourceID",
 			"value": ""
 		},
 		{
-			"id": "3285bd38-e7f3-4299-8ec7-f0d1483bdb3c",
+			"id": "0035dfba-2074-4af1-9eee-579b8e8f77d0",
 			"key": "interfaceName",
 			"value": ""
 		},
 		{
-			"id": "20ef0802-627e-4eaf-a666-64ffd18a9269",
+			"id": "d129225c-028c-4f92-bbe2-22db35005de3",
 			"key": "serviceType",
 			"value": ""
 		},
 		{
-			"id": "f1e4cc57-daaa-4f7e-9f64-61f3012647e4",
+			"id": "a76db916-561a-40a4-b4e4-650ef42dd4d3",
 			"key": "appName",
 			"value": ""
 		}
