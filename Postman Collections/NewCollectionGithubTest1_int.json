@@ -414,6 +414,48 @@
 						"url": "https://info.xsede.org/wh1/glue2-views-api/v1/services-spf/InterfaceName/{{interfaceName}}"
 					},
 					"response": []
+				},
+				{
+					"name": "services-spf_ResourceID",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "27796364-d966-4cbc-9914-40fb53fcc0ce",
+								"exec": [
+									"// collection variables that are set by previous test",
+									"console.log(\"Loaded InterfaceName: \" + pm.collectionVariables.get(\"interfaceName\"));",
+									"",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "dfa6f311-f0ae-4c58-bfab-e18de08d2e6a",
+								"exec": [
+									"",
+									"pm.test(\"Response time is less than 200ms\", function () {",
+									"    pm.expect(pm.response.responseTime).to.be.below(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "d0a2de87-31d7-4528-a06e-a7750adb723b",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "https://info.xsede.org/wh1/glue2-views-api/v1/services-spf/InterfaceName/{{interfaceName}}"
+					},
+					"response": []
 				}
 			],
 			"id": "74db0102-6149-45d0-9fd0-d048e7b85db5"
@@ -701,22 +743,22 @@
 	],
 	"variable": [
 		{
-			"id": "b77f7683-7a72-4244-91f3-41582991f8e8",
+			"id": "91ad1ebb-8dbf-4a35-856a-345c176bc4cc",
 			"key": "xsede_ID",
 			"value": "NONE"
 		},
 		{
-			"id": "de7f13cf-83e9-4f56-a2d8-a52d5351cba9",
+			"id": "4c9dc438-e219-461d-ad59-5381f223fc74",
 			"key": "localID",
 			"value": ""
 		},
 		{
-			"id": "932e35f6-40b9-40ba-a26f-25255934f477",
+			"id": "690e94bb-2cd0-464b-a697-ca2147e476f3",
 			"key": "resourceID",
 			"value": ""
 		},
 		{
-			"id": "2c081d18-9f82-4353-bf59-cf825e5ab9f9",
+			"id": "ec38b99f-1cf6-4ada-b47c-99583e176db7",
 			"key": "interfaceName",
 			"value": ""
 		}
