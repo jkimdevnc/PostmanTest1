@@ -453,7 +453,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": "https://info.xsede.org/wh1/glue2-views-api/v1/services-spf/InterfaceName/{{interfaceName}}"
+						"url": "https://info.xsede.org/wh1/glue2-views-api/v1/services-spf/ResourceID/{{resourceID}}"
 					},
 					"response": []
 				}
@@ -743,22 +743,22 @@
 	],
 	"variable": [
 		{
-			"id": "91ad1ebb-8dbf-4a35-856a-345c176bc4cc",
+			"id": "c4806d77-2089-4856-9961-39a5c4b4967b",
 			"key": "xsede_ID",
 			"value": "NONE"
 		},
 		{
-			"id": "4c9dc438-e219-461d-ad59-5381f223fc74",
+			"id": "0d198a72-0d15-40b5-9146-74ecb386ce59",
 			"key": "localID",
 			"value": ""
 		},
 		{
-			"id": "690e94bb-2cd0-464b-a697-ca2147e476f3",
+			"id": "988215bf-3461-4a33-9044-febcc5186c44",
 			"key": "resourceID",
 			"value": ""
 		},
 		{
-			"id": "ec38b99f-1cf6-4ada-b47c-99583e176db7",
+			"id": "8c811b15-f932-4cea-985d-7818fd3d9884",
 			"key": "interfaceName",
 			"value": ""
 		}
