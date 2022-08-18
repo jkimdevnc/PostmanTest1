@@ -1113,27 +1113,27 @@
 	],
 	"variable": [
 		{
-			"id": "85e3fecb-3bff-421c-9da7-8fcde0e10f1b",
+			"id": "a9c0a4cb-806e-4477-8aa0-cce59a91363c",
 			"key": "xsede_ID",
 			"value": "NONE"
 		},
 		{
-			"id": "abced5e8-b8cd-4066-a97d-dec32606333c",
+			"id": "6a0c5ea9-5a5d-4d55-96a7-68a3810435bc",
 			"key": "localID",
 			"value": ""
 		},
 		{
-			"id": "81a46e05-029b-4b36-9299-47b41147295e",
+			"id": "9ee05875-643d-4085-8bbf-ce1fe31a3e33",
 			"key": "resourceID",
 			"value": ""
 		},
 		{
-			"id": "b117f99c-81db-49f2-8349-ff5e56c7c748",
+			"id": "178c73ed-046a-41fc-b201-a884c3a6de3d",
 			"key": "interfaceName",
 			"value": ""
 		},
 		{
-			"id": "a3bc6905-bb32-4b2a-b465-722fa8c0ceb6",
+			"id": "4f09fd0d-4f84-41e1-b785-aa67b21ec89e",
 			"key": "serviceType",
 			"value": ""
 		}
