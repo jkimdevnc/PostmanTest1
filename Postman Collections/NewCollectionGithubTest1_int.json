@@ -268,13 +268,43 @@
 						{
 							"listen": "test",
 							"script": {
+								"id": "0f2c93a7-775d-4e46-b7a2-f9b581345ab3",
 								"exec": [
 									"pm.test(\"Status code is 200\", function () {",
 									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test(\"Response time is less than 300ms\", function () {",
+									"    pm.expect(pm.response.responseTime).to.be.below(300);",
+									"});",
+									"",
+									"pm.test(\"Save ID\", function () {",
+									"    // get mid index of response data array",
+									"    let arrLen = pm.response.json().length;",
+									"    //console.log(arrLen);",
+									"    if (arrLen < 1) {",
+									"        // set ID variable to none and return fail",
+									"        pm.collectionVariables.set(\"xsede_ID\",\"NONE\");",
+									"        pm.expect.fail(\" No element exist!\");",
+									"    }",
+									"",
+									"    let midIdx = Math.floor(arrLen/2);",
+									"    //console.log(midIdx);",
+									"",
+									"    //get ID of midIdx element ",
+									"    ID = pm.response.json()[midIdx].ID;",
+									"    console.log(\"SAVED ID: \" + ID);",
+									"    // set ID to collection variable",
+									"    pm.collectionVariables.set(\"xsede_ID\", ID);",
+									"",
+									"    // get ResourceID of midIdx element ",
+									"    resourceID = pm.response.json()[midIdx].ResourceID;",
+									"    console.log(\"SAVED ResourceID: \" + resourceID);",
+									"    // set ID to collection variable",
+									"    pm.collectionVariables.set(\"resourceID\", resourceID);",
 									"});"
 								],
-								"type": "text/javascript",
-								"id": "34b835b3-9f8a-4fb9-aca3-7678e20136c4"
+								"type": "text/javascript"
 							}
 						}
 					],
@@ -619,12 +649,12 @@
 	],
 	"variable": [
 		{
-			"id": "81b71b82-965b-4804-8cdf-1b5572ff4af8",
+			"id": "1f8ee3fd-2eca-4b9e-b7c4-dc9f2b4f6599",
 			"key": "xsede_ID",
 			"value": "NONE"
 		},
 		{
-			"id": "6a8a24ae-6023-42d4-983d-df68f563b02e",
+			"id": "d4629c4a-7368-4069-93d4-6e14189faf5d",
 			"key": "localID",
 			"value": ""
 		}
