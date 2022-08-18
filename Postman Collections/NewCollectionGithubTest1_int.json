@@ -373,6 +373,52 @@
 						"url": "https://info.xsede.org/wh1/glue2-views-api/v1/services-spf/ID/{{xsede_ID}}"
 					},
 					"response": []
+				},
+				{
+					"name": "services-spf_InterfaceName",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "27796364-d966-4cbc-9914-40fb53fcc0ce",
+								"exec": [
+									"",
+									"// Get ID from collection variable which is set by previous test",
+									"console.log(\"Loaded ID: \" + pm.collectionVariables.get(\"xsede_ID\"));",
+									"//pm.collectionVariables.set(\"localID\", pm.collectionVariables.get(\"xsede_ID\"));",
+									"//console.log(\"localID: \" + pm.collectionVariables.get(\"localID\"));",
+									"",
+									"",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "dfa6f311-f0ae-4c58-bfab-e18de08d2e6a",
+								"exec": [
+									"",
+									"pm.test(\"Response time is less than 200ms\", function () {",
+									"    pm.expect(pm.response.responseTime).to.be.below(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "eacd4cc9-6684-45bf-a35c-5de0fa9c6ed8",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "https://info.xsede.org/wh1/glue2-views-api/v1/services-spf/ID/{{xsede_ID}}"
+					},
+					"response": []
 				}
 			],
 			"id": "74db0102-6149-45d0-9fd0-d048e7b85db5"
@@ -660,22 +706,22 @@
 	],
 	"variable": [
 		{
-			"id": "f93e1a48-9deb-4269-a378-36d6a94d634b",
+			"id": "8712015d-c6d9-43e3-aa2e-3c2936613104",
 			"key": "xsede_ID",
 			"value": "NONE"
 		},
 		{
-			"id": "41a60dfd-0254-427c-8ba2-4361fa6f9aac",
+			"id": "c7d2ae74-34bf-4136-9c98-d8f8e809e0e4",
 			"key": "localID",
 			"value": ""
 		},
 		{
-			"id": "b9bd00b3-4949-4662-91aa-d8d18dce15c4",
+			"id": "848b0ec1-1963-4fed-a6c1-0d5de61d55db",
 			"key": "resourceID",
 			"value": ""
 		},
 		{
-			"id": "4564ed37-4390-4920-adda-0ae71927e59e",
+			"id": "d655f040-cf76-4876-8565-3712029bdec8",
 			"key": "interfaceName",
 			"value": ""
 		}
