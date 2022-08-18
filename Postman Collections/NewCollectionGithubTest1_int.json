@@ -1440,32 +1440,32 @@
 	],
 	"variable": [
 		{
-			"id": "173e3249-df18-4ea1-8f32-8aedaa72d165",
+			"id": "8ead3811-5db9-4f73-8c3d-ba32158581fd",
 			"key": "xsede_ID",
 			"value": "NONE"
 		},
 		{
-			"id": "52f0c5a4-7397-45e0-9457-f47817bf8302",
+			"id": "28b64190-83ab-40a5-86b6-ca74bbf5279f",
 			"key": "localID",
 			"value": ""
 		},
 		{
-			"id": "704e262a-92ea-4080-b034-337c9139defc",
+			"id": "0b9b7510-9192-466d-9d2f-7db824d18fb9",
 			"key": "resourceID",
 			"value": ""
 		},
 		{
-			"id": "2e5fa954-efe4-4055-a2d1-5e54b71124ac",
+			"id": "b43d3807-2ac1-4b61-a65b-97de7016382a",
 			"key": "interfaceName",
 			"value": ""
 		},
 		{
-			"id": "1a070fdf-4b73-48b1-a907-e89b8adc255b",
+			"id": "4e1aabba-1612-48e0-a1b1-96143df7288a",
 			"key": "serviceType",
 			"value": ""
 		},
 		{
-			"id": "cfe03916-b6b9-4787-9048-ed60fc638626",
+			"id": "7f75bb8d-581c-43bf-ad4b-83c0e9a4ae51",
 			"key": "appName",
 			"value": ""
 		}
