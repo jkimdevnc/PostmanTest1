@@ -649,13 +649,18 @@
 	],
 	"variable": [
 		{
-			"id": "1f8ee3fd-2eca-4b9e-b7c4-dc9f2b4f6599",
+			"id": "ec470934-7cbe-4af7-82fc-b41f17bbd5b4",
 			"key": "xsede_ID",
 			"value": "NONE"
 		},
 		{
-			"id": "d4629c4a-7368-4069-93d4-6e14189faf5d",
+			"id": "c4e60919-f26b-442b-bb5d-eecee3c6a3f8",
 			"key": "localID",
+			"value": ""
+		},
+		{
+			"id": "8e6d84f1-b7f3-40b2-ad23-380e2183f84b",
+			"key": "resourceID",
 			"value": ""
 		}
 	]
