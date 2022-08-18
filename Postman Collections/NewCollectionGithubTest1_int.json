@@ -278,7 +278,7 @@
 									"    pm.expect(pm.response.responseTime).to.be.below(300);",
 									"});",
 									"",
-									"pm.test(\"Save ID\", function () {",
+									"pm.test(\"Save IDs\", function () {",
 									"    // get mid index of response data array",
 									"    let arrLen = pm.response.json().length;",
 									"    //console.log(arrLen);",
@@ -291,12 +291,21 @@
 									"    let midIdx = Math.floor(arrLen/2);",
 									"    //console.log(midIdx);",
 									"",
+									"    //----------------------------",
 									"    //get ID of midIdx element ",
 									"    ID = pm.response.json()[midIdx].ID;",
 									"    console.log(\"SAVED ID: \" + ID);",
 									"    // set ID to collection variable",
 									"    pm.collectionVariables.set(\"xsede_ID\", ID);",
 									"",
+									"    //-----------------------------------",
+									"    // get InterfaceName of midIdx element ",
+									"    interfaceName = pm.response.json()[midIdx].InterfaceName;",
+									"    console.log(\"SAVED InterfaceName: \" + interfaceName);",
+									"    // set ID to collection variable",
+									"    pm.collectionVariables.set(\"interfaceName\", interfaceName);",
+									"",
+									"    //-----------------------------------",
 									"    // get ResourceID of midIdx element ",
 									"    resourceID = pm.response.json()[midIdx].ResourceID;",
 									"    console.log(\"SAVED ResourceID: \" + resourceID);",
@@ -651,17 +660,17 @@
 	],
 	"variable": [
 		{
-			"id": "076c92ed-717b-49f7-9b73-0a6515b1182d",
+			"id": "20ad8fd0-a4bd-40a9-9ba7-e4b53b6f2b5c",
 			"key": "xsede_ID",
 			"value": "NONE"
 		},
 		{
-			"id": "4c501eda-a10c-496b-bf20-3ac4ba9fcf2b",
+			"id": "42a9e7aa-4e1d-4d04-b019-3e92d04cd8e0",
 			"key": "localID",
 			"value": ""
 		},
 		{
-			"id": "64b59d90-2a91-47c5-81e4-ee72b110768e",
+			"id": "f94c8a6c-b719-459d-aaa5-e06e2ede9b1d",
 			"key": "resourceID",
 			"value": ""
 		}
