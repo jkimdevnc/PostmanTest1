@@ -290,7 +290,7 @@
 					"response": []
 				},
 				{
-					"name": "abstractservice_ID Copy",
+					"name": "services-spf_ID",
 					"event": [
 						{
 							"listen": "prerequest",
@@ -619,7 +619,7 @@
 	],
 	"variable": [
 		{
-			"id": "88fd19d8-928a-41b8-9a49-a422c1ae4b6c",
+			"id": "7837d8d1-ecdc-451c-967c-39c9974f21f5",
 			"key": "xsede_ID",
 			"value": "NONE"
 		}
