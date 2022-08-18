@@ -325,12 +325,14 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "e5b223db-4ae4-4140-8aba-90934afcd3c5",
+								"id": "27796364-d966-4cbc-9914-40fb53fcc0ce",
 								"exec": [
 									"",
 									"// Get ID from collection variable which is set by previous test",
-									"//console.log(pm.collectionVariables.get(\"xsede_ID\"));",
-									"pm.environment.set(\"localID\", pm.collectionVariables.get(\"xsede_ID\"));",
+									"console.log(\"Loaded ID: \" + pm.collectionVariables.get(\"xsede_ID\"));",
+									"//pm.collectionVariables.set(\"localID\", pm.collectionVariables.get(\"xsede_ID\"));",
+									"//console.log(\"localID: \" + pm.collectionVariables.get(\"localID\"));",
+									"",
 									"",
 									"",
 									""
@@ -341,7 +343,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "bcfca4d9-5c39-4759-9f4b-5fb44515f8fa",
+								"id": "dfa6f311-f0ae-4c58-bfab-e18de08d2e6a",
 								"exec": [
 									"",
 									"pm.test(\"Response time is less than 200ms\", function () {",
@@ -359,7 +361,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": "https://info.xsede.org/wh1/glue2-views-api/v1/services-spf/ID/{{localID}}"
+						"url": "https://info.xsede.org/wh1/glue2-views-api/v1/services-spf/ID/{{xsede_ID}}"
 					},
 					"response": []
 				}
@@ -649,17 +651,17 @@
 	],
 	"variable": [
 		{
-			"id": "65a25d57-77df-4c65-8db1-bea3a71d0ca7",
+			"id": "076c92ed-717b-49f7-9b73-0a6515b1182d",
 			"key": "xsede_ID",
 			"value": "NONE"
 		},
 		{
-			"id": "c430b94d-75a8-4728-9886-d5de6f764892",
+			"id": "4c501eda-a10c-496b-bf20-3ac4ba9fcf2b",
 			"key": "localID",
 			"value": ""
 		},
 		{
-			"id": "21ece00a-b197-44fe-9fd3-8853b4f3b836",
+			"id": "64b59d90-2a91-47c5-81e4-ee72b110768e",
 			"key": "resourceID",
 			"value": ""
 		}
