@@ -424,7 +424,7 @@
 								"id": "27796364-d966-4cbc-9914-40fb53fcc0ce",
 								"exec": [
 									"// collection variables that are set by previous test",
-									"console.log(\"Loaded InterfaceName: \" + pm.collectionVariables.get(\"interfaceName\"));",
+									"console.log(\"Loaded ResourceID: \" + pm.collectionVariables.get(\"ResourceID\"));",
 									"",
 									"",
 									""
@@ -743,22 +743,22 @@
 	],
 	"variable": [
 		{
-			"id": "c4806d77-2089-4856-9961-39a5c4b4967b",
+			"id": "832c004b-6fbc-4376-939f-257ce1fd00fe",
 			"key": "xsede_ID",
 			"value": "NONE"
 		},
 		{
-			"id": "0d198a72-0d15-40b5-9146-74ecb386ce59",
+			"id": "2ab9dbd0-642b-40ee-a386-82cdf5ec33b7",
 			"key": "localID",
 			"value": ""
 		},
 		{
-			"id": "988215bf-3461-4a33-9044-febcc5186c44",
+			"id": "c79cd00c-0da3-4865-8969-a13247706278",
 			"key": "resourceID",
 			"value": ""
 		},
 		{
-			"id": "8c811b15-f932-4cea-985d-7818fd3d9884",
+			"id": "07a4d9cf-b087-4380-9525-b4ab7e4e59a6",
 			"key": "interfaceName",
 			"value": ""
 		}
