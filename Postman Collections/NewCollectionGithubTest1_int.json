@@ -381,12 +381,8 @@
 							"script": {
 								"id": "27796364-d966-4cbc-9914-40fb53fcc0ce",
 								"exec": [
-									"",
-									"// Get ID from collection variable which is set by previous test",
-									"console.log(\"Loaded ID: \" + pm.collectionVariables.get(\"xsede_ID\"));",
-									"//pm.collectionVariables.set(\"localID\", pm.collectionVariables.get(\"xsede_ID\"));",
-									"//console.log(\"localID: \" + pm.collectionVariables.get(\"localID\"));",
-									"",
+									"// collection variables that are set by previous test",
+									"console.log(\"Loaded InterfaceName: \" + pm.collectionVariables.get(\"interfaceName\"));",
 									"",
 									"",
 									""
@@ -705,22 +701,22 @@
 	],
 	"variable": [
 		{
-			"id": "6059ca50-a806-4634-a042-cbd395061ed5",
+			"id": "ccf70715-df20-4f70-b676-15bf948fe030",
 			"key": "xsede_ID",
 			"value": "NONE"
 		},
 		{
-			"id": "085bd3f3-2bf2-4215-bd81-4a655759b46d",
+			"id": "c254c1d2-2409-4c39-86a8-b62aa8b58cf4",
 			"key": "localID",
 			"value": ""
 		},
 		{
-			"id": "153f3311-86f8-41fe-aea2-47d3ba9d8aa1",
+			"id": "0bbaecee-efa8-445d-bc9c-ac09f12160cf",
 			"key": "resourceID",
 			"value": ""
 		},
 		{
-			"id": "5cdd273c-a334-41e4-baeb-f1470b3161b0",
+			"id": "58409744-886a-4a20-9f19-4747df4cdd8a",
 			"key": "interfaceName",
 			"value": ""
 		}
