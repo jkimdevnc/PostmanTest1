@@ -828,7 +828,7 @@
 					"response": []
 				},
 				{
-					"name": "services-spf_ID Copy",
+					"name": "software-spf_ID",
 					"event": [
 						{
 							"listen": "prerequest",
@@ -1158,32 +1158,32 @@
 	],
 	"variable": [
 		{
-			"id": "285ae481-ed5f-49fb-8dc2-843e1f01afdd",
+			"id": "2152a2cb-f660-43ca-bee1-68c3a08f41a7",
 			"key": "xsede_ID",
 			"value": "NONE"
 		},
 		{
-			"id": "e1cfadd9-6a1e-4ffe-a9c5-d0a65ac85ae8",
+			"id": "773ab274-c3b4-4334-8f71-b135fdce4d31",
 			"key": "localID",
 			"value": ""
 		},
 		{
-			"id": "fca1c469-f60f-414d-9940-b755f4bac9ff",
+			"id": "4efeaaad-a7ab-4b88-96c2-1d7111cf30fb",
 			"key": "resourceID",
 			"value": ""
 		},
 		{
-			"id": "32ee40ff-4220-4b91-8a71-293bc3c3960a",
+			"id": "8c2cc99e-3d61-4e6b-baff-2a659306f536",
 			"key": "interfaceName",
 			"value": ""
 		},
 		{
-			"id": "fe7039f6-1365-431f-bc12-76436af08768",
+			"id": "ed40edf8-aff6-443a-9978-2b0c55fb2ada",
 			"key": "serviceType",
 			"value": ""
 		},
 		{
-			"id": "5fe175e4-d790-4ebf-b045-e9497b56fcd2",
+			"id": "b6292821-5e06-49f9-a185-6d17162d0755",
 			"key": "appName",
 			"value": ""
 		}
