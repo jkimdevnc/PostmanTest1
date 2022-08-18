@@ -292,25 +292,36 @@
 									"    //console.log(midIdx);",
 									"",
 									"    //----------------------------",
-									"    //get ID of midIdx element ",
+									"    // Save ID",
+									"    // get middle element ",
 									"    ID = pm.response.json()[midIdx].ID;",
 									"    console.log(\"SAVED ID: \" + ID);",
-									"    // set ID to collection variable",
+									"    // set to collection variable",
 									"    pm.collectionVariables.set(\"xsede_ID\", ID);",
 									"",
 									"    //-----------------------------------",
-									"    // get InterfaceName of midIdx element ",
+									"    // Save InterfaceName",
+									"    // get middle element ",
 									"    interfaceName = pm.response.json()[midIdx].InterfaceName;",
 									"    console.log(\"SAVED InterfaceName: \" + interfaceName);",
 									"    // set ID to collection variable",
 									"    pm.collectionVariables.set(\"interfaceName\", interfaceName);",
 									"",
 									"    //-----------------------------------",
-									"    // get ResourceID of midIdx element ",
+									"    // Save ResourceID",
+									"    // get middle element ",
 									"    resourceID = pm.response.json()[midIdx].ResourceID;",
 									"    console.log(\"SAVED ResourceID: \" + resourceID);",
-									"    // set ID to collection variable",
+									"    // set to collection variable",
 									"    pm.collectionVariables.set(\"resourceID\", resourceID);",
+									"",
+									"    //-----------------------------------",
+									"    // Save ServiceType",
+									"    // get middle element ",
+									"    serviceType = pm.response.json()[midIdx].ServiceType;",
+									"    console.log(\"SAVED ServiceType: \" + serviceType);",
+									"    // set to collection variable",
+									"    pm.collectionVariables.set(\"serviceType\", serviceType);",
 									"});"
 								],
 								"type": "text/javascript"
@@ -785,22 +796,22 @@
 	],
 	"variable": [
 		{
-			"id": "c8810eec-9165-40b5-844c-af0b7ba37076",
+			"id": "9d07ba11-1346-4450-9a0f-d5d9bbe514b0",
 			"key": "xsede_ID",
 			"value": "NONE"
 		},
 		{
-			"id": "59839fb0-791e-417d-a28b-20dc3671517f",
+			"id": "f5210ed9-5535-473b-b572-7769bb2d1c72",
 			"key": "localID",
 			"value": ""
 		},
 		{
-			"id": "8986f5bc-e242-4ba1-9276-306161834106",
+			"id": "ecd736bc-16c8-4896-ab08-e754778b879b",
 			"key": "resourceID",
 			"value": ""
 		},
 		{
-			"id": "b0e8ca63-bcb0-4922-8245-22d8f136a835",
+			"id": "487c97ce-a4d9-4c02-b41d-ded96eb8c44e",
 			"key": "interfaceName",
 			"value": ""
 		}
