@@ -955,6 +955,75 @@
 						"url": "https://info.xsede.org/wh1/glue2-views-api/v1/software-spf/ResourceID/{{resourceID}}"
 					},
 					"response": []
+				},
+				{
+					"name": "software",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "0f2c93a7-775d-4e46-b7a2-f9b581345ab3",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test(\"Response time is less than 4000ms\", function () {",
+									"    pm.expect(pm.response.responseTime).to.be.below(4000);",
+									"});",
+									"",
+									"pm.test(\"Save Parameters for next test\", function () {",
+									"    // get mid index of response data array",
+									"    let arrLen = pm.response.json().length;",
+									"    //console.log(arrLen);",
+									"    if (arrLen < 1) {",
+									"        // set ID variable to none and return fail",
+									"        pm.collectionVariables.set(\"xsede_ID\",\"NONE\");",
+									"        pm.expect.fail(\" No element exist!\");",
+									"    }",
+									"",
+									"    let midIdx = Math.floor(arrLen/2);",
+									"    //console.log(midIdx);",
+									"",
+									"    //----------------------------",
+									"    // Save ID",
+									"    // get middle element ",
+									"    ID = pm.response.json()[midIdx].ID;",
+									"    console.log(\"SAVED ID: \" + ID);",
+									"    // set to collection variable",
+									"    pm.collectionVariables.set(\"xsede_ID\", ID);",
+									"",
+									"    //-----------------------------------",
+									"    // Save ResourceID",
+									"    // get middle element ",
+									"    resourceID = pm.response.json()[midIdx].ResourceID;",
+									"    console.log(\"SAVED ResourceID: \" + resourceID);",
+									"    // set to collection variable",
+									"    pm.collectionVariables.set(\"resourceID\", resourceID);",
+									"",
+									"    //-----------------------------------",
+									"    // Save AppName",
+									"    // get middle element ",
+									"    appName = pm.response.json()[midIdx].AppName;",
+									"    console.log(\"SAVED AppName: \" + appName);",
+									"    // set to collection variable",
+									"    pm.collectionVariables.set(\"appName\", appName);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "255c2c6b-8a4d-4d18-80c7-cd302b060546",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "https://info.xsede.org/wh1/glue2-views-api/v1/software-spf/"
+					},
+					"response": []
 				}
 			],
 			"id": "74db0102-6149-45d0-9fd0-d048e7b85db5"
@@ -1242,32 +1311,32 @@
 	],
 	"variable": [
 		{
-			"id": "d51ed779-6046-4dcf-a917-af335bc366a9",
+			"id": "284a41af-1439-4747-a251-20540b319b75",
 			"key": "xsede_ID",
 			"value": "NONE"
 		},
 		{
-			"id": "478325b9-ce06-487d-b912-4c54087e6438",
+			"id": "3ee682db-d406-4710-83b7-b57f2c36e20b",
 			"key": "localID",
 			"value": ""
 		},
 		{
-			"id": "8922b428-8e4d-4178-bbea-b155f0f4ddef",
+			"id": "0dfe970b-16b7-493a-8008-7ecfaa3a4ec6",
 			"key": "resourceID",
 			"value": ""
 		},
 		{
-			"id": "f0cd02e4-b3fd-454a-b31d-37bb645c445b",
+			"id": "25a8544f-e57d-4be0-85b9-a319e0d40335",
 			"key": "interfaceName",
 			"value": ""
 		},
 		{
-			"id": "4e51a94e-0ca0-4193-a896-fbcf9ea7afe1",
+			"id": "3599ce8c-9cc9-43cb-aa2b-03095d438427",
 			"key": "serviceType",
 			"value": ""
 		},
 		{
-			"id": "d9943867-da19-4387-a2e6-c0de161b1da9",
+			"id": "97ca9acd-be62-42c5-a515-03e4d751f6cc",
 			"key": "appName",
 			"value": ""
 		}
