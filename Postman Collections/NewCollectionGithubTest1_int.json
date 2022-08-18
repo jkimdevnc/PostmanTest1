@@ -14,7 +14,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "7df94e74-46ef-4d1b-a6cf-b2966627fc54",
+								"id": "3c37bd10-6e27-4d75-9871-6822829727dd",
 								"exec": [
 									"",
 									"",
@@ -36,7 +36,7 @@
 									"    console.log(ID);",
 									"",
 									"    // get ResourceID of first element - TEST purpose",
-									"    //resourceID = response.json()[midIdx].ResourceID;",
+									"    //resourceID = pm.response.json()[midIdx].ResourceID;",
 									"    //console.log(resourceID);",
 									"",
 									"    // set ID to collection variable",
@@ -55,7 +55,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "b8a7f3be-e00b-4b99-9044-673c5b14fc7b",
+								"id": "fa5ae01a-2945-41b2-8f2a-71512429bb83",
 								"exec": [
 									""
 								],
@@ -701,22 +701,22 @@
 	],
 	"variable": [
 		{
-			"id": "8d873857-570a-4a60-98d7-02283c028330",
+			"id": "b77f7683-7a72-4244-91f3-41582991f8e8",
 			"key": "xsede_ID",
 			"value": "NONE"
 		},
 		{
-			"id": "49ae9add-7a61-4ef4-a23a-c613a1e18db5",
+			"id": "de7f13cf-83e9-4f56-a2d8-a52d5351cba9",
 			"key": "localID",
 			"value": ""
 		},
 		{
-			"id": "953eaa58-c247-4462-aaf6-df0e42e195e2",
+			"id": "932e35f6-40b9-40ba-a26f-25255934f477",
 			"key": "resourceID",
 			"value": ""
 		},
 		{
-			"id": "04d4fe08-5795-48f8-95b8-b1564fb40ba2",
+			"id": "2c081d18-9f82-4353-bf59-cf825e5ab9f9",
 			"key": "interfaceName",
 			"value": ""
 		}
