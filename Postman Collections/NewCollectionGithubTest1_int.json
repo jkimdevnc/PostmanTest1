@@ -1578,6 +1578,14 @@
 									"    console.log(\"SAVED info_resourceid: \" + resourceId);",
 									"    // set to collection variable",
 									"    pm.collectionVariables.set(\"resourceID\", resourceId);",
+									"",
+									"    //-----------------------------------",
+									"    // Save info_siteid",
+									"    // get middle element ",
+									"    infoSiteid = pm.response.json().result_set[midIdx].info_siteid;",
+									"    console.log(\"SAVED info_siteid: \" + infoSiteid);",
+									"    // set to collection variable",
+									"    pm.collectionVariables.set(\"info_siteid\", infoSiteid);",
 									"});"
 								],
 								"type": "text/javascript"
@@ -1623,37 +1631,37 @@
 	],
 	"variable": [
 		{
-			"id": "5ace54c1-74c7-4889-bea9-e976f5a69821",
+			"id": "178486ac-747d-4670-a743-b7a42a66fcf6",
 			"key": "xsede_ID",
 			"value": "NONE"
 		},
 		{
-			"id": "f580dca8-c268-4bcc-aae0-0442d6104eda",
+			"id": "e3a43897-baad-4cdf-bf16-48b35410a6a6",
 			"key": "localID",
 			"value": ""
 		},
 		{
-			"id": "3184e300-5af0-45a7-b5dc-8372b9c44041",
+			"id": "98d6499e-245a-4013-93c9-58920d7e202b",
 			"key": "resourceID",
 			"value": ""
 		},
 		{
-			"id": "ac86be67-e2d1-49a6-8abf-231cbcf6a345",
+			"id": "642d80aa-7917-4fb9-8e5b-050c27cfc11a",
 			"key": "interfaceName",
 			"value": ""
 		},
 		{
-			"id": "7e7e315b-fdbc-4b12-bfa0-2e80921706f9",
+			"id": "8aee6530-3ff3-4dfe-b5d0-a17acf275117",
 			"key": "serviceType",
 			"value": ""
 		},
 		{
-			"id": "20be6772-a9b4-4677-9389-b8689886e662",
+			"id": "cce7ac73-d109-4e5c-a1f2-e16b82db35ef",
 			"key": "appName",
 			"value": ""
 		},
 		{
-			"id": "163a15c4-0fdb-4cb0-b2ab-aca4c82ee328",
+			"id": "0e5d3af4-2b97-4d79-99e9-cb90f8af7a6a",
 			"key": "rdr_type",
 			"value": ""
 		}
