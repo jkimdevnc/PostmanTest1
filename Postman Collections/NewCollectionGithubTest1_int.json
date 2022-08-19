@@ -1329,36 +1329,7 @@
 									"    pm.expect(pm.response.responseTime).to.be.below(300);",
 									"});",
 									"",
-									"pm.test(\"Save Parameters for next test\", function () {",
-									"    // get mid index of response data array",
-									"    let arrLen = pm.response.json().length;",
-									"    //console.log(arrLen);",
-									"    if (arrLen < 1) {",
-									"        // set ID variable to none and return fail",
-									"        pm.collectionVariables.set(\"xsede_ID\",\"NONE\");",
-									"        pm.expect.fail(\" No element exist!\");",
-									"    }",
-									"",
-									"    let midIdx = Math.floor(arrLen/2);",
-									"    //console.log(midIdx);",
-									"",
-									"    //----------------------------",
-									"    // Save ID",
-									"    // get middle element ",
-									"    ID = pm.response.json()[midIdx].ID;",
-									"    console.log(\"SAVED ID: \" + ID);",
-									"    // set to collection variable",
-									"    pm.collectionVariables.set(\"xsede_ID\", ID);",
-									"",
-									"",
-									"    //-----------------------------------",
-									"    // Save ResourceID",
-									"    // get middle element ",
-									"    resourceID = pm.response.json()[midIdx].ResourceID;",
-									"    console.log(\"SAVED ResourceID: \" + resourceID);",
-									"    // set to collection variable",
-									"    pm.collectionVariables.set(\"resourceID\", resourceID);",
-									"});"
+									""
 								],
 								"type": "text/javascript"
 							}
@@ -2213,47 +2184,47 @@
 	],
 	"variable": [
 		{
-			"id": "c42ea9d8-51d8-4c02-8a95-408489491577",
+			"id": "7ea02f27-7431-4697-b09f-64d7a6727ad8",
 			"key": "xsede_ID",
 			"value": "NONE"
 		},
 		{
-			"id": "3eb06555-4524-400b-b50b-ffeed6f99a74",
+			"id": "d325862c-562e-48b1-a587-d431ce3ace93",
 			"key": "localID",
 			"value": ""
 		},
 		{
-			"id": "f29d3e71-b698-469f-a792-9a26fa4f7774",
+			"id": "c7525953-4775-4e1e-bbca-88b9aca50afa",
 			"key": "resourceID",
 			"value": ""
 		},
 		{
-			"id": "2206a326-a410-4203-9dcc-43d122bb24ee",
+			"id": "1a395488-a06d-467f-97b5-df61afbcb229",
 			"key": "interfaceName",
 			"value": ""
 		},
 		{
-			"id": "44d44d8e-79cf-4746-b927-8ceab568576b",
+			"id": "4b980832-7e58-4424-a4b8-dc531a365364",
 			"key": "serviceType",
 			"value": ""
 		},
 		{
-			"id": "d4cfafe5-e030-45c2-b75b-7fb29d58a765",
+			"id": "18ff043f-095e-4db7-b57a-677cd02c3bae",
 			"key": "appName",
 			"value": ""
 		},
 		{
-			"id": "0fc6685a-c79b-4090-a450-0293cb13953f",
+			"id": "46a58fa1-9cfd-4b51-aeaf-776e3a2d8fec",
 			"key": "rdr_type",
 			"value": ""
 		},
 		{
-			"id": "533a8f3f-a94a-4874-adb0-d660b6e584c5",
+			"id": "053fe311-06c7-4d3d-b675-fcff1faa518a",
 			"key": "info_siteID",
 			"value": ""
 		},
 		{
-			"id": "c7518c38-5aea-4492-ae4a-fe23dc48b27d",
+			"id": "1cf146de-aa1f-4fc3-a4d0-cb4bd6d91046",
 			"key": "rdr_Type",
 			"value": ""
 		}
