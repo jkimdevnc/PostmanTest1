@@ -1835,6 +1835,11 @@
 			"name": "rdr-db_v2",
 			"item": [],
 			"id": "735d7f58-d407-495d-82bb-c762cb401258"
+		},
+		{
+			"name": "New Folder",
+			"item": [],
+			"id": "6e2ba222-9d9b-4020-baf3-c199d6b5dc32"
 		}
 	],
 	"event": [
@@ -1861,47 +1866,47 @@
 	],
 	"variable": [
 		{
-			"id": "0134efa9-8900-441d-8b04-8b2062bf2fad",
+			"id": "49e681b5-ca10-441f-8403-ed5e8440240c",
 			"key": "xsede_ID",
 			"value": "NONE"
 		},
 		{
-			"id": "9f49075a-f803-48c0-be48-312500bfb1db",
+			"id": "a14515c0-7b7e-40b2-a85e-e9b4acffbe2b",
 			"key": "localID",
 			"value": ""
 		},
 		{
-			"id": "934e7078-281c-407a-87ef-162ad5fff72a",
+			"id": "1506ba4a-1e0e-4974-97e5-58e7b4b3ac2d",
 			"key": "resourceID",
 			"value": ""
 		},
 		{
-			"id": "682e64b9-17b3-4a76-856f-7d0ab980b5ca",
+			"id": "3f27656b-f7d8-4f73-a7f0-f87cea6b6414",
 			"key": "interfaceName",
 			"value": ""
 		},
 		{
-			"id": "a7b563ca-fb04-47a3-bc81-1416d7a77cbb",
+			"id": "023711e1-051b-4ad1-ab38-29c6b1c21ce7",
 			"key": "serviceType",
 			"value": ""
 		},
 		{
-			"id": "1bf115db-e000-454c-8da5-68fe3fb16264",
+			"id": "5690b504-cb61-47e9-a6d6-5f1e906a9a0e",
 			"key": "appName",
 			"value": ""
 		},
 		{
-			"id": "f7bdd660-8f26-494a-ab9d-ad4b1594f75d",
+			"id": "73c01dbc-44fa-439f-b92c-15dcdba74ed0",
 			"key": "rdr_type",
 			"value": ""
 		},
 		{
-			"id": "f8dd39b7-bc90-4a5b-b365-8766fccd5f78",
+			"id": "fd516ca2-df0c-4c84-b816-4c50217701fb",
 			"key": "info_siteID",
 			"value": ""
 		},
 		{
-			"id": "d62f04a8-d8ca-484e-9fc8-c716fc77f511",
+			"id": "0b52222f-130b-438c-b39c-241eb4483af9",
 			"key": "rdr_Type",
 			"value": ""
 		}
