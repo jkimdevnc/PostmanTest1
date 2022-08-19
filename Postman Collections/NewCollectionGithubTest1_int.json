@@ -1450,7 +1450,7 @@
 									"    //----------------------------",
 									"    // Save ID",
 									"    // get middle element ",
-									"    ID = pm.response.json()[midIdx].ID;",
+									"    ID = pm.response.json()[midIdx].rdr_resource_id;",
 									"    console.log(\"SAVED ID: \" + ID);",
 									"    // set to collection variable",
 									"    pm.collectionVariables.set(\"xsede_ID\", ID);",
@@ -1553,32 +1553,32 @@
 	],
 	"variable": [
 		{
-			"id": "856828ee-2ce2-4345-bbe2-2a5f76f625d7",
+			"id": "83353890-ee75-41cf-97a1-d132eb512838",
 			"key": "xsede_ID",
 			"value": "NONE"
 		},
 		{
-			"id": "9aae690f-6eaa-44fd-bb65-73e6b2d905b4",
+			"id": "95395151-52b9-450f-8445-4c9330a918a0",
 			"key": "localID",
 			"value": ""
 		},
 		{
-			"id": "ea3c2393-a133-4daa-8c8f-0440c55ff009",
+			"id": "eb8652b8-f1a1-43fa-a315-fdc194b19ea5",
 			"key": "resourceID",
 			"value": ""
 		},
 		{
-			"id": "ffdbcb5f-5934-4b03-ac8c-70ef994ffef9",
+			"id": "f2513644-203f-4f5f-bb0c-be49cc523557",
 			"key": "interfaceName",
 			"value": ""
 		},
 		{
-			"id": "62fafe14-364f-4a28-b219-5864c4c93b8a",
+			"id": "5be7ae74-d8eb-4e1b-b95e-f7fb64f11ece",
 			"key": "serviceType",
 			"value": ""
 		},
 		{
-			"id": "4302df0c-ca4f-4f08-a54a-96888d5e1839",
+			"id": "aa5efd9d-dc94-43bf-a686-e709253191cf",
 			"key": "appName",
 			"value": ""
 		}
