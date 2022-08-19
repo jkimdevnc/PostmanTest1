@@ -1159,7 +1159,85 @@
 		},
 		{
 			"name": "Outages",
-			"item": [],
+			"item": [
+				{
+					"name": "services Copy",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "0f2c93a7-775d-4e46-b7a2-f9b581345ab3",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test(\"Response time is less than 300ms\", function () {",
+									"    pm.expect(pm.response.responseTime).to.be.below(300);",
+									"});",
+									"",
+									"pm.test(\"Save Parameters for next test\", function () {",
+									"    // get mid index of response data array",
+									"    let arrLen = pm.response.json().length;",
+									"    //console.log(arrLen);",
+									"    if (arrLen < 1) {",
+									"        // set ID variable to none and return fail",
+									"        pm.collectionVariables.set(\"xsede_ID\",\"NONE\");",
+									"        pm.expect.fail(\" No element exist!\");",
+									"    }",
+									"",
+									"    let midIdx = Math.floor(arrLen/2);",
+									"    //console.log(midIdx);",
+									"",
+									"    //----------------------------",
+									"    // Save ID",
+									"    // get middle element ",
+									"    ID = pm.response.json()[midIdx].ID;",
+									"    console.log(\"SAVED ID: \" + ID);",
+									"    // set to collection variable",
+									"    pm.collectionVariables.set(\"xsede_ID\", ID);",
+									"",
+									"    //-----------------------------------",
+									"    // Save InterfaceName",
+									"    // get middle element ",
+									"    interfaceName = pm.response.json()[midIdx].InterfaceName;",
+									"    console.log(\"SAVED InterfaceName: \" + interfaceName);",
+									"    // set ID to collection variable",
+									"    pm.collectionVariables.set(\"interfaceName\", interfaceName);",
+									"",
+									"    //-----------------------------------",
+									"    // Save ResourceID",
+									"    // get middle element ",
+									"    resourceID = pm.response.json()[midIdx].ResourceID;",
+									"    console.log(\"SAVED ResourceID: \" + resourceID);",
+									"    // set to collection variable",
+									"    pm.collectionVariables.set(\"resourceID\", resourceID);",
+									"",
+									"    //-----------------------------------",
+									"    // Save ServiceType",
+									"    // get middle element ",
+									"    serviceType = pm.response.json()[midIdx].ServiceType;",
+									"    console.log(\"SAVED ServiceType: \" + serviceType);",
+									"    // set to collection variable",
+									"    pm.collectionVariables.set(\"serviceType\", serviceType);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "0f5388b4-8ebd-4723-8c07-07174d8f1ed8",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "https://info.xsede.org/wh1/outages/v1/outages/"
+					},
+					"response": []
+				}
+			],
 			"id": "829e9f05-f34b-463e-bc8b-7c4e5370887c"
 		},
 		{
@@ -1997,47 +2075,47 @@
 	],
 	"variable": [
 		{
-			"id": "69cf0edb-9cc9-4ebd-b036-76f2fee93e8e",
+			"id": "d4726c74-586e-43f7-8f21-6462df75f2b8",
 			"key": "xsede_ID",
 			"value": "NONE"
 		},
 		{
-			"id": "cff4b8b3-0c34-440a-9727-6ea6143fc9ff",
+			"id": "6ba33e82-c7de-4234-8dff-7b8e5f596aad",
 			"key": "localID",
 			"value": ""
 		},
 		{
-			"id": "70a2d619-b261-4cba-be34-bf761bea58ca",
+			"id": "6d401cf2-22d9-48e0-bac8-06de2ff3d04e",
 			"key": "resourceID",
 			"value": ""
 		},
 		{
-			"id": "d667520f-1fa2-4d1b-8f73-f5e4ba0b5a40",
+			"id": "5e1fba2d-d2c1-4f85-938b-c9c67828196e",
 			"key": "interfaceName",
 			"value": ""
 		},
 		{
-			"id": "7b5e9a70-f1ef-4c8d-b731-96cdad820438",
+			"id": "1cc16795-3c9e-46bc-a503-7bed2e5552fc",
 			"key": "serviceType",
 			"value": ""
 		},
 		{
-			"id": "4a3e48b4-a6dd-4d6f-89fc-c256f3b57174",
+			"id": "daf71a37-9c26-4316-b2e9-49235dc06109",
 			"key": "appName",
 			"value": ""
 		},
 		{
-			"id": "0ffdc27c-4541-4e7c-a559-8c05ff77cd84",
+			"id": "a48d4481-fe1f-4a2e-b9dc-cde08081dd6d",
 			"key": "rdr_type",
 			"value": ""
 		},
 		{
-			"id": "e2242353-d87b-4095-96e4-e1ac993e2590",
+			"id": "e3f675a3-fe96-44fa-abbe-b3a07b19c727",
 			"key": "info_siteID",
 			"value": ""
 		},
 		{
-			"id": "d5993299-c11c-4b8d-bc10-bbfc9014443e",
+			"id": "135fc9e3-65ce-4b99-aec6-ed03995acd96",
 			"key": "rdr_Type",
 			"value": ""
 		}
