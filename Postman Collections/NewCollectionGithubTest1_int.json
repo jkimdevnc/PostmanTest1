@@ -1324,11 +1324,9 @@
 									"    pm.response.to.have.status(200);",
 									"});",
 									"",
-									"// SKIP as this can take upto 7sec or more. ",
-									"// May add back later when it becomes more in range. ",
-									"// Otherwise remove this test. ",
-									"pm.test.skip(\"Response time is less than 1500ms\", function () {",
-									"    pm.expect(pm.response.responseTime).to.be.below(1500);",
+									"",
+									"pm.test(\"Response time is less than 300ms\", function () {",
+									"    pm.expect(pm.response.responseTime).to.be.below(300);",
 									"});",
 									"",
 									"pm.test(\"Save Parameters for next test\", function () {",
@@ -1373,7 +1371,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": "https://info.xsede.org/wh1/outages/v1/outages/"
+						"url": "https://info.xsede.org/wh1/outages/v1/outages/Current/"
 					},
 					"response": []
 				}
@@ -2215,47 +2213,47 @@
 	],
 	"variable": [
 		{
-			"id": "aaadf217-425f-4570-86e5-807a439591c8",
+			"id": "c42ea9d8-51d8-4c02-8a95-408489491577",
 			"key": "xsede_ID",
 			"value": "NONE"
 		},
 		{
-			"id": "155fa448-ca20-4a14-bd0e-417e51123404",
+			"id": "3eb06555-4524-400b-b50b-ffeed6f99a74",
 			"key": "localID",
 			"value": ""
 		},
 		{
-			"id": "d88297a5-c713-497a-803d-fb17ae7f93d4",
+			"id": "f29d3e71-b698-469f-a792-9a26fa4f7774",
 			"key": "resourceID",
 			"value": ""
 		},
 		{
-			"id": "da096f85-1e53-4bc3-91f2-b82c32966c1f",
+			"id": "2206a326-a410-4203-9dcc-43d122bb24ee",
 			"key": "interfaceName",
 			"value": ""
 		},
 		{
-			"id": "689d2924-8ca0-4aa5-9f28-ea80cfc6d03c",
+			"id": "44d44d8e-79cf-4746-b927-8ceab568576b",
 			"key": "serviceType",
 			"value": ""
 		},
 		{
-			"id": "4efea948-938e-44a6-9564-4f7fd0eaf366",
+			"id": "d4cfafe5-e030-45c2-b75b-7fb29d58a765",
 			"key": "appName",
 			"value": ""
 		},
 		{
-			"id": "9f7bea68-194b-4a85-986b-86e7b5d39860",
+			"id": "0fc6685a-c79b-4090-a450-0293cb13953f",
 			"key": "rdr_type",
 			"value": ""
 		},
 		{
-			"id": "7f9e7903-9171-4975-ad71-77ba1a67b473",
+			"id": "533a8f3f-a94a-4874-adb0-d660b6e584c5",
 			"key": "info_siteID",
 			"value": ""
 		},
 		{
-			"id": "95fcf6b0-bf45-4437-ab53-1d95d8c7f7e9",
+			"id": "c7518c38-5aea-4492-ae4a-fe23dc48b27d",
 			"key": "rdr_Type",
 			"value": ""
 		}
