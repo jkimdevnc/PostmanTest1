@@ -1966,6 +1966,11 @@
 				}
 			],
 			"id": "6e2ba222-9d9b-4020-baf3-c199d6b5dc32"
+		},
+		{
+			"name": "New Folder",
+			"item": [],
+			"id": "829e9f05-f34b-463e-bc8b-7c4e5370887c"
 		}
 	],
 	"event": [
@@ -1992,47 +1997,47 @@
 	],
 	"variable": [
 		{
-			"id": "669b201c-8564-4119-97c7-c0156e62321c",
+			"id": "7c53b9d0-008d-4656-a167-ca233a3cb236",
 			"key": "xsede_ID",
 			"value": "NONE"
 		},
 		{
-			"id": "b89060f5-754e-408b-9c83-5c7c5f914c82",
+			"id": "2e294fca-c170-4a09-af21-8abb99152ded",
 			"key": "localID",
 			"value": ""
 		},
 		{
-			"id": "909b4b13-820b-49c4-a389-1509e7ebe467",
+			"id": "1286b9aa-488a-4d6d-809b-b82a393b5d0f",
 			"key": "resourceID",
 			"value": ""
 		},
 		{
-			"id": "4457e230-5d97-4d7d-a2be-66bfc35ee8ec",
+			"id": "09dd7033-02dd-407a-aaf0-a929ab31fe96",
 			"key": "interfaceName",
 			"value": ""
 		},
 		{
-			"id": "2d75f328-315c-403b-99c5-9e15b75e24a6",
+			"id": "26ca461b-ddd8-48bf-abe1-b5c5af7da748",
 			"key": "serviceType",
 			"value": ""
 		},
 		{
-			"id": "2b932adc-599f-4fd6-adfe-6e08db8cc448",
+			"id": "cc500cb2-89ad-4f2c-997a-b3885cac1263",
 			"key": "appName",
 			"value": ""
 		},
 		{
-			"id": "edf3f42f-77d4-4d5e-b584-e2ee2b63c5ca",
+			"id": "d0dfecf8-feb7-4d8c-bc11-ab342867e083",
 			"key": "rdr_type",
 			"value": ""
 		},
 		{
-			"id": "974d6008-0e1e-4bf4-bfd6-0e452bdc751d",
+			"id": "19034ae1-8d5b-4f7b-9898-37de26e54514",
 			"key": "info_siteID",
 			"value": ""
 		},
 		{
-			"id": "7a4a2c9e-e4b9-4ba1-b144-b85ee01ccab4",
+			"id": "4e79e042-9ca8-49d0-bd44-bdc06f9a082f",
 			"key": "rdr_Type",
 			"value": ""
 		}
