@@ -1416,7 +1416,7 @@
 			"id": "a89e9082-1c7b-4183-b844-d55e01aa0ab1"
 		},
 		{
-			"name": "New Folder",
+			"name": "rdr-db",
 			"item": [],
 			"id": "d768aaa9-3ecc-4e2d-8926-094ea2caac76"
 		}
@@ -1445,32 +1445,32 @@
 	],
 	"variable": [
 		{
-			"id": "94ba0522-4802-4a49-a335-e914d2f97d90",
+			"id": "34b61d2b-fdae-4fae-8264-161bd8e76192",
 			"key": "xsede_ID",
 			"value": "NONE"
 		},
 		{
-			"id": "15a5136c-f648-4b4f-9963-ff4fd6ae8acc",
+			"id": "4782e3c7-3e78-4272-82a9-0b6ce6919a05",
 			"key": "localID",
 			"value": ""
 		},
 		{
-			"id": "b0e42a80-ac2c-4aa9-a165-a0dbd5c2ba08",
+			"id": "242f46c9-0a74-458e-a0c4-98efc3bf9d11",
 			"key": "resourceID",
 			"value": ""
 		},
 		{
-			"id": "44c582b7-6644-40bd-958d-583aca2eb3e0",
+			"id": "e4c394d0-e3ca-41b5-b6be-0e68d74b1eda",
 			"key": "interfaceName",
 			"value": ""
 		},
 		{
-			"id": "280e7d4b-29c0-4229-b68e-d3c8028e1328",
+			"id": "b36525de-66bc-4345-9b6c-736f9810a395",
 			"key": "serviceType",
 			"value": ""
 		},
 		{
-			"id": "d3c9dfc6-478f-4520-a745-ce33b22384e5",
+			"id": "8e3c8585-38d8-4467-9941-6231a8ea35bd",
 			"key": "appName",
 			"value": ""
 		}
