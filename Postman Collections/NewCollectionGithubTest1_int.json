@@ -1226,7 +1226,7 @@
 					"response": []
 				},
 				{
-					"name": "services_ID Copy",
+					"name": "outages_ID",
 					"event": [
 						{
 							"listen": "prerequest",
@@ -2150,47 +2150,47 @@
 	],
 	"variable": [
 		{
-			"id": "3da57cc6-7311-4122-a78a-08447b0acceb",
+			"id": "69c65951-b3cf-427f-bf36-76e06a6fcb20",
 			"key": "xsede_ID",
 			"value": "NONE"
 		},
 		{
-			"id": "0e0d2dc2-1bb3-45ff-8c78-b3274dc3bbb8",
+			"id": "4259528d-9cc6-4dd6-b2a5-d1e9632a9f81",
 			"key": "localID",
 			"value": ""
 		},
 		{
-			"id": "2c493a1b-347b-4e12-ad2a-7bec193588c6",
+			"id": "72e30004-8b8e-47ed-9ca1-0160fdc1fa7d",
 			"key": "resourceID",
 			"value": ""
 		},
 		{
-			"id": "a611dc27-07be-4e03-8817-04c28b158cf4",
+			"id": "bcb417c9-f14d-45d7-a5c9-3b81ecf4007e",
 			"key": "interfaceName",
 			"value": ""
 		},
 		{
-			"id": "d0dae355-030a-4a95-8905-4ae5e4922201",
+			"id": "077b0de9-c3f9-4c01-b06f-bf387b7a3f3c",
 			"key": "serviceType",
 			"value": ""
 		},
 		{
-			"id": "199501f9-82a0-4b2a-801f-cac13b5c833b",
+			"id": "dfd6f223-6e34-45c6-8339-333cf3cb40ff",
 			"key": "appName",
 			"value": ""
 		},
 		{
-			"id": "fe5a9edc-c624-4d84-87dc-875a3eb3e7af",
+			"id": "e4ab272a-43c4-4c4e-bd43-48f065889941",
 			"key": "rdr_type",
 			"value": ""
 		},
 		{
-			"id": "39f94138-ea7d-4de7-9d1f-f452d08514ce",
+			"id": "ff5e868f-9cc9-4e34-a68a-515d9c8b0688",
 			"key": "info_siteID",
 			"value": ""
 		},
 		{
-			"id": "3a75582e-a03a-444a-8b1a-8ddb7c9327e2",
+			"id": "907b2109-36f1-4238-85db-5d1e085f6e2e",
 			"key": "rdr_Type",
 			"value": ""
 		}
