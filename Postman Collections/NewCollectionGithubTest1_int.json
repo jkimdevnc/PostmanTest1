@@ -1416,7 +1416,7 @@
 			"id": "a89e9082-1c7b-4183-b844-d55e01aa0ab1"
 		},
 		{
-			"name": "v1_rdr-db",
+			"name": "rdr-db_v1",
 			"item": [
 				{
 					"name": "rdr-xup",
@@ -1523,32 +1523,32 @@
 	],
 	"variable": [
 		{
-			"id": "3bf85178-09f1-429d-b7e7-57e8bea6b0f9",
+			"id": "8b0bfdd2-dca9-4264-b4e6-e22c81a3ca9c",
 			"key": "xsede_ID",
 			"value": "NONE"
 		},
 		{
-			"id": "a8af78db-6346-4c75-bdb0-9563cf6ad1aa",
+			"id": "7f744664-45b7-47ac-a3c3-7dee69c54eb3",
 			"key": "localID",
 			"value": ""
 		},
 		{
-			"id": "b2199b82-3e6a-4b4f-ac2e-417db3f8f793",
+			"id": "bd379798-6279-49ad-8092-6993e53fc866",
 			"key": "resourceID",
 			"value": ""
 		},
 		{
-			"id": "da232e27-fe19-4b60-9dd5-8e7f53eb23eb",
+			"id": "ca79e3b2-4a2f-4026-999f-05c9c3e7348e",
 			"key": "interfaceName",
 			"value": ""
 		},
 		{
-			"id": "a0257a30-4ca7-4aca-ac65-aaa8a70c35e2",
+			"id": "cecc9fdb-5bf0-4bdc-9fa8-5a1e73c26409",
 			"key": "serviceType",
 			"value": ""
 		},
 		{
-			"id": "a7f2b6a6-8918-4b6c-968d-32a2d62ffb92",
+			"id": "d4f4a73c-2dc7-4162-976c-5542b1f55225",
 			"key": "appName",
 			"value": ""
 		}
