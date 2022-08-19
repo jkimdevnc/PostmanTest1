@@ -1524,6 +1524,68 @@
 						"url": "https://info.xsede.org/wh1/rdr-db/v1/rdr-xup/ID/{{xsede_ID}}"
 					},
 					"response": []
+				},
+				{
+					"name": "rdr",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "0f2c93a7-775d-4e46-b7a2-f9b581345ab3",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test(\"Response time is less than 300ms\", function () {",
+									"    pm.expect(pm.response.responseTime).to.be.below(300);",
+									"});",
+									"",
+									"pm.test(\"Save Parameters for next test\", function () {",
+									"    // get mid index of response data array",
+									"    let arrLen = pm.response.json().length;",
+									"    //console.log(arrLen);",
+									"    if (arrLen < 1) {",
+									"        // set ID variable to none and return fail",
+									"        pm.collectionVariables.set(\"xsede_ID\",\"NONE\");",
+									"        pm.expect.fail(\" No element exist!\");",
+									"    }",
+									"",
+									"    let midIdx = Math.floor(arrLen/2);",
+									"    //console.log(midIdx);",
+									"",
+									"    //----------------------------",
+									"    // Save ID",
+									"    // get middle element ",
+									"    ID = pm.response.json()[midIdx].rdr_resource_id;",
+									"    console.log(\"SAVED rdr_resource_id: \" + ID);",
+									"    // set to collection variable",
+									"    pm.collectionVariables.set(\"xsede_ID\", ID);",
+									"",
+									"",
+									"    //-----------------------------------",
+									"    // Save ResourceID",
+									"    // get middle element ",
+									"    resourceId = pm.response.json()[midIdx].info_resourceid;",
+									"    console.log(\"SAVED info_resourceid: \" + resourceId);",
+									"    // set to collection variable",
+									"    pm.collectionVariables.set(\"resourceID\", resourceId);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "d17d5364-2b9d-41f9-ada8-9193932f33ec",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "https://info.xsede.org/wh1/rdr-db/v1/rdr-xup/"
+					},
+					"response": []
 				}
 			],
 			"id": "d768aaa9-3ecc-4e2d-8926-094ea2caac76"
@@ -1553,32 +1615,32 @@
 	],
 	"variable": [
 		{
-			"id": "ded46470-ce10-463f-bf82-d297b6cc5389",
+			"id": "91fbd78c-90b2-4c32-9df4-8a5da8a9c9f1",
 			"key": "xsede_ID",
 			"value": "NONE"
 		},
 		{
-			"id": "5a3f143a-e647-4495-aec5-66020dfc152f",
+			"id": "484be0c0-5dbb-4de9-af83-a1a6a4b46390",
 			"key": "localID",
 			"value": ""
 		},
 		{
-			"id": "1d77f4b3-ef1b-44cd-aae2-662df5b74497",
+			"id": "76dad07d-8d8b-491c-8a04-f6cf75678e9e",
 			"key": "resourceID",
 			"value": ""
 		},
 		{
-			"id": "29263364-66d1-4d02-a97a-988c291112fc",
+			"id": "f6d36cb4-7d79-4ce6-b13b-1e44fec9da76",
 			"key": "interfaceName",
 			"value": ""
 		},
 		{
-			"id": "4bfee3c8-f759-4445-9d1d-7fbca8779625",
+			"id": "295381cf-c5a2-4a14-93d3-660c8db36a85",
 			"key": "serviceType",
 			"value": ""
 		},
 		{
-			"id": "de8794cc-df2f-4234-88f2-d1140508cb84",
+			"id": "f3652ee1-f146-4db4-bd08-aa3e45d7a9fb",
 			"key": "appName",
 			"value": ""
 		}
