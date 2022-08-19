@@ -1393,8 +1393,8 @@
 									"});",
 									"",
 									"",
-									"pm.test(\"Response time is less than 300ms\", function () {",
-									"    pm.expect(pm.response.responseTime).to.be.below(300);",
+									"pm.test(\"Response time is less than 400ms\", function () {",
+									"    pm.expect(pm.response.responseTime).to.be.below(400);",
 									"});",
 									"",
 									""
@@ -2252,47 +2252,47 @@
 	],
 	"variable": [
 		{
-			"id": "1193949c-2601-44d4-ac37-511ecf958ad1",
+			"id": "0558d952-56b6-45c4-8b45-9043a3daeb2c",
 			"key": "xsede_ID",
 			"value": "NONE"
 		},
 		{
-			"id": "e813d63c-c70b-4173-a6c3-316bdffd9db4",
+			"id": "7e46b272-17da-4f98-814e-048c57641a1a",
 			"key": "localID",
 			"value": ""
 		},
 		{
-			"id": "869b6346-5923-4b88-a35e-0c2c32fa7c09",
+			"id": "808c06bf-7782-4556-9cc3-0b2dcfd5b235",
 			"key": "resourceID",
 			"value": ""
 		},
 		{
-			"id": "caa8f017-d2e4-4a87-a66b-5beebb5f63d6",
+			"id": "cc0f40ce-874c-4b7d-bcbf-3dc3db6d746b",
 			"key": "interfaceName",
 			"value": ""
 		},
 		{
-			"id": "aa4651fb-52b2-4905-be83-55a839419fa5",
+			"id": "eb6d2001-b206-461f-8563-49e24b793d1b",
 			"key": "serviceType",
 			"value": ""
 		},
 		{
-			"id": "c314db7c-526b-4e43-9785-c6e6576a4dde",
+			"id": "ab9a5dd1-c3f7-4958-b36f-df9a7ad09f43",
 			"key": "appName",
 			"value": ""
 		},
 		{
-			"id": "b7b0a588-d10a-4ebd-8085-ad7c4eb62596",
+			"id": "0f73ad7b-0bb1-4ca5-a811-6da1cbe8487a",
 			"key": "rdr_type",
 			"value": ""
 		},
 		{
-			"id": "9a463476-5b89-495c-95d4-10a4d99f6971",
+			"id": "afd27744-9038-4d25-8c27-eeef4fb91c3f",
 			"key": "info_siteID",
 			"value": ""
 		},
 		{
-			"id": "11296e6e-628c-4ad8-ac4e-9b42ea40024d",
+			"id": "a089b353-92d4-4351-af45-c23306427bd2",
 			"key": "rdr_Type",
 			"value": ""
 		}
