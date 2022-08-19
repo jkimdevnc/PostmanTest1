@@ -1414,6 +1414,11 @@
 				}
 			],
 			"id": "a89e9082-1c7b-4183-b844-d55e01aa0ab1"
+		},
+		{
+			"name": "New Folder",
+			"item": [],
+			"id": "d768aaa9-3ecc-4e2d-8926-094ea2caac76"
 		}
 	],
 	"event": [
@@ -1440,32 +1445,32 @@
 	],
 	"variable": [
 		{
-			"id": "2170a7ee-3bc0-4a23-864b-390093671e4c",
+			"id": "94ba0522-4802-4a49-a335-e914d2f97d90",
 			"key": "xsede_ID",
 			"value": "NONE"
 		},
 		{
-			"id": "8b073dc6-1f64-411f-99dc-302d0f29e7df",
+			"id": "15a5136c-f648-4b4f-9963-ff4fd6ae8acc",
 			"key": "localID",
 			"value": ""
 		},
 		{
-			"id": "500d842b-e721-46af-a835-43808a09fe45",
+			"id": "b0e42a80-ac2c-4aa9-a165-a0dbd5c2ba08",
 			"key": "resourceID",
 			"value": ""
 		},
 		{
-			"id": "0fd99c85-70a6-4fed-984e-d3d5b8e8a5eb",
+			"id": "44c582b7-6644-40bd-958d-583aca2eb3e0",
 			"key": "interfaceName",
 			"value": ""
 		},
 		{
-			"id": "71989c2e-07ad-4fa2-9f58-ef9c7514b69e",
+			"id": "280e7d4b-29c0-4229-b68e-d3c8028e1328",
 			"key": "serviceType",
 			"value": ""
 		},
 		{
-			"id": "82e9ae41-7f14-40ab-82b0-f378caf14bbc",
+			"id": "d3c9dfc6-478f-4520-a745-ce33b22384e5",
 			"key": "appName",
 			"value": ""
 		}
