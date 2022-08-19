@@ -1417,7 +1417,85 @@
 		},
 		{
 			"name": "rdr-db",
-			"item": [],
+			"item": [
+				{
+					"name": "rdr-xup",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "0f2c93a7-775d-4e46-b7a2-f9b581345ab3",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test(\"Response time is less than 300ms\", function () {",
+									"    pm.expect(pm.response.responseTime).to.be.below(300);",
+									"});",
+									"",
+									"pm.test(\"Save Parameters for next test\", function () {",
+									"    // get mid index of response data array",
+									"    let arrLen = pm.response.json().length;",
+									"    //console.log(arrLen);",
+									"    if (arrLen < 1) {",
+									"        // set ID variable to none and return fail",
+									"        pm.collectionVariables.set(\"xsede_ID\",\"NONE\");",
+									"        pm.expect.fail(\" No element exist!\");",
+									"    }",
+									"",
+									"    let midIdx = Math.floor(arrLen/2);",
+									"    //console.log(midIdx);",
+									"",
+									"    //----------------------------",
+									"    // Save ID",
+									"    // get middle element ",
+									"    ID = pm.response.json()[midIdx].ID;",
+									"    console.log(\"SAVED ID: \" + ID);",
+									"    // set to collection variable",
+									"    pm.collectionVariables.set(\"xsede_ID\", ID);",
+									"",
+									"    //-----------------------------------",
+									"    // Save InterfaceName",
+									"    // get middle element ",
+									"    interfaceName = pm.response.json()[midIdx].InterfaceName;",
+									"    console.log(\"SAVED InterfaceName: \" + interfaceName);",
+									"    // set ID to collection variable",
+									"    pm.collectionVariables.set(\"interfaceName\", interfaceName);",
+									"",
+									"    //-----------------------------------",
+									"    // Save ResourceID",
+									"    // get middle element ",
+									"    resourceID = pm.response.json()[midIdx].ResourceID;",
+									"    console.log(\"SAVED ResourceID: \" + resourceID);",
+									"    // set to collection variable",
+									"    pm.collectionVariables.set(\"resourceID\", resourceID);",
+									"",
+									"    //-----------------------------------",
+									"    // Save ServiceType",
+									"    // get middle element ",
+									"    serviceType = pm.response.json()[midIdx].ServiceType;",
+									"    console.log(\"SAVED ServiceType: \" + serviceType);",
+									"    // set to collection variable",
+									"    pm.collectionVariables.set(\"serviceType\", serviceType);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "b2a4a386-47a9-4137-b4ff-7a6996416e8c",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "https://info.xsede.org/wh1/glue2-views-api/v1/services/"
+					},
+					"response": []
+				}
+			],
 			"id": "d768aaa9-3ecc-4e2d-8926-094ea2caac76"
 		}
 	],
@@ -1445,32 +1523,32 @@
 	],
 	"variable": [
 		{
-			"id": "34b61d2b-fdae-4fae-8264-161bd8e76192",
+			"id": "5ec8b434-84a7-4d4f-a2b0-ec5f15da43fc",
 			"key": "xsede_ID",
 			"value": "NONE"
 		},
 		{
-			"id": "4782e3c7-3e78-4272-82a9-0b6ce6919a05",
+			"id": "1724617e-4c40-4f23-b8a2-aa8bae81ab9a",
 			"key": "localID",
 			"value": ""
 		},
 		{
-			"id": "242f46c9-0a74-458e-a0c4-98efc3bf9d11",
+			"id": "a485e965-fd91-44e0-a7a7-c079826165a0",
 			"key": "resourceID",
 			"value": ""
 		},
 		{
-			"id": "e4c394d0-e3ca-41b5-b6be-0e68d74b1eda",
+			"id": "559757b0-d8bf-4895-8dd8-a955a4c157bf",
 			"key": "interfaceName",
 			"value": ""
 		},
 		{
-			"id": "b36525de-66bc-4345-9b6c-736f9810a395",
+			"id": "991d2273-7886-410a-90d1-f5f8838b9638",
 			"key": "serviceType",
 			"value": ""
 		},
 		{
-			"id": "8e3c8585-38d8-4467-9941-6231a8ea35bd",
+			"id": "5b65cffc-7fec-4cea-891b-8d7be8a862c7",
 			"key": "appName",
 			"value": ""
 		}
