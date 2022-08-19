@@ -1455,13 +1455,6 @@
 									"    // set to collection variable",
 									"    pm.collectionVariables.set(\"xsede_ID\", ID);",
 									"",
-									"    //-----------------------------------",
-									"    // Save InterfaceName",
-									"    // get middle element ",
-									"    interfaceName = pm.response.json()[midIdx].InterfaceName;",
-									"    console.log(\"SAVED InterfaceName: \" + interfaceName);",
-									"    // set ID to collection variable",
-									"    pm.collectionVariables.set(\"interfaceName\", interfaceName);",
 									"",
 									"    //-----------------------------------",
 									"    // Save ResourceID",
@@ -1470,14 +1463,6 @@
 									"    console.log(\"SAVED ResourceID: \" + resourceID);",
 									"    // set to collection variable",
 									"    pm.collectionVariables.set(\"resourceID\", resourceID);",
-									"",
-									"    //-----------------------------------",
-									"    // Save ServiceType",
-									"    // get middle element ",
-									"    serviceType = pm.response.json()[midIdx].ServiceType;",
-									"    console.log(\"SAVED ServiceType: \" + serviceType);",
-									"    // set to collection variable",
-									"    pm.collectionVariables.set(\"serviceType\", serviceType);",
 									"});"
 								],
 								"type": "text/javascript"
@@ -1523,32 +1508,32 @@
 	],
 	"variable": [
 		{
-			"id": "880d1ccd-e078-4106-9be2-d7a11ab33c66",
+			"id": "00b7c8fa-5a8f-4dbe-87d2-c671f0e92508",
 			"key": "xsede_ID",
 			"value": "NONE"
 		},
 		{
-			"id": "6c47d47f-b1fa-4c98-88c8-44336a6b4a81",
+			"id": "bf65dec0-1f66-46e2-921e-54a93f9d71ed",
 			"key": "localID",
 			"value": ""
 		},
 		{
-			"id": "c1ab5808-0889-47e1-a788-3063aa5b3e5c",
+			"id": "f2422c09-36bd-4aa6-8cf4-fb56db5a4d14",
 			"key": "resourceID",
 			"value": ""
 		},
 		{
-			"id": "63f1957e-2750-47db-905c-1646d50d73f6",
+			"id": "101dd608-b212-42ac-b6c6-7ae3f3a10689",
 			"key": "interfaceName",
 			"value": ""
 		},
 		{
-			"id": "7e8d7d7f-a1a5-45f5-be8e-b4eff1625d3f",
+			"id": "346d7df5-4c7e-466f-b82c-830a9fc6d5df",
 			"key": "serviceType",
 			"value": ""
 		},
 		{
-			"id": "ed1f68a7-f1d9-476d-a589-c232b1d521d5",
+			"id": "ee2c23bf-97d5-4678-91c7-00f8e931d573",
 			"key": "appName",
 			"value": ""
 		}
