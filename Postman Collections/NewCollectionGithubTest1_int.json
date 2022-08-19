@@ -1833,12 +1833,138 @@
 		},
 		{
 			"name": "rdr-db_v2",
-			"item": [],
+			"item": [
+				{
+					"name": "rdr-xup",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "0f2c93a7-775d-4e46-b7a2-f9b581345ab3",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test(\"Response time is less than 1000ms\", function () {",
+									"    pm.expect(pm.response.responseTime).to.be.below(1000);",
+									"});",
+									"",
+									"pm.test(\"Save Parameters for next test\", function () {",
+									"    // get mid index of response data array",
+									"    let arrLen = pm.response.json().length;",
+									"    //console.log(arrLen);",
+									"    if (arrLen < 1) {",
+									"        // set ID variable to none and return fail",
+									"        pm.collectionVariables.set(\"xsede_ID\",\"NONE\");",
+									"        pm.expect.fail(\" No element exist!\");",
+									"    }",
+									"",
+									"    let midIdx = Math.floor(arrLen/2);",
+									"    //console.log(midIdx);",
+									"",
+									"    //----------------------------",
+									"    // Save ID",
+									"    // get middle element ",
+									"    ID = pm.response.json()[midIdx].rdr_resource_id;",
+									"    console.log(\"SAVED rdr_resource_id: \" + ID);",
+									"    // set to collection variable",
+									"    pm.collectionVariables.set(\"xsede_ID\", ID);",
+									"",
+									"",
+									"    //-----------------------------------",
+									"    // Save ResourceID",
+									"    // get middle element ",
+									"    resourceId = pm.response.json()[midIdx].info_resourceid;",
+									"    console.log(\"SAVED info_resourceid: \" + resourceId);",
+									"    // set to collection variable",
+									"    pm.collectionVariables.set(\"resourceID\", resourceId);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "03b11362-10d9-4fe2-8bc8-76218171ed54",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "https://info.xsede.org/wh1/rdr-db/v1/rdr-xup/"
+					},
+					"response": []
+				}
+			],
 			"id": "735d7f58-d407-495d-82bb-c762cb401258"
 		},
 		{
 			"name": "rdr-db_v3",
-			"item": [],
+			"item": [
+				{
+					"name": "rdr-xup Copy",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "0f2c93a7-775d-4e46-b7a2-f9b581345ab3",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test(\"Response time is less than 1000ms\", function () {",
+									"    pm.expect(pm.response.responseTime).to.be.below(1000);",
+									"});",
+									"",
+									"pm.test(\"Save Parameters for next test\", function () {",
+									"    // get mid index of response data array",
+									"    let arrLen = pm.response.json().length;",
+									"    //console.log(arrLen);",
+									"    if (arrLen < 1) {",
+									"        // set ID variable to none and return fail",
+									"        pm.collectionVariables.set(\"xsede_ID\",\"NONE\");",
+									"        pm.expect.fail(\" No element exist!\");",
+									"    }",
+									"",
+									"    let midIdx = Math.floor(arrLen/2);",
+									"    //console.log(midIdx);",
+									"",
+									"    //----------------------------",
+									"    // Save ID",
+									"    // get middle element ",
+									"    ID = pm.response.json()[midIdx].rdr_resource_id;",
+									"    console.log(\"SAVED rdr_resource_id: \" + ID);",
+									"    // set to collection variable",
+									"    pm.collectionVariables.set(\"xsede_ID\", ID);",
+									"",
+									"",
+									"    //-----------------------------------",
+									"    // Save ResourceID",
+									"    // get middle element ",
+									"    resourceId = pm.response.json()[midIdx].info_resourceid;",
+									"    console.log(\"SAVED info_resourceid: \" + resourceId);",
+									"    // set to collection variable",
+									"    pm.collectionVariables.set(\"resourceID\", resourceId);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "9914d712-ebf8-4edc-88cf-89933360313a",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "https://info.xsede.org/wh1/rdr-db/v1/rdr-xup/"
+					},
+					"response": []
+				}
+			],
 			"id": "6e2ba222-9d9b-4020-baf3-c199d6b5dc32"
 		}
 	],
@@ -1866,47 +1992,47 @@
 	],
 	"variable": [
 		{
-			"id": "04a3a6bc-cadb-4547-a406-7924914439c8",
+			"id": "02d799b0-4f32-46e7-b4f5-d6c457c0bf00",
 			"key": "xsede_ID",
 			"value": "NONE"
 		},
 		{
-			"id": "83505aa3-775a-446b-a3d1-c48a975391b8",
+			"id": "570537aa-7f67-4f4e-8272-873327ce54fd",
 			"key": "localID",
 			"value": ""
 		},
 		{
-			"id": "6c5d14c6-4d39-46d4-976f-719e809ac21e",
+			"id": "8fdac392-fd5e-452b-9151-24fb64a0055d",
 			"key": "resourceID",
 			"value": ""
 		},
 		{
-			"id": "c11d7416-dd4a-4dc6-b34e-dcee374b83a4",
+			"id": "b08a647c-c212-4295-8642-60800d480ca4",
 			"key": "interfaceName",
 			"value": ""
 		},
 		{
-			"id": "f8f16878-d684-4bd3-ae01-2f9edb41e644",
+			"id": "7caf7ed0-328b-4c9f-b034-6e6e1a45bf02",
 			"key": "serviceType",
 			"value": ""
 		},
 		{
-			"id": "9e7709bf-d9ef-49d5-9b2d-92dbdccaa58f",
+			"id": "84a8c020-a1fd-42e1-af73-1dc91cae7d6c",
 			"key": "appName",
 			"value": ""
 		},
 		{
-			"id": "20c537c3-fb50-4c94-900c-62848125f965",
+			"id": "821689ba-e141-4c76-9669-c815e445ffb5",
 			"key": "rdr_type",
 			"value": ""
 		},
 		{
-			"id": "7b0b1d89-1669-44d0-b19e-be6602e355b5",
+			"id": "fbfd087f-06de-4599-bb37-40b308d119d6",
 			"key": "info_siteID",
 			"value": ""
 		},
 		{
-			"id": "d38003c8-4f09-4864-b7e6-fb299cea26bd",
+			"id": "abd609bc-ad57-490a-85b5-d8275e043d53",
 			"key": "rdr_Type",
 			"value": ""
 		}
