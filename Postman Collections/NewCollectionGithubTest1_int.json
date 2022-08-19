@@ -1200,13 +1200,6 @@
 									"    // set to collection variable",
 									"    pm.collectionVariables.set(\"xsede_ID\", ID);",
 									"",
-									"    //-----------------------------------",
-									"    // Save InterfaceName",
-									"    // get middle element ",
-									"    interfaceName = pm.response.json()[midIdx].InterfaceName;",
-									"    console.log(\"SAVED InterfaceName: \" + interfaceName);",
-									"    // set ID to collection variable",
-									"    pm.collectionVariables.set(\"interfaceName\", interfaceName);",
 									"",
 									"    //-----------------------------------",
 									"    // Save ResourceID",
@@ -1215,14 +1208,6 @@
 									"    console.log(\"SAVED ResourceID: \" + resourceID);",
 									"    // set to collection variable",
 									"    pm.collectionVariables.set(\"resourceID\", resourceID);",
-									"",
-									"    //-----------------------------------",
-									"    // Save ServiceType",
-									"    // get middle element ",
-									"    serviceType = pm.response.json()[midIdx].ServiceType;",
-									"    console.log(\"SAVED ServiceType: \" + serviceType);",
-									"    // set to collection variable",
-									"    pm.collectionVariables.set(\"serviceType\", serviceType);",
 									"});"
 								],
 								"type": "text/javascript"
@@ -2078,47 +2063,47 @@
 	],
 	"variable": [
 		{
-			"id": "80e60b33-c941-4d77-a621-b19fa12185db",
+			"id": "1f592d10-724a-417b-8242-84eadae13ee8",
 			"key": "xsede_ID",
 			"value": "NONE"
 		},
 		{
-			"id": "2a338072-069c-4b32-bad9-f9af16f8e4f2",
+			"id": "f64372d9-4d76-4b85-8f20-ee4c49531184",
 			"key": "localID",
 			"value": ""
 		},
 		{
-			"id": "c1acf2ad-283f-46f8-8ec1-5f4d1043f28d",
+			"id": "7bb8c081-c684-420d-a547-0033e79bf85a",
 			"key": "resourceID",
 			"value": ""
 		},
 		{
-			"id": "b1106749-3516-4713-b994-fbca5d1d15ba",
+			"id": "ed76503e-bcea-449b-8329-ac0694837d02",
 			"key": "interfaceName",
 			"value": ""
 		},
 		{
-			"id": "9af14f63-4510-42e9-a2ac-2fc889fa63b8",
+			"id": "6da95228-8dc1-42f0-9a2b-532d0755cedc",
 			"key": "serviceType",
 			"value": ""
 		},
 		{
-			"id": "a77853e4-5f80-4416-b8ed-a5b48e1c934a",
+			"id": "fcfd1ce9-9b5d-4ee8-857a-3181c3978d6b",
 			"key": "appName",
 			"value": ""
 		},
 		{
-			"id": "ece73200-6c3d-40c1-8824-bfa38e8ab64c",
+			"id": "067e23a2-f46a-4772-b915-91430e09e420",
 			"key": "rdr_type",
 			"value": ""
 		},
 		{
-			"id": "3ae9e403-ae3a-4dc4-940f-1747f4f96a4b",
+			"id": "144e6099-4507-43aa-8e8d-cf468e37a857",
 			"key": "info_siteID",
 			"value": ""
 		},
 		{
-			"id": "7d9e7fdf-11f5-4b4a-a8fe-7dea1e56b385",
+			"id": "8b5bfa39-4014-460e-96ed-d76b3e4d4067",
 			"key": "rdr_Type",
 			"value": ""
 		}
