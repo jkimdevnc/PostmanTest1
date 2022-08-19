@@ -1614,7 +1614,7 @@
 									"    rdrType = pm.response.json().result_set[midIdx].rdr_type;",
 									"    console.log(\"SAVED rdr_type: \" + rdrType);",
 									"    // set to collection variable",
-									"    pm.collectionVariables.set(\"rdr_type\", rdrType);",
+									"    pm.collectionVariables.set(\"rdr_Type\", rdrType);",
 									"",
 									"    //-----------------------------------",
 									"    // Save ResourceID",
@@ -1627,10 +1627,10 @@
 									"    //-----------------------------------",
 									"    // Save info_siteid",
 									"    // get middle element ",
-									"    infoSiteid = pm.response.json().result_set[midIdx].info_siteid;",
-									"    console.log(\"SAVED info_siteid: \" + infoSiteid);",
+									"    infoSiteId = pm.response.json().result_set[midIdx].info_siteid;",
+									"    console.log(\"SAVED info_siteid: \" + infoSiteId);",
 									"    // set to collection variable",
-									"    pm.collectionVariables.set(\"info_siteid\", infoSiteid);",
+									"    pm.collectionVariables.set(\"info_siteID\", infoSiteId);",
 									"});"
 								],
 								"type": "text/javascript"
@@ -1811,42 +1811,42 @@
 	],
 	"variable": [
 		{
-			"id": "0c13a404-eea0-4730-8ad3-9f5aa514710a",
+			"id": "ce286f56-b3c6-409c-a7a6-690f468bd2fb",
 			"key": "xsede_ID",
 			"value": "NONE"
 		},
 		{
-			"id": "06d93d35-a131-4ae0-a8b0-bbeceba9e2c6",
+			"id": "465beea0-8dac-4c92-b249-d498f6c8b7a9",
 			"key": "localID",
 			"value": ""
 		},
 		{
-			"id": "7e1c8aa2-0161-4a7d-b035-e9592f4f81eb",
+			"id": "b458d831-a044-426a-8582-837d039d38f9",
 			"key": "resourceID",
 			"value": ""
 		},
 		{
-			"id": "585964e8-de95-43a8-8c7f-058f9d3aa49c",
+			"id": "b376f720-2778-4ca1-9e3a-f9a496c9346c",
 			"key": "interfaceName",
 			"value": ""
 		},
 		{
-			"id": "7c377af9-13c5-41b0-ad31-4f138f41d907",
+			"id": "8dc892ee-c966-426e-bd05-c14d46e0a541",
 			"key": "serviceType",
 			"value": ""
 		},
 		{
-			"id": "abb6a16c-f9b5-4dc7-ad7c-e7b0d3c82e7a",
+			"id": "8c7e2a62-7365-4cf2-a973-0f47886aaa31",
 			"key": "appName",
 			"value": ""
 		},
 		{
-			"id": "db7b0de5-2543-4b0c-acee-3a75b1c5577a",
+			"id": "5c31a2c6-0f54-43a6-a8ef-30bdc2fbc76a",
 			"key": "rdr_type",
 			"value": ""
 		},
 		{
-			"id": "b2e4b8cf-7fb4-4ea3-80e2-c8d60b78166f",
+			"id": "2b6459a0-5ed5-45b1-a0a6-925ef9375439",
 			"key": "info_siteID",
 			"value": ""
 		}
