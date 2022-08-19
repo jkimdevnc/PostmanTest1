@@ -260,7 +260,7 @@
 			]
 		},
 		{
-			"name": "v1_glue2-view-api",
+			"name": "glue2-view-api_v1",
 			"item": [
 				{
 					"name": "services-spf",
@@ -1523,32 +1523,32 @@
 	],
 	"variable": [
 		{
-			"id": "a23697fa-e493-4497-8e4f-9f8e131d5608",
+			"id": "3bf85178-09f1-429d-b7e7-57e8bea6b0f9",
 			"key": "xsede_ID",
 			"value": "NONE"
 		},
 		{
-			"id": "8a3573e1-fd4c-4fe2-b664-565f9b3b975d",
+			"id": "a8af78db-6346-4c75-bdb0-9563cf6ad1aa",
 			"key": "localID",
 			"value": ""
 		},
 		{
-			"id": "ae88a323-b5ba-4283-96c5-8212e4c580a3",
+			"id": "b2199b82-3e6a-4b4f-ac2e-417db3f8f793",
 			"key": "resourceID",
 			"value": ""
 		},
 		{
-			"id": "39309cb8-39f4-426a-9f5d-aa55771d3654",
+			"id": "da232e27-fe19-4b60-9dd5-8e7f53eb23eb",
 			"key": "interfaceName",
 			"value": ""
 		},
 		{
-			"id": "530458f2-bd0a-453f-b80f-2400ddb33a41",
+			"id": "a0257a30-4ca7-4aca-ac65-aaa8a70c35e2",
 			"key": "serviceType",
 			"value": ""
 		},
 		{
-			"id": "375501ca-3854-48bf-9665-a8a438c9418b",
+			"id": "a7f2b6a6-8918-4b6c-968d-32a2d62ffb92",
 			"key": "appName",
 			"value": ""
 		}
