@@ -1224,6 +1224,93 @@
 						"url": "https://info.xsede.org/wh1/outages/v1/outages/"
 					},
 					"response": []
+				},
+				{
+					"name": "services_ID Copy",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "27796364-d966-4cbc-9914-40fb53fcc0ce",
+								"exec": [
+									"",
+									"// collection variables that are set by previous test",
+									"console.log(\"Loaded ID: \" + pm.collectionVariables.get(\"xsede_ID\"));",
+									"",
+									"",
+									"",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "dfa6f311-f0ae-4c58-bfab-e18de08d2e6a",
+								"exec": [
+									"",
+									"pm.test(\"Response time is less than 200ms\", function () {",
+									"    pm.expect(pm.response.responseTime).to.be.below(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "f87aa610-da38-474c-a453-24ae6df7cdaf",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "https://info.xsede.org/wh1/outages/v1/outages/ID/{{xsede_ID}}"
+					},
+					"response": []
+				},
+				{
+					"name": "services_ResourceID Copy",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "27796364-d966-4cbc-9914-40fb53fcc0ce",
+								"exec": [
+									"// collection variables that are set by previous test",
+									"console.log(\"Loaded ResourceID: \" + pm.collectionVariables.get(\"resourceID\"));",
+									"",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "dfa6f311-f0ae-4c58-bfab-e18de08d2e6a",
+								"exec": [
+									"",
+									"pm.test(\"Response time is less than 200ms\", function () {",
+									"    pm.expect(pm.response.responseTime).to.be.below(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "16c35fa6-9eea-4195-a9d5-69c16c097dba",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "https://info.xsede.org/wh1/glue2-views-api/v1/services/ResourceID/{{resourceID}}"
+					},
+					"response": []
 				}
 			],
 			"id": "829e9f05-f34b-463e-bc8b-7c4e5370887c"
@@ -2063,47 +2150,47 @@
 	],
 	"variable": [
 		{
-			"id": "6e6954e5-1d0d-4169-8b07-1370d841e0ef",
+			"id": "3da57cc6-7311-4122-a78a-08447b0acceb",
 			"key": "xsede_ID",
 			"value": "NONE"
 		},
 		{
-			"id": "19e4eada-6557-45a4-a2df-a40fc6179e9e",
+			"id": "0e0d2dc2-1bb3-45ff-8c78-b3274dc3bbb8",
 			"key": "localID",
 			"value": ""
 		},
 		{
-			"id": "23531306-4b4c-459d-b41c-2da3027ba874",
+			"id": "2c493a1b-347b-4e12-ad2a-7bec193588c6",
 			"key": "resourceID",
 			"value": ""
 		},
 		{
-			"id": "0f7b5270-da6f-4c9b-87ee-8ff36c6e4852",
+			"id": "a611dc27-07be-4e03-8817-04c28b158cf4",
 			"key": "interfaceName",
 			"value": ""
 		},
 		{
-			"id": "6ed2ac86-6410-4fa5-9ac5-12ead2a25256",
+			"id": "d0dae355-030a-4a95-8905-4ae5e4922201",
 			"key": "serviceType",
 			"value": ""
 		},
 		{
-			"id": "a7de6f6f-a2d5-4be3-a22f-ad4a0f4b76f5",
+			"id": "199501f9-82a0-4b2a-801f-cac13b5c833b",
 			"key": "appName",
 			"value": ""
 		},
 		{
-			"id": "75d1c55c-798b-4e5b-8517-3cde9d601c96",
+			"id": "fe5a9edc-c624-4d84-87dc-875a3eb3e7af",
 			"key": "rdr_type",
 			"value": ""
 		},
 		{
-			"id": "a7c70bb0-a849-47b5-9aea-1787ac626d7b",
+			"id": "39f94138-ea7d-4de7-9d1f-f452d08514ce",
 			"key": "info_siteID",
 			"value": ""
 		},
 		{
-			"id": "9e94b632-515b-4728-8094-b9edc0a09d27",
+			"id": "3a75582e-a03a-444a-8b1a-8ddb7c9327e2",
 			"key": "rdr_Type",
 			"value": ""
 		}
