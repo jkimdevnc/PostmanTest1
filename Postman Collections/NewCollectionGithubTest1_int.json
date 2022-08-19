@@ -1311,6 +1311,71 @@
 						"url": "https://info.xsede.org/wh1/outages/v1/outages/ResourceID/{{resourceID}}"
 					},
 					"response": []
+				},
+				{
+					"name": "outagesCurrent",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "0f2c93a7-775d-4e46-b7a2-f9b581345ab3",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"// SKIP as this can take upto 7sec or more. ",
+									"// May add back later when it becomes more in range. ",
+									"// Otherwise remove this test. ",
+									"pm.test.skip(\"Response time is less than 1500ms\", function () {",
+									"    pm.expect(pm.response.responseTime).to.be.below(1500);",
+									"});",
+									"",
+									"pm.test(\"Save Parameters for next test\", function () {",
+									"    // get mid index of response data array",
+									"    let arrLen = pm.response.json().length;",
+									"    //console.log(arrLen);",
+									"    if (arrLen < 1) {",
+									"        // set ID variable to none and return fail",
+									"        pm.collectionVariables.set(\"xsede_ID\",\"NONE\");",
+									"        pm.expect.fail(\" No element exist!\");",
+									"    }",
+									"",
+									"    let midIdx = Math.floor(arrLen/2);",
+									"    //console.log(midIdx);",
+									"",
+									"    //----------------------------",
+									"    // Save ID",
+									"    // get middle element ",
+									"    ID = pm.response.json()[midIdx].ID;",
+									"    console.log(\"SAVED ID: \" + ID);",
+									"    // set to collection variable",
+									"    pm.collectionVariables.set(\"xsede_ID\", ID);",
+									"",
+									"",
+									"    //-----------------------------------",
+									"    // Save ResourceID",
+									"    // get middle element ",
+									"    resourceID = pm.response.json()[midIdx].ResourceID;",
+									"    console.log(\"SAVED ResourceID: \" + resourceID);",
+									"    // set to collection variable",
+									"    pm.collectionVariables.set(\"resourceID\", resourceID);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "6dd75d5f-cb4c-490a-81b1-608909e6c930",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "https://info.xsede.org/wh1/outages/v1/outages/"
+					},
+					"response": []
 				}
 			],
 			"id": "829e9f05-f34b-463e-bc8b-7c4e5370887c"
@@ -2150,47 +2215,47 @@
 	],
 	"variable": [
 		{
-			"id": "5dc20d37-eb9c-4d79-881b-b04a2b4d8f90",
+			"id": "fa56e692-7963-4770-9bda-dd8bd8db8565",
 			"key": "xsede_ID",
 			"value": "NONE"
 		},
 		{
-			"id": "9f79ae23-a410-481f-bfb1-23ace8abd6f4",
+			"id": "2aa1918f-3c9d-4654-b26f-f068c24614cb",
 			"key": "localID",
 			"value": ""
 		},
 		{
-			"id": "a06499cd-d279-41cc-ba43-b7324775a774",
+			"id": "3ab88e3a-3a63-417b-8ae4-17aaa9e858ea",
 			"key": "resourceID",
 			"value": ""
 		},
 		{
-			"id": "15556600-c207-4752-9fbb-62e4a3142e57",
+			"id": "c1f94989-f085-45f3-800d-24af87de474e",
 			"key": "interfaceName",
 			"value": ""
 		},
 		{
-			"id": "64cbd73e-e392-4a15-b128-efae5601a2da",
+			"id": "b0ff9ec6-7979-438e-b8a8-aaebb51cea4b",
 			"key": "serviceType",
 			"value": ""
 		},
 		{
-			"id": "792eac42-93c9-4579-8105-bcb81c2769ea",
+			"id": "21d6eba7-caa3-459e-ab4f-a3f041286a07",
 			"key": "appName",
 			"value": ""
 		},
 		{
-			"id": "55ce9b97-a47d-42c0-9417-659cfeb2915a",
+			"id": "94ac6a3a-ba12-4f4c-b808-3a11d42bd556",
 			"key": "rdr_type",
 			"value": ""
 		},
 		{
-			"id": "3577c70a-c3dd-4994-bc71-e8b146454d35",
+			"id": "1d4b7cbd-6ae1-4e10-8128-bb249304d377",
 			"key": "info_siteID",
 			"value": ""
 		},
 		{
-			"id": "6a0c1939-522f-4108-97cc-092382f071c2",
+			"id": "a3bbec8b-7b97-48c2-b883-a88877ee70ef",
 			"key": "rdr_Type",
 			"value": ""
 		}
