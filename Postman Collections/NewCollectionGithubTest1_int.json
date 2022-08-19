@@ -1903,7 +1903,7 @@
 			"name": "rdr-db_v3",
 			"item": [
 				{
-					"name": "rdr-xup Copy",
+					"name": "rdr-xup",
 					"event": [
 						{
 							"listen": "test",
@@ -1992,47 +1992,47 @@
 	],
 	"variable": [
 		{
-			"id": "beba6f12-1be9-4b50-b5d8-2c517737ebb2",
+			"id": "c4b30a31-528d-4891-9078-aa08b1ac18f1",
 			"key": "xsede_ID",
 			"value": "NONE"
 		},
 		{
-			"id": "01264a19-b3e9-437a-acf6-98ad9b1311b3",
+			"id": "f46ce383-ae63-4c30-9da9-2ecc14f7aba7",
 			"key": "localID",
 			"value": ""
 		},
 		{
-			"id": "089fa6cb-4006-463a-a629-15b94a86acd7",
+			"id": "48e9cd86-66ab-41f5-92f6-3e9a4ec5c877",
 			"key": "resourceID",
 			"value": ""
 		},
 		{
-			"id": "c9da87ff-963b-41f6-9dfb-a362401427c0",
+			"id": "690e68dc-5479-4144-a74c-a0fae8acbdc0",
 			"key": "interfaceName",
 			"value": ""
 		},
 		{
-			"id": "4b61743c-a01e-49f6-8bbe-3146ea7e72f8",
+			"id": "34efa107-bc72-4511-8caf-a48f7e781ff1",
 			"key": "serviceType",
 			"value": ""
 		},
 		{
-			"id": "d61a9f72-c2e3-456c-838c-7dfe5522c946",
+			"id": "1cef00d1-c78a-4e9c-9b03-d300fda43eaf",
 			"key": "appName",
 			"value": ""
 		},
 		{
-			"id": "540eba42-cd0c-438a-8a7d-7a3e90cabec1",
+			"id": "09b015c8-50f7-4e68-84c6-6fa9093362bc",
 			"key": "rdr_type",
 			"value": ""
 		},
 		{
-			"id": "b8efafdc-f734-41e7-aabf-e27a94ccea36",
+			"id": "41a8d099-ce64-4a11-8616-baf0d2e084f5",
 			"key": "info_siteID",
 			"value": ""
 		},
 		{
-			"id": "81cfa785-58bd-4256-b91a-e86144542e1c",
+			"id": "0aba8105-09a6-4270-ae25-4eb4e28e20ec",
 			"key": "rdr_Type",
 			"value": ""
 		}
