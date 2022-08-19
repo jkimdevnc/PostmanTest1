@@ -1308,7 +1308,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": "https://info.xsede.org/wh1/glue2-views-api/v1/services/ResourceID/{{resourceID}}"
+						"url": "https://info.xsede.org/wh1/outages/v1/outages/ResourceID/{{resourceID}}"
 					},
 					"response": []
 				}
@@ -2150,47 +2150,47 @@
 	],
 	"variable": [
 		{
-			"id": "69c65951-b3cf-427f-bf36-76e06a6fcb20",
+			"id": "fccf0444-6e75-45db-a013-a62cf06c970e",
 			"key": "xsede_ID",
 			"value": "NONE"
 		},
 		{
-			"id": "4259528d-9cc6-4dd6-b2a5-d1e9632a9f81",
+			"id": "296955bd-3290-4586-9316-7d8a35b75a13",
 			"key": "localID",
 			"value": ""
 		},
 		{
-			"id": "72e30004-8b8e-47ed-9ca1-0160fdc1fa7d",
+			"id": "2c980513-f9f6-40fd-afb2-ff5137955d6b",
 			"key": "resourceID",
 			"value": ""
 		},
 		{
-			"id": "bcb417c9-f14d-45d7-a5c9-3b81ecf4007e",
+			"id": "872edd2c-358d-4b1f-a7f4-d250b2af91d8",
 			"key": "interfaceName",
 			"value": ""
 		},
 		{
-			"id": "077b0de9-c3f9-4c01-b06f-bf387b7a3f3c",
+			"id": "dc2c4a14-8438-4d00-b780-4d4fd2123e36",
 			"key": "serviceType",
 			"value": ""
 		},
 		{
-			"id": "dfd6f223-6e34-45c6-8339-333cf3cb40ff",
+			"id": "4369a39d-eb3f-48a7-b74e-b90ce73dc4a5",
 			"key": "appName",
 			"value": ""
 		},
 		{
-			"id": "e4ab272a-43c4-4c4e-bd43-48f065889941",
+			"id": "8fe78f5d-c7b9-4aeb-b4c6-e9bc7093d528",
 			"key": "rdr_type",
 			"value": ""
 		},
 		{
-			"id": "ff5e868f-9cc9-4e34-a68a-515d9c8b0688",
+			"id": "9d4364a4-950e-430c-8554-35acb1c4e080",
 			"key": "info_siteID",
 			"value": ""
 		},
 		{
-			"id": "907b2109-36f1-4238-85db-5d1e085f6e2e",
+			"id": "34b17eaf-8fc5-47aa-813d-727db10b2c8d",
 			"key": "rdr_Type",
 			"value": ""
 		}
