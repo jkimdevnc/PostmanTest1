@@ -1172,7 +1172,9 @@
 									"    pm.response.to.have.status(200);",
 									"});",
 									"",
-									"// SKIP as this can take upto 7sec or more",
+									"// SKIP as this can take upto 7sec or more. ",
+									"// May add back later when it becomes more in range. ",
+									"// Otherwise remove this test. ",
 									"pm.test.skip(\"Response time is less than 1500ms\", function () {",
 									"    pm.expect(pm.response.responseTime).to.be.below(1500);",
 									"});",
@@ -2076,47 +2078,47 @@
 	],
 	"variable": [
 		{
-			"id": "7e5646af-5e6d-44fd-a4f1-4b9feddcb54b",
+			"id": "80e60b33-c941-4d77-a621-b19fa12185db",
 			"key": "xsede_ID",
 			"value": "NONE"
 		},
 		{
-			"id": "f46e6ee2-9d71-42e7-b840-098016191fa5",
+			"id": "2a338072-069c-4b32-bad9-f9af16f8e4f2",
 			"key": "localID",
 			"value": ""
 		},
 		{
-			"id": "427fd5e6-b31f-47bc-aebf-272cbee52859",
+			"id": "c1acf2ad-283f-46f8-8ec1-5f4d1043f28d",
 			"key": "resourceID",
 			"value": ""
 		},
 		{
-			"id": "939cac3c-4edb-4ea9-9e4c-9743c3d48156",
+			"id": "b1106749-3516-4713-b994-fbca5d1d15ba",
 			"key": "interfaceName",
 			"value": ""
 		},
 		{
-			"id": "10e84c2a-090f-4bf1-9df1-1b1bd963a152",
+			"id": "9af14f63-4510-42e9-a2ac-2fc889fa63b8",
 			"key": "serviceType",
 			"value": ""
 		},
 		{
-			"id": "5fcf7b19-8579-4ea3-88ff-e37234886776",
+			"id": "a77853e4-5f80-4416-b8ed-a5b48e1c934a",
 			"key": "appName",
 			"value": ""
 		},
 		{
-			"id": "df0baf9d-246a-4624-ad89-622ebe485f4b",
+			"id": "ece73200-6c3d-40c1-8824-bfa38e8ab64c",
 			"key": "rdr_type",
 			"value": ""
 		},
 		{
-			"id": "40784617-3153-4251-afab-54145ed41fac",
+			"id": "3ae9e403-ae3a-4dc4-940f-1747f4f96a4b",
 			"key": "info_siteID",
 			"value": ""
 		},
 		{
-			"id": "0d4c85fd-cf3e-45ac-9ff7-2014b9122db2",
+			"id": "7d9e7fdf-11f5-4b4a-a8fe-7dea1e56b385",
 			"key": "rdr_Type",
 			"value": ""
 		}
