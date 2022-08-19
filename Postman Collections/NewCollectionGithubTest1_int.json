@@ -1824,7 +1824,7 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": "https://info.xsede.org/wh1/rdr-db/v1/rdr/ResourceID/{{resourceID}}"
+						"url": "https://info.xsede.org/wh1/rdr-db/v1/rdr/SiteID/{{resourceID}}"
 					},
 					"response": []
 				}
@@ -1856,47 +1856,47 @@
 	],
 	"variable": [
 		{
-			"id": "07f4286e-3b83-4736-9bff-f43954c5cdbc",
+			"id": "0287c78f-9e26-4da3-9f3e-5128e92376fe",
 			"key": "xsede_ID",
 			"value": "NONE"
 		},
 		{
-			"id": "c8999dc3-8dc7-415f-b20a-44b79e38ee14",
+			"id": "15f71384-2971-413a-9bd9-5ab7e1519527",
 			"key": "localID",
 			"value": ""
 		},
 		{
-			"id": "2f78b564-6ede-4f99-8a02-65a812cae0ca",
+			"id": "b5f32a05-f455-4262-a6be-558ab68f9e07",
 			"key": "resourceID",
 			"value": ""
 		},
 		{
-			"id": "a8653c9d-1589-4132-9459-e6243b3a540c",
+			"id": "929ef546-c58d-4d8a-9753-0f18e33ee26c",
 			"key": "interfaceName",
 			"value": ""
 		},
 		{
-			"id": "294f26cc-6063-4280-b9ae-752e29c610a4",
+			"id": "1fb07067-bb94-42d8-b7d4-00cad7c2cc83",
 			"key": "serviceType",
 			"value": ""
 		},
 		{
-			"id": "d810d5cd-b207-4c0a-8efb-4ee592a69740",
+			"id": "4937339b-2eb1-4eea-9bc3-18fd393749bb",
 			"key": "appName",
 			"value": ""
 		},
 		{
-			"id": "1119f518-61d6-41ef-b347-c0591fb84b7c",
+			"id": "c7d36fc0-2be4-4ac0-a72a-7e53a2530717",
 			"key": "rdr_type",
 			"value": ""
 		},
 		{
-			"id": "41d70f3c-5143-47fb-9044-a9379b9c9ab3",
+			"id": "42540f4f-c68f-4081-acc5-ccd1f0972865",
 			"key": "info_siteID",
 			"value": ""
 		},
 		{
-			"id": "6cd07dc7-2cec-466c-b202-8487d7224929",
+			"id": "d40b5d40-6d4c-44a5-bd87-54f63e677844",
 			"key": "rdr_Type",
 			"value": ""
 		}
