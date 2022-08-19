@@ -1459,10 +1459,10 @@
 									"    //-----------------------------------",
 									"    // Save ResourceID",
 									"    // get middle element ",
-									"    resourceID = pm.response.json()[midIdx].ResourceID;",
-									"    console.log(\"SAVED ResourceID: \" + resourceID);",
+									"    resourceId = pm.response.json()[midIdx].info_resourceid;",
+									"    console.log(\"SAVED info_resourceid: \" + resourceId);",
 									"    // set to collection variable",
-									"    pm.collectionVariables.set(\"resourceID\", resourceID);",
+									"    pm.collectionVariables.set(\"resourceID\", resourceId);",
 									"});"
 								],
 								"type": "text/javascript"
@@ -1553,32 +1553,32 @@
 	],
 	"variable": [
 		{
-			"id": "5e08ba6c-eb23-459d-8bff-9b252970caed",
+			"id": "9ee76665-0fb3-4868-9976-42bd3f9ea7cd",
 			"key": "xsede_ID",
 			"value": "NONE"
 		},
 		{
-			"id": "23d9851b-e716-4535-9e5c-478e526d609d",
+			"id": "b5454352-02db-4cbb-9d79-d7580c410544",
 			"key": "localID",
 			"value": ""
 		},
 		{
-			"id": "f4899f5f-c49c-4eb6-b7d4-f47ef21b5618",
+			"id": "110c7b08-2aae-4733-96ee-c79fbaf039bf",
 			"key": "resourceID",
 			"value": ""
 		},
 		{
-			"id": "89d63d0e-cc62-4589-858c-302075a3ea24",
+			"id": "55c2ceeb-cc80-4e94-8e01-be169ba765c6",
 			"key": "interfaceName",
 			"value": ""
 		},
 		{
-			"id": "613de856-87c3-428b-842b-169f1f18a8a0",
+			"id": "c5c24d65-0f17-4bba-9aba-0142291d45ba",
 			"key": "serviceType",
 			"value": ""
 		},
 		{
-			"id": "8ca6efdf-df40-475c-a848-19b39c8f2db8",
+			"id": "c767b521-58f3-47c5-bfd5-6e172d4db3fa",
 			"key": "appName",
 			"value": ""
 		}
