@@ -1968,7 +1968,7 @@
 			"id": "6e2ba222-9d9b-4020-baf3-c199d6b5dc32"
 		},
 		{
-			"name": "New Folder",
+			"name": "outages",
 			"item": [],
 			"id": "829e9f05-f34b-463e-bc8b-7c4e5370887c"
 		}
@@ -1997,47 +1997,47 @@
 	],
 	"variable": [
 		{
-			"id": "7c53b9d0-008d-4656-a167-ca233a3cb236",
+			"id": "0dd619ab-c9e7-46b2-a7e5-b89690facb7d",
 			"key": "xsede_ID",
 			"value": "NONE"
 		},
 		{
-			"id": "2e294fca-c170-4a09-af21-8abb99152ded",
+			"id": "90add435-4980-4d57-8cf5-415cf61d7c0e",
 			"key": "localID",
 			"value": ""
 		},
 		{
-			"id": "1286b9aa-488a-4d6d-809b-b82a393b5d0f",
+			"id": "4b46417f-28f3-435e-aada-cda401b146ac",
 			"key": "resourceID",
 			"value": ""
 		},
 		{
-			"id": "09dd7033-02dd-407a-aaf0-a929ab31fe96",
+			"id": "f98d52f6-f86d-4694-b3eb-d26a267645ac",
 			"key": "interfaceName",
 			"value": ""
 		},
 		{
-			"id": "26ca461b-ddd8-48bf-abe1-b5c5af7da748",
+			"id": "bc3d3fcf-d311-4743-8784-cab465ae6826",
 			"key": "serviceType",
 			"value": ""
 		},
 		{
-			"id": "cc500cb2-89ad-4f2c-997a-b3885cac1263",
+			"id": "fae0d69e-3488-4969-8b5e-b22b7c4e62e6",
 			"key": "appName",
 			"value": ""
 		},
 		{
-			"id": "d0dfecf8-feb7-4d8c-bc11-ab342867e083",
+			"id": "dfcf3cc6-b698-4e81-a428-b67fc9d4e19f",
 			"key": "rdr_type",
 			"value": ""
 		},
 		{
-			"id": "19034ae1-8d5b-4f7b-9898-37de26e54514",
+			"id": "730f3fa9-9d08-4005-aacc-bc767319f1d7",
 			"key": "info_siteID",
 			"value": ""
 		},
 		{
-			"id": "4e79e042-9ca8-49d0-bd44-bdc06f9a082f",
+			"id": "d37b39f5-d30f-4163-8cea-048712655840",
 			"key": "rdr_Type",
 			"value": ""
 		}
