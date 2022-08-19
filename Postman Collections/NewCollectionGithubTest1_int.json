@@ -1694,6 +1694,51 @@
 					"response": []
 				},
 				{
+					"name": "rdr_RDR_Type",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "27796364-d966-4cbc-9914-40fb53fcc0ce",
+								"exec": [
+									"",
+									"// collection variables that are set by previous test",
+									"console.log(\"Loaded ResourceID: \" + pm.collectionVariables.get(\"resourceID\"));",
+									"",
+									"",
+									"",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "dfa6f311-f0ae-4c58-bfab-e18de08d2e6a",
+								"exec": [
+									"",
+									"pm.test(\"Response time is less than 200ms\", function () {",
+									"    pm.expect(pm.response.responseTime).to.be.below(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "6c442c65-840e-4102-a4aa-d95f5c8243d7",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "https://info.xsede.org/wh1/rdr-db/v1/rdr/ResourceID/{{resourceID}}"
+					},
+					"response": []
+				},
+				{
 					"name": "rdr_ResourceID",
 					"event": [
 						{
@@ -1766,42 +1811,42 @@
 	],
 	"variable": [
 		{
-			"id": "7c09a781-6dd5-4b61-bfb7-1cc85af6e401",
+			"id": "f79af3cb-0a7c-4e05-8b1e-e176bf760a64",
 			"key": "xsede_ID",
 			"value": "NONE"
 		},
 		{
-			"id": "308645ba-a5f7-4a1b-ad07-be7ac4a2f5d8",
+			"id": "1cc5aea4-6596-418a-b7f7-183c0af6d1cf",
 			"key": "localID",
 			"value": ""
 		},
 		{
-			"id": "5c19c11b-fdbe-4b8b-baf8-2fc736fe8b55",
+			"id": "af1f2480-4400-47fe-886d-7e5cb8120738",
 			"key": "resourceID",
 			"value": ""
 		},
 		{
-			"id": "4ba72222-96cd-44bf-9efa-3e636e4db7a1",
+			"id": "5c2cffa9-4e81-488e-a723-56c42ee93650",
 			"key": "interfaceName",
 			"value": ""
 		},
 		{
-			"id": "cf7bb838-6cf2-4312-8e0f-b2228496f66e",
+			"id": "779ffd45-1282-45e1-82b5-5d20b55143ed",
 			"key": "serviceType",
 			"value": ""
 		},
 		{
-			"id": "0b59f6e5-a328-45d9-9c24-86e4e9b5c35e",
+			"id": "036f6761-2dc9-480b-9e66-02d79a0e02f0",
 			"key": "appName",
 			"value": ""
 		},
 		{
-			"id": "ec34919a-98c7-4688-8fe5-e6d17ab944c2",
+			"id": "e4691a43-04ea-4130-aa4b-4bf62185f846",
 			"key": "rdr_type",
 			"value": ""
 		},
 		{
-			"id": "98a56665-7a58-43b6-8ff6-89e667de436b",
+			"id": "73147bcb-0789-4cc9-943d-d799eef75e98",
 			"key": "info_siteID",
 			"value": ""
 		}
