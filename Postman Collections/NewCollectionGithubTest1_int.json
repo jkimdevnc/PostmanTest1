@@ -1166,7 +1166,7 @@
 								"id": "27796364-d966-4cbc-9914-40fb53fcc0ce",
 								"exec": [
 									"// collection variables that are set by previous test",
-									"console.log(\"Loaded ResourceID: \" + pm.collectionVariables.get(\"resourceID\"));",
+									"console.log(\"Load ResourceID: \" + pm.collectionVariables.get(\"resourceID\"));",
 									"",
 									"",
 									""
@@ -1179,6 +1179,10 @@
 							"script": {
 								"id": "dfa6f311-f0ae-4c58-bfab-e18de08d2e6a",
 								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
 									"",
 									"pm.test(\"Response time is less than 2000ms\", function () {",
 									"    pm.expect(pm.response.responseTime).to.be.below(2000);",
@@ -2297,47 +2301,47 @@
 	],
 	"variable": [
 		{
-			"id": "eb4c18b0-105d-48ed-930e-c8fef9a458b8",
+			"id": "8e5a0953-f11e-4180-b5c2-02516e41ed7e",
 			"key": "xsede_ID",
 			"value": "NONE"
 		},
 		{
-			"id": "4422c2aa-7e6d-49f9-9a9e-8f0f8b482fca",
+			"id": "0405e232-0351-4775-b04a-8eb3efe1784e",
 			"key": "localID",
 			"value": ""
 		},
 		{
-			"id": "4fff452a-0a66-4fd9-b61c-068aa47be536",
+			"id": "58f97abd-5f06-4cbb-bf22-58c34bf26ad1",
 			"key": "resourceID",
 			"value": ""
 		},
 		{
-			"id": "66b04fb4-7d5e-4ab8-b5b0-f2d1f66f9f40",
+			"id": "6525958b-359c-477d-b3f2-6d0a36fae56e",
 			"key": "interfaceName",
 			"value": ""
 		},
 		{
-			"id": "e56df657-4e71-4733-a785-fefbc7a1ecba",
+			"id": "0e94f785-f661-4e79-a6a0-cbe58643e8c5",
 			"key": "serviceType",
 			"value": ""
 		},
 		{
-			"id": "c45c02dc-d260-47fc-a3ab-fb6f93f32dc7",
+			"id": "71e3fdab-c751-45a4-b3c2-fffef3e92f8f",
 			"key": "appName",
 			"value": ""
 		},
 		{
-			"id": "b441775e-7ee1-4ea6-ae0f-d2cf5af6643e",
+			"id": "ad5fc65b-08ea-4d37-9a4c-c4f59a133193",
 			"key": "rdr_type",
 			"value": ""
 		},
 		{
-			"id": "389f0f69-20fd-4c52-8b79-ba462a465de5",
+			"id": "1bcb6894-6fb5-4bf4-977b-7f452576119e",
 			"key": "info_siteID",
 			"value": ""
 		},
 		{
-			"id": "503b393b-d9d6-410b-b09a-2c3cf96cc589",
+			"id": "11234af7-8a55-4680-93c5-0c9a01ce6590",
 			"key": "rdr_Type",
 			"value": ""
 		}
