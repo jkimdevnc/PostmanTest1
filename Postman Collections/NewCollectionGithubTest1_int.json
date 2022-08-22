@@ -388,7 +388,7 @@
 					"response": []
 				},
 				{
-					"name": "services-spf_InterfaceName Copy",
+					"name": "services-spf_InterfaceName",
 					"event": [
 						{
 							"listen": "prerequest",
@@ -2301,47 +2301,47 @@
 	],
 	"variable": [
 		{
-			"id": "a3072ba1-dffb-45d5-ac47-64140ffa5ebb",
+			"id": "da6ed4f6-7f42-4ece-b7ad-1580120ee224",
 			"key": "xsede_ID",
 			"value": "NONE"
 		},
 		{
-			"id": "39e59946-4555-493b-9a53-02c1eeb7b611",
+			"id": "b9456f51-3269-4aaa-81b9-27d0a99d39aa",
 			"key": "localID",
 			"value": ""
 		},
 		{
-			"id": "477f4f49-b620-4a23-8499-c7b623d89d4a",
+			"id": "1b49221a-6c1f-43bd-879c-cdb760975ff7",
 			"key": "resourceID",
 			"value": ""
 		},
 		{
-			"id": "aa5325a7-2312-4cf2-a510-dcff69f1f6a0",
+			"id": "f99998b2-ae95-487b-97cb-cca61e175662",
 			"key": "interfaceName",
 			"value": ""
 		},
 		{
-			"id": "aaf9fc13-adc6-4460-afb3-96f8a64c45ca",
+			"id": "b0f27c7d-cf64-454b-9f24-557782637f4b",
 			"key": "serviceType",
 			"value": ""
 		},
 		{
-			"id": "41f61f48-9649-4b6b-97ce-8d9d4bf58935",
+			"id": "33a5ac84-caeb-4062-b20e-087898043cf9",
 			"key": "appName",
 			"value": ""
 		},
 		{
-			"id": "307a7e96-172f-478a-ad3c-3d5331bdc5d3",
+			"id": "ebbf802a-c935-4eec-be9a-32a85e213799",
 			"key": "rdr_type",
 			"value": ""
 		},
 		{
-			"id": "6dbf8ea8-ad6c-49b2-b6b6-077ec5100000",
+			"id": "92ee0207-8f63-47e3-94a8-48b015f353c2",
 			"key": "info_siteID",
 			"value": ""
 		},
 		{
-			"id": "efd05c56-6e85-4b60-b036-398dce584bf0",
+			"id": "01403c13-7dee-4aa1-bb5a-eb5f658e711a",
 			"key": "rdr_Type",
 			"value": ""
 		}
