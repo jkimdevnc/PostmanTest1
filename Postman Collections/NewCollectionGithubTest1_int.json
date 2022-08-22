@@ -1744,6 +1744,10 @@
 							"script": {
 								"id": "dfa6f311-f0ae-4c58-bfab-e18de08d2e6a",
 								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
 									"",
 									"pm.test(\"Response time is less than 200ms\", function () {",
 									"    pm.expect(pm.response.responseTime).to.be.below(200);",
@@ -2321,47 +2325,47 @@
 	],
 	"variable": [
 		{
-			"id": "679b50c4-deed-40f0-9b94-0c371ed85714",
+			"id": "0f80aa04-2452-4039-a923-4f47b4537514",
 			"key": "xsede_ID",
 			"value": "NONE"
 		},
 		{
-			"id": "bf1c14da-56f0-4fe8-b30f-467967cfcfa5",
+			"id": "e02a49ce-aafa-456a-8a43-ca5ac177b0b8",
 			"key": "localID",
 			"value": ""
 		},
 		{
-			"id": "d47bfcac-3a47-43f6-a688-989458884fd1",
+			"id": "688ae4e5-ac54-42d8-ba36-cd29597569a4",
 			"key": "resourceID",
 			"value": ""
 		},
 		{
-			"id": "c7943655-6e33-466e-8bfc-205f7611f44d",
+			"id": "1567adbb-c8ee-46cb-880b-41df379f16d0",
 			"key": "interfaceName",
 			"value": ""
 		},
 		{
-			"id": "f5bf4720-de74-41ef-989f-54e830448854",
+			"id": "2c8a46d1-9f5b-4dbf-acb6-3b76cb292416",
 			"key": "serviceType",
 			"value": ""
 		},
 		{
-			"id": "a2076fd4-9448-476d-abbb-77f8494dcf1c",
+			"id": "0c3382b8-931b-4c12-8eed-d818d23b879f",
 			"key": "appName",
 			"value": ""
 		},
 		{
-			"id": "4a489a04-16e4-48e4-812d-813a42a5dd31",
+			"id": "496737c2-913e-411c-9754-21ee4470ba90",
 			"key": "rdr_type",
 			"value": ""
 		},
 		{
-			"id": "95fe2ccd-02b5-413d-a8f0-d344516b6832",
+			"id": "805cb32e-3f39-4233-aac7-128b193fb85d",
 			"key": "info_siteID",
 			"value": ""
 		},
 		{
-			"id": "02122453-5007-4c54-9990-5ce332d54c9f",
+			"id": "c91591e5-0342-44bb-9d79-0b6d291ce85a",
 			"key": "rdr_Type",
 			"value": ""
 		}
