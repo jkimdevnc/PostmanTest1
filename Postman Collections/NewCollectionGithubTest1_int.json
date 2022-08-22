@@ -1118,7 +1118,7 @@
 								"exec": [
 									"",
 									"// collection variables that are set by previous test",
-									"console.log(\"Loaded ID: \" + pm.collectionVariables.get(\"xsede_ID\"));",
+									"console.log(\"Load ID: \" + pm.collectionVariables.get(\"xsede_ID\"));",
 									"",
 									"",
 									"",
@@ -1133,6 +1133,10 @@
 							"script": {
 								"id": "dfa6f311-f0ae-4c58-bfab-e18de08d2e6a",
 								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
 									"",
 									"pm.test(\"Response time is less than 200ms\", function () {",
 									"    pm.expect(pm.response.responseTime).to.be.below(200);",
@@ -2293,47 +2297,47 @@
 	],
 	"variable": [
 		{
-			"id": "ae95ead9-caf0-4638-9a99-344fcd86bdce",
+			"id": "eb4c18b0-105d-48ed-930e-c8fef9a458b8",
 			"key": "xsede_ID",
 			"value": "NONE"
 		},
 		{
-			"id": "dcc7dbc9-07db-4778-bd2d-878a2787f3a1",
+			"id": "4422c2aa-7e6d-49f9-9a9e-8f0f8b482fca",
 			"key": "localID",
 			"value": ""
 		},
 		{
-			"id": "44f478c3-37e2-4b26-ad5f-47c4a00be768",
+			"id": "4fff452a-0a66-4fd9-b61c-068aa47be536",
 			"key": "resourceID",
 			"value": ""
 		},
 		{
-			"id": "679bae1f-7747-428d-92da-1cd59c5fa8b8",
+			"id": "66b04fb4-7d5e-4ab8-b5b0-f2d1f66f9f40",
 			"key": "interfaceName",
 			"value": ""
 		},
 		{
-			"id": "48e94aaf-cf9c-444a-8c26-24dc1ff553ba",
+			"id": "e56df657-4e71-4733-a785-fefbc7a1ecba",
 			"key": "serviceType",
 			"value": ""
 		},
 		{
-			"id": "9b8504b7-44db-4b63-ba83-9a60043f08ca",
+			"id": "c45c02dc-d260-47fc-a3ab-fb6f93f32dc7",
 			"key": "appName",
 			"value": ""
 		},
 		{
-			"id": "245e6ac5-03b9-4786-aa4b-d12c83fb8ece",
+			"id": "b441775e-7ee1-4ea6-ae0f-d2cf5af6643e",
 			"key": "rdr_type",
 			"value": ""
 		},
 		{
-			"id": "198d1dba-8e20-41d7-83c3-8097495e05c9",
+			"id": "389f0f69-20fd-4c52-8b79-ba462a465de5",
 			"key": "info_siteID",
 			"value": ""
 		},
 		{
-			"id": "63471af5-a683-46bc-9411-faf1e9ed899c",
+			"id": "503b393b-d9d6-410b-b09a-2c3cf96cc589",
 			"key": "rdr_Type",
 			"value": ""
 		}
