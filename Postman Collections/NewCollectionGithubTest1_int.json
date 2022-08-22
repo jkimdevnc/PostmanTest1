@@ -435,7 +435,7 @@
 								"id": "27796364-d966-4cbc-9914-40fb53fcc0ce",
 								"exec": [
 									"// collection variables that are set by previous test",
-									"console.log(\"Load ID: \" + pm.collectionVariables.get(\"xsede_ID\"));",
+									"console.log(\"Load ResourceID: \" + pm.collectionVariables.get(\"resourceID\"));",
 									"",
 									"",
 									""
@@ -2252,47 +2252,47 @@
 	],
 	"variable": [
 		{
-			"id": "c84195d6-6560-41fd-9edf-3fa49b638974",
+			"id": "9dfd54db-ef7f-4db5-b580-d9c4d890f45a",
 			"key": "xsede_ID",
 			"value": "NONE"
 		},
 		{
-			"id": "4d43d2c0-9988-48fd-94c2-84a4cfe7fa32",
+			"id": "bc915b44-0e2a-454c-84d5-4666fadecb25",
 			"key": "localID",
 			"value": ""
 		},
 		{
-			"id": "1cd77703-aa50-4b51-91d8-f647288b1276",
+			"id": "1449f246-c5cd-4a3c-a3fe-1c968c3fc4cc",
 			"key": "resourceID",
 			"value": ""
 		},
 		{
-			"id": "392ec7d0-2e5c-4d84-95fb-a696310290d2",
+			"id": "d8e85719-c663-41a1-b3bb-2191629ee3b9",
 			"key": "interfaceName",
 			"value": ""
 		},
 		{
-			"id": "f1cc104e-980a-4b4c-9683-0b1382679390",
+			"id": "2f70ca27-9739-445c-a246-275e3e90a384",
 			"key": "serviceType",
 			"value": ""
 		},
 		{
-			"id": "ab65ad87-acd5-4bde-8088-a5e342db6ad2",
+			"id": "0ff25ed3-d16c-4ef5-9ce3-812d3f64148c",
 			"key": "appName",
 			"value": ""
 		},
 		{
-			"id": "8afb6319-80cd-42ec-8a8f-ec44348672e3",
+			"id": "16f902c1-5096-4105-bb1d-365648176d87",
 			"key": "rdr_type",
 			"value": ""
 		},
 		{
-			"id": "580f1c91-e5bd-447b-93f5-2a45217c7654",
+			"id": "0d1cb29b-312a-41fe-b928-9386ac5df8e4",
 			"key": "info_siteID",
 			"value": ""
 		},
 		{
-			"id": "e137f490-e315-4c13-a82b-fe306eafea73",
+			"id": "c7343d3b-51f4-4b14-9bfa-5d250416490b",
 			"key": "rdr_Type",
 			"value": ""
 		}
