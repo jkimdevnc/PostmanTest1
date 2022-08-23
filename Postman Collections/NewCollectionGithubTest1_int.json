@@ -447,7 +447,7 @@
 							}
 						}
 					],
-					"id": "0f5388b4-8ebd-4723-8c07-07174d8f1ed8",
+					"id": "d2563aa5-8dae-4451-8a2e-16365227a8bc",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -459,7 +459,7 @@
 					"response": []
 				},
 				{
-					"name": "outages_ID",
+					"name": "outages_ID Copy",
 					"event": [
 						{
 							"listen": "prerequest",
@@ -496,7 +496,7 @@
 							}
 						}
 					],
-					"id": "f87aa610-da38-474c-a453-24ae6df7cdaf",
+					"id": "ee0a25c3-b56a-47e3-b4c7-981ff8485dc0",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -504,154 +504,6 @@
 						"method": "GET",
 						"header": [],
 						"url": "https://info.xsede.org/wh1/outages/v1/outages/ID/{{xsede_ID}}"
-					},
-					"response": []
-				},
-				{
-					"name": "outages_ResourceID",
-					"event": [
-						{
-							"listen": "prerequest",
-							"script": {
-								"id": "27796364-d966-4cbc-9914-40fb53fcc0ce",
-								"exec": [
-									"// collection variables that are set by previous test",
-									"console.log(\"Loaded ResourceID: \" + pm.collectionVariables.get(\"resourceID\"));",
-									"",
-									"",
-									""
-								],
-								"type": "text/javascript"
-							}
-						},
-						{
-							"listen": "test",
-							"script": {
-								"id": "dfa6f311-f0ae-4c58-bfab-e18de08d2e6a",
-								"exec": [
-									"pm.test(\"Status code is 200\", function () {",
-									"    pm.response.to.have.status(200);",
-									"});",
-									"",
-									"",
-									"pm.test(\"Response time is less than 300ms\", function () {",
-									"    pm.expect(pm.response.responseTime).to.be.below(300);",
-									"});"
-								],
-								"type": "text/javascript"
-							}
-						}
-					],
-					"id": "16c35fa6-9eea-4195-a9d5-69c16c097dba",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": "https://info.xsede.org/wh1/outages/v1/outages/ResourceID/{{resourceID}}"
-					},
-					"response": []
-				},
-				{
-					"name": "outagesCurrent",
-					"event": [
-						{
-							"listen": "test",
-							"script": {
-								"id": "0f2c93a7-775d-4e46-b7a2-f9b581345ab3",
-								"exec": [
-									"pm.test(\"Status code is 200\", function () {",
-									"    pm.response.to.have.status(200);",
-									"});",
-									"",
-									"",
-									"pm.test(\"Response time is less than 300ms\", function () {",
-									"    pm.expect(pm.response.responseTime).to.be.below(300);",
-									"});",
-									"",
-									""
-								],
-								"type": "text/javascript"
-							}
-						}
-					],
-					"id": "6dd75d5f-cb4c-490a-81b1-608909e6c930",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": "https://info.xsede.org/wh1/outages/v1/outages/Current/"
-					},
-					"response": []
-				},
-				{
-					"name": "outagesFuture",
-					"event": [
-						{
-							"listen": "test",
-							"script": {
-								"id": "0f2c93a7-775d-4e46-b7a2-f9b581345ab3",
-								"exec": [
-									"pm.test(\"Status code is 200\", function () {",
-									"    pm.response.to.have.status(200);",
-									"});",
-									"",
-									"",
-									"pm.test(\"Response time is less than 300ms\", function () {",
-									"    pm.expect(pm.response.responseTime).to.be.below(300);",
-									"});",
-									"",
-									""
-								],
-								"type": "text/javascript"
-							}
-						}
-					],
-					"id": "83abd256-776f-4c49-bf14-2e3facfd427d",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": "https://info.xsede.org/wh1/outages/v1/outages/Future/"
-					},
-					"response": []
-				},
-				{
-					"name": "outagesPast",
-					"event": [
-						{
-							"listen": "test",
-							"script": {
-								"id": "0f2c93a7-775d-4e46-b7a2-f9b581345ab3",
-								"exec": [
-									"pm.test(\"Status code is 200\", function () {",
-									"    pm.response.to.have.status(200);",
-									"});",
-									"",
-									"",
-									"pm.test(\"Response time is less than 1000ms\", function () {",
-									"    pm.expect(pm.response.responseTime).to.be.below(1000);",
-									"});",
-									"",
-									""
-								],
-								"type": "text/javascript"
-							}
-						}
-					],
-					"id": "5de70f44-d799-4aa2-a057-7ef0a8450ae6",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": "https://info.xsede.org/wh1/outages/v1/outages/Past/"
 					},
 					"response": []
 				}
@@ -1517,47 +1369,47 @@
 	],
 	"variable": [
 		{
-			"id": "38200a7e-3718-491d-854d-38f4ea37ab3e",
+			"id": "f38f6945-c041-4bdd-b881-8cb982c7c2cd",
 			"key": "xsede_ID",
 			"value": "NONE"
 		},
 		{
-			"id": "b05a96b9-c4e9-4abb-b463-1331e3ef2862",
+			"id": "c7998755-8ffa-4991-9396-1d2550aed6a2",
 			"key": "localID",
 			"value": ""
 		},
 		{
-			"id": "4295dbaa-8794-432d-820d-a9dd0b737af9",
+			"id": "aa8c9238-9335-419d-bcd5-de1b4b5555b7",
 			"key": "resourceID",
 			"value": ""
 		},
 		{
-			"id": "94b59ed6-be4e-4e7b-b889-40a58f9df7e4",
+			"id": "13c824b8-dbda-4733-979c-579a7747a266",
 			"key": "interfaceName",
 			"value": ""
 		},
 		{
-			"id": "0a6ab018-806b-4a9b-bca2-9f0ec39728c8",
+			"id": "bf84d16c-b371-4327-87e2-38d554c067c9",
 			"key": "serviceType",
 			"value": ""
 		},
 		{
-			"id": "b7faaacb-80d5-44c8-b829-a03cb93d6ee5",
+			"id": "66f7173e-26bb-4207-ae1b-13f3b865ce43",
 			"key": "appName",
 			"value": ""
 		},
 		{
-			"id": "f5e80862-d1e8-40f9-bd51-8130113db022",
+			"id": "7adaac2c-e53a-47dd-abb3-95998f3872d8",
 			"key": "rdr_type",
 			"value": ""
 		},
 		{
-			"id": "25e3b3af-b5b0-4ea0-9d59-a2e07bcd253c",
+			"id": "a85f8d2f-7f34-4bb0-818f-13e49e052c55",
 			"key": "info_siteID",
 			"value": ""
 		},
 		{
-			"id": "59d387f9-42b5-4df9-bb18-0ed73da8115a",
+			"id": "3bd85314-41f2-492a-bd64-79b59c3b9d07",
 			"key": "rdr_Type",
 			"value": ""
 		}
