@@ -260,7 +260,7 @@
 			]
 		},
 		{
-			"name": "glue2-view-api_v1",
+			"name": "glue2-view-api",
 			"item": [
 				{
 					"name": "services-spf",
@@ -1369,47 +1369,47 @@
 	],
 	"variable": [
 		{
-			"id": "831f5a4a-79e1-4735-b22d-77f72f6976b4",
+			"id": "d08d2972-3c18-4302-be11-4438e079dd0e",
 			"key": "xsede_ID",
 			"value": "NONE"
 		},
 		{
-			"id": "0022d61b-1955-4671-ba77-4fe74c171594",
+			"id": "e67c7881-6bb7-4864-9789-dcc4500dec0a",
 			"key": "localID",
 			"value": ""
 		},
 		{
-			"id": "264494f1-2d4b-404f-8907-57be42d31b01",
+			"id": "a93169e4-5ca8-4663-94cf-fe40f008b689",
 			"key": "resourceID",
 			"value": ""
 		},
 		{
-			"id": "dc2f1191-9fc5-4e0e-a3dc-9123ee781d64",
+			"id": "3da4048a-4ff9-4a6b-aba0-295c1830f4e8",
 			"key": "interfaceName",
 			"value": ""
 		},
 		{
-			"id": "03cb2955-7a1c-43e5-9a43-6336b36583a8",
+			"id": "f74a14d4-5ea9-45cf-ade0-1f88f1edc701",
 			"key": "serviceType",
 			"value": ""
 		},
 		{
-			"id": "1f6fd8e0-9251-4caf-8c46-96ee32c251a0",
+			"id": "26122014-e18c-4e9d-a681-a1c460b4dcfc",
 			"key": "appName",
 			"value": ""
 		},
 		{
-			"id": "423287ee-d466-43b2-868b-bf0a0adc0776",
+			"id": "bc4adc33-6b26-45e9-8ffb-abba6810c473",
 			"key": "rdr_type",
 			"value": ""
 		},
 		{
-			"id": "985de66f-98e6-44cd-a39d-074b1cd3a04b",
+			"id": "58426d8f-5151-4563-a49a-63178d3c51ec",
 			"key": "info_siteID",
 			"value": ""
 		},
 		{
-			"id": "22147067-a223-4eaf-8955-960c0637c047",
+			"id": "f2125310-09d2-4250-84b0-9e6da8f17ed3",
 			"key": "rdr_Type",
 			"value": ""
 		}
